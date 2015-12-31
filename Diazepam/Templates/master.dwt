@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Master Template</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../Styles/globalstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+ 	<!-- header -->
+	<div id="header">		
+    	<div id="logo">
+        	<a href="#"><img src="../Images/logo.png" alt="logo"></a>
+        </div>
+        <div id="nav_bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about.html" class="scroll">About us</a></li>
+            <li><a href="#product" class="scroll">Products</a></li>
+            <li><a href="#services" class="scroll">Services</a></li>
+            <li><a href="#events" class="scroll">Events</a></li>
+            <li><a href="#faq" class="scroll">FAQ</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
+            <li><a href="#signup" class="scroll">Sign-up</a></li>
+            <li><a href="#order" class="scroll">Order</a></li>
+          </ul>                
+	  	</div>
+        <div id="social_icons">
+        	<ul>
+            	<li><a href="#"><img src="../Images/facebook_resize.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../Images/instagram_resize.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="../Images/twitter_resize.png" alt="twitter icon"></a></li>
+           </ul>
+        </div>
+        <div class="clearfix"></div>
+	</div><!--//header -->
+    
+	<!--banner-->
+    <div id="banner">						
+	</div>			
+    <!--//banner-->
+    
+    <!--welcome-->
+    <div id="welcome">
+        <h2 class="heading2">Welcome to <span>Diazepam!</span></h2>
+        <div class="connect">
+        	<ul>
+            	<li><a href="contact.html"><img src="../Images/Apps-Google-Maps-icon.png" title="map icon"></a></li>
+                <li><a href="#"><img src="../Images/facebook_resize.png" title="facebook icon"></a></li>
+                <li><a href="#"><img src="../Images/facebook_resize.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../Images/instagram_resize.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="../Images/twitter_resize.png" alt="twitter icon"></a></li>
+            </ul>
+        </div>
+    </div>    
+    <!--//welcome-->
+    
+    <!--products-->
+    <div id="products">
+   		<div class="label">
+	        <h2>Products</h2>
+            <div class="line">
+            	<span></span>
+            </div>
+      	</div> 
+      	<div class="contents">      	
+        	<div class="grid_1">
+            	<div><img src="#" alt="category1"></div>
+                <h3><a href="#">Classical</a></h3>
+                <p>Praesent vestibulum aenean
+                nonummy hendrerit mauris. Cum
+                sociis natoque penatibus et
+                magnis dis parturient montes
+                ascetur ridiculus mus.</p>
+                <hr>
+                <div><a class="btn_readmore" href="#">Read more</a></div>
+            </div>
+            <div>Products2</div>
+            <div>Products3</div>
+            <div>Products4</div>
+            <div>Products5</div>
+            <div>Products6</div>            
+      	</div> 
+   	</div>
+    
+    <!--//products-->
+
+	<!--services-->
+    <div id="services">
+    <p>Services</p>
+    </div>
+    <!--//services-->
+
+	<!--events-->
+    <div id="events">
+    	<p>Events</p>
+    </div>
+    <!--//events-->        
+
+	<!-- footer -->    
+    <div id="footer">
+    	<p>Footer</p>
+    </div>
+    <!--//footer -->
+    
+</div> <!--end div "container"-->	    
+    
+    
+</body>
+</html>

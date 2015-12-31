@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#f0efed;
+	font-family:Verdana, Geneva, sans-serif;
+	margin-top:0;
+}
+
+#container{
+	width:100%;	
+	padding-top:0;
+	margin:0 auto;	
+}
+
+#header{	
+	width:100%;
+	margin:0;
+	padding:0;	
+	border:1px solid #000;
+	height:135px;
+	background:#5D4B33;
+}
+
+#logo{
+	width:142px;
+	height:135px;
+	float:left;		
+}
+
+#logo a{
+	display:block;
+	text-align:center;
+}
+
+/*Navigation bar*/
+#nav_bar{
+	float:left;
+	margin-top:65px;
+	height:70px;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;	
+}
+
+#nav_bar ul{
+	list-style-type:none;
+	margin:0 auto;
+}
+#nav_bar ul li{
+	float:left;
+	margin:0;
+}
+
+#nav_bar ul li a{
+	display:block;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	text-decoration:none;
+	height:50px;
+	padding:10px 15px;
+	font-size:1.5em;
+	color:#FFF;
+}
+#nav_bar ul li a:hover{
+	background-color:#F90;
+	text-shadow:none;
+	color:#FFF;
+}
+
+/*Social icons*/
+#social_icons{
+	height:20px;
+	float:right;
+}
+
+#social_icons ul{
+	list-style-type:none;
+}
+
+#social_icons ul li{
+	float:right;
+	margin:0 2px;
+	padding:0;
+}
+
+#social_icon ul li a{
+	display:block;
+}
+
+.clearfix{
+	clear:both;
+}
+
+/*banner*/
+#banner{
+	background-image:url(../Images/banner1-small.jpg);
+	background-repeat: no-repeat;
+	height:300px;
+	width:80%;
+	margin:0 auto;
+	paddling-top:0;
+}
+
+/*welcome*/
+#welcome{
+	background-image:url(../Images/banner2-small.jpg);
+	background-repeat:no-repeat;
+	height:300px;
+	max-width:80%;
+	margin:0 auto;
+}
+
+.heading2{
+	font-size: 4em;
+    font-family: 'Marvel-Regular';
+    color: #5D4B33;
+    font-weight: 800;
+	float:left;
+	margin-top:0;
+}
+
+.heading2 span{
+    color: #F07818;
+}
+
+.connect{
+	float:right;
+	vertical-align:top;
+}
+
+.connect ul{
+	list-style-type:none;
+}
+
+.line span{
+	background:url(../Images/line.png) no-repeat 0px 0px;
+	display:block;
+	height:7px;
+}
