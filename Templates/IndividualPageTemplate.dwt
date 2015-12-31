@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Template</title>
+<!-- TemplateEndEditable -->
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../Style/MainStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+  <div id="head">
+    <p>head</p>
+  </div>
+  <div id="nav_bar">
+    <p>Nav_bar</p>
+  </div>
+  <div id="banner">
+    <div id="banner_con">
+      <div id="slider">
+      <div class="cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="200"
+    data-cycle-prev="#prev_banner"
+    data-cycle-next="#next_banner"
+    >
+      <img src="../Photoshopped images/Banners/banner1-small.jpg" width="100%" height="300" alt="banner1" />
+      <img src="../Photoshopped images/Banners/banner2-small.jpg" width="100%" height="300" alt="banner2" />
+      <img src="../Photoshopped images/Banners/banner3.jpg" width="100%" height="300" alt="banner3" /> 
+      <img src="../Photoshopped images/Banners/banner4.jpg" width="100%" height="=300" alt="banner4" />
+      <img src="../Photoshopped images/Banners/banner5.jpg" width="100%" height="300" alt="banner5" />
+      <img src="../Photoshopped images/Banners/banner6.jpg" width="100%" height="300" alt="banner6" />
+      </div>
+      </div>
+    </div>
+  </div>
+ <script type="text/javascript" src="../jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../jquery/cycle2/build/jquery.cycle2.js"></script>
+
+  <div id="body">
+    <p>body</p>
+  </div>
+  <div id="footer">
+    <p>footer</p>
+  </div>
+</div>
+</body>
+</html>
