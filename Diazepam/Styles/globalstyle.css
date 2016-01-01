@@ -39,13 +39,17 @@ body{
 }
 
 /*Navigation bar*/
+#nav_wrap{
+	height:70px;
+}
 #nav_bar{
 	float:left;
 	margin-top:65px;
 	height:70px;
 	border-radius:5px;
 	-noz-border-radius:5px;
-	-webkit-border-radius:5px;		
+	-webkit-border-radius:5px;
+	background:#5D4B33;		
 }
 
 #nav_bar ul{
@@ -167,8 +171,6 @@ a:hover, a:active{
 
 /*banner*/
 #banner{
-	background-image:url(../Images/banner1-small.jpg);
-	background-repeat: no-repeat;
 	height:300px;
 	/*width:80%;*/	
 	margin:0 auto;
@@ -176,6 +178,19 @@ a:hover, a:active{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;	
+}
+#banner_con{
+	overflow:auto;
+}
+
+#slider{
+	display:block;
+	margin:auto;
+	float:left;
+	height:300px;
+	width:80%;
+	overflow:hidden;
+	position:absolute;
 }
 
 /*welcome*/

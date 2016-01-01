@@ -40,7 +40,7 @@
     </div>
   </div>
  <script type="text/javascript" src="../jquery/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="../jquery/cycle2/build/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../jquery/cycle2-master/build/jquery.cycle2.js"></script>
 
   <div id="body">
     <p>body</p>
