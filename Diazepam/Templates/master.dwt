@@ -19,7 +19,7 @@
         </div>
         <div id="nav_bar">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#about.html" class="scroll">About us</a></li>
             <li><a href="#product" class="scroll">Products</a></li>
             <li><a href="#services" class="scroll">Services</a></li>
@@ -40,75 +40,201 @@
         <div class="clearfix"></div>
 	</div><!--//header -->
     
-	<!--banner-->
-    <div id="banner">						
-	</div>			
-    <!--//banner-->
-    
-    <!--welcome-->
-    <div id="welcome">
+    <!--sidebar_left-->
+    <div class="sidebar_left">
+    	<h2>GRAND OPENNING ON 15/01/2015</h2>
+    </div>
+    <!--//sidebar_left-->
+	
+	<!-- TemplateBeginEditable name="maincontent" -->
+    <!--//maincontent-->
+    <div id="maincontent">
+      <!--banner-->
+      <div id="banner"> </div>
+      <!--//banner-->
+      <!--welcome-->
+      <div id="welcome">
         <h2 class="heading2">Welcome to <span>Diazepam!</span></h2>
-        <div class="connect">
-        	<ul>
-            	<li><a href="contact.html"><img src="../Images/Apps-Google-Maps-icon.png" title="map icon"></a></li>
-                <li><a href="#"><img src="../Images/facebook_resize.png" title="facebook icon"></a></li>
-                <li><a href="#"><img src="../Images/facebook_resize.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="../Images/instagram_resize.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="../Images/twitter_resize.png" alt="twitter icon"></a></li>
-            </ul>
+      </div>
+      <!--//welcome-->
+      <!--products-->
+      <div id="products">
+        <h2 class="label"><a href="products.html">Products</a></h2>
+        <div class="content">
+          <div class="grid_first_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Single/Double scoop</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_middle_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Waffle ice-cream</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_middle_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Ice-cream cake</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_middle_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Fried ice-cream</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_middle_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Ice-cream cookies</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_last_products">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Ice-cream sundae</a></h3>
+            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
         </div>
-    </div>    
-    <!--//welcome-->
+        <!---//content-->
+        <div class="clearfix"></div>
+      </div>
+      <!--//products-->
+      <!--services-->
+      <div id="services">
+        <h2 class="label"><a href="services.html">Services</a></h2>
+        <div class="content">
+          <div class="grid_services">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Party Planner-Free flow-NEW</a></h3>
+            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_services">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Free n Fast Delivery</a></h3>
+            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="grid_services">
+            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
+            <h3><a href="#">Exchange n Return</a></h3>
+            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            <hr>
+            <div class="bt_readmore"><a href="#">Read more</a></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!--//services-->
+      <!--review-->
+      <div id="reviews">
+        <h2 class="label"><a href="services.html">Reviews</a></h2>
+        <div class="content">
+          <ul>
+            <li>
+              <h4>Lorem Ipsum 1</h4>
+              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            </li>
+            <li>
+              <h4>Lorem Ipsum 2</h4>
+              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            </li>
+            <li>
+              <h4>Lorem Ipsum 3</h4>
+              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            </li>
+            <li>
+              <h4>Lorem Ipsum 4</h4>
+              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            </li>
+            <li>
+              <h4>Lorem Ipsum 5</h4>
+              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!--//review-->
+    </div>
+    <!--//maincontent-->
+    <!-- TemplateEndEditable -->
     
-    <!--products-->
-    <div id="products">
-   		<div class="label">
-	        <h2>Products</h2>
-            <div class="line">
-            	<span></span>
+    <!--sidebar right-->
+    <aside id="sidebar_right_top">
+   		<h2>Online support</h2>
+   	</aside>    
+        
+   <aside id="sidebar_right_bottom">
+   		<h2>Leave comments</h2>
+	</aside>  
+    <!--//sidebar_right-->
+    
+   <!-- footer_top -->    
+  	<div class="clearfix"></div>
+    <div class="footer_top">			
+        <div class="content_footer_top">
+            <div class="footer_grid">
+                <h4>Company</h4>
+                <ul class="ul_footer">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Work Here</a></li>                
+                    <li><a href="#">Upcomming Events</a></li>
+                    <li><a href="#">Outlets</a></li>
+                </ul>
             </div>
-      	</div> 
-      	<div class="contents">      	
-        	<div class="grid_1">
-            	<div><img src="#" alt="category1"></div>
-                <h3><a href="#">Classical</a></h3>
-                <p>Praesent vestibulum aenean
-                nonummy hendrerit mauris. Cum
-                sociis natoque penatibus et
-                magnis dis parturient montes
-                ascetur ridiculus mus.</p>
-                <hr>
-                <div><a class="btn_readmore" href="#">Read more</a></div>
+            <div class="footer_grid">
+                <h4>Products/Services</h4>
+                <ul class="ul_footer">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
             </div>
-            <div>Products2</div>
-            <div>Products3</div>
-            <div>Products4</div>
-            <div>Products5</div>
-            <div>Products6</div>            
-      	</div> 
-   	</div>
+            <div class="footer_grid">
+                <h4>Order/Return</h4>
+                <ul class="ul_footer">                
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Digital Gift Card</a></li>
+                </ul>
+            </div>        
+            <div class="footer_grid">
+                <h4>Connect with Us</h4>
+                <ul class="ul_footer">
+		           	<li><a href="contact.html"><img src="../Images/Apps-Google-Maps-icon.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="../Images/facebook_resize.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="../Images/instagram_resize.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="../Images/twitter_resize.png" alt="twitter icon">On Twitter</a></li>                
+            	</ul>
+        	</div>       
+            <div class="clearfix"></div>
+      </div>
+    </div>
+	<!--//footer_top-->
     
-    <!--//products-->
-
-	<!--services-->
-    <div id="services">
-    <p>Services</p>
-    </div>
-    <!--//services-->
-
-	<!--events-->
-    <div id="events">
-    	<p>Events</p>
-    </div>
-    <!--//events-->        
-
-	<!-- footer -->    
-    <div id="footer">
-    	<p>Footer</p>
-    </div>
-    <!--//footer -->
-    
-</div> <!--end div "container"-->	    
+    <!--//footer_bottom-->
+	<div class="footer_bottom">
+    	<div>© 2015 Diazepam. All rights reserved.</div>
+        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
+		</div>
+	</div>
+    <!--//footer_bottom -->
+  
+  </div> <!--end div "container"-->	    
     
     
 </body>
