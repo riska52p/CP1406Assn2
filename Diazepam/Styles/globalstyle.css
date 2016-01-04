@@ -1,6 +1,30 @@
 @charset "utf-8";
+@import url("../webfonts/Dimbo_Regular/stylesheet.css");
+
 /* CSS Document */
 
+#Background {
+	background-image:url(../Images/background-Small.jpg);
+	background-repeat:repeat;
+}
+
+#Container {
+	background-color: #50c0a8;
+	margin: auto;
+	margin-top: 50px;
+	width: 1080px;
+	text-align: right;
+}
+
+
+#Maincontent {
+	background-color:#e7f1ff;
+	width: 94%;
+	float: left;
+	padding:3%;
+	font-size:18px;
+	text-align: left
+}
 body{
 	background-color:#FFF;
 	font-family:Verdana, Geneva, sans-serif;
@@ -12,11 +36,6 @@ body{
 	-webkit-border-radius:5px;
 }
 
-#container{
-	width:100%;	
-	padding-top:0;
-	margin:0 auto;	
-}
 
 #header{	
 	width:100%;
@@ -50,6 +69,7 @@ body{
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 	background:#5D4B33;		
+	font-family: "Dimbo Regular";
 }
 
 #nav_bar ul{
@@ -88,8 +108,9 @@ a:hover, a:active{
 
 #nav_bar a:hover, #nav_bar a:active,
 #nav_bar .active a:link, #nav_bar .active a:visited{
-	background-color:orange;
-	text-shadow:none;
+	background-color: orange;
+	text-shadow: none;
+	font-family: "Dimbo Regular";
 }
 
 /*Social icons*/
@@ -116,11 +137,6 @@ a:hover, a:active{
 	clear:both;
 }
 
-#maincontent{
-	width:80%;
-	margin:0;
-	float:left;
-}
 
 .sidebar_left{
 	float:left;
@@ -457,5 +473,3 @@ a:hover, a:active{
 	margin:10px;
 }
 /*--//footer--*/
-
-

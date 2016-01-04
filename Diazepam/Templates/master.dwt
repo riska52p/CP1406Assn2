@@ -44,8 +44,7 @@ $(function() {
 
 
 </head>
-
-<body>
+<body id="Background">
 <div id="container">
  	<!-- header -->
 	<div id="header">		
@@ -76,20 +75,13 @@ $(function() {
         </div>
         <div class="clearfix"></div>
 	</div><!--//header -->
-    
-    <!--sidebar_left-->
-    <div class="sidebar_left">
-    	<h2>GRAND OPENNING ON 15/01/2015</h2>
-    </div>
-    <!--//sidebar_left-->
-	
-	<!-- TemplateBeginEditable name="maincontent" -->
+<div id="Container">
+
     <!--//maincontent-->
-    <div id="maincontent">
       <!--banner-->
       <div id="banner">
       <div id="banner_con">
-      <div id="slider">
+      <center><div id="slider">
       	<div class="cycle-slideshow"
     		data-cycle-fx="scrollHorz"
     		data-cycle-pause-on-hover="true"
@@ -105,125 +97,11 @@ $(function() {
       </div>
       </div>
       <!--//banner-->
-      <!--welcome-->
-      <div id="welcome">
-        <h2 class="heading2">Welcome to <span>Diazepam!</span></h2>
-      </div>
-      <!--//welcome-->
-      <!--products-->
-      <div id="products">
-        <h2 class="label"><a href="products.html">Products</a></h2>
-        <div class="content">
-          <div class="grid_first_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Single/Double scoop</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_middle_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Waffle ice-cream</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_middle_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Ice-cream cake</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_middle_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Fried ice-cream</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_middle_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Ice-cream cookies</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_last_products">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Ice-cream sundae</a></h3>
-            <p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-        </div>
-        <!---//content-->
-        <div class="clearfix"></div>
-      </div>
-      <!--//products-->
-      <!--services-->
-      <div id="services">
-        <h2 class="label"><a href="services.html">Services</a></h2>
-        <div class="content">
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Party Planner-Free flow-NEW</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Free n Fast Delivery</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Exchange n Return</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            <hr>
-            <div class="bt_readmore"><a href="#">Read more</a></div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <!--//services-->
-      <!--review-->
-      <div id="reviews">
-        <h2 class="label"><a href="services.html">Reviews</a></h2>
-        <div class="content">
-          <ul>
-            <li>
-              <h4>Lorem Ipsum 1</h4>
-              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            </li>
-            <li>
-              <h4>Lorem Ipsum 2</h4>
-              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            </li>
-            <li>
-              <h4>Lorem Ipsum 3</h4>
-              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            </li>
-            <li>
-              <h4>Lorem Ipsum 4</h4>
-              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            </li>
-            <li>
-              <h4>Lorem Ipsum 5</h4>
-              <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-            </li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <!--//review-->
-    </div>
+      <div id="Maincontent"><!-- TemplateBeginEditable name="EditRegion3" -->
+  <p>This is main body content</p>
+<!-- TemplateEndEditable --></div>
     <!--//maincontent-->
-    <!-- TemplateEndEditable -->
-    
+    </div>
     <!--sidebar right-->
     <aside id="sidebar_right_top">
    		<h2>Online support</h2>
@@ -275,7 +153,7 @@ $(function() {
             	</ul>
         	</div>       
             <div class="clearfix"></div>
-      </div>
+      </div></div>
     </div>
 	<!--//footer_top-->
     
