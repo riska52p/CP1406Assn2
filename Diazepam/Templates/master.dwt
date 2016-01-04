@@ -7,7 +7,7 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
-<script type="text/javascript" src="../../jquery/jquery-1.11.3.min.js"></script>
+<script src="../jquery/jquery-1.11.3.min.js"></script>
 
 <link href="../Styles/globalstyle.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
@@ -40,8 +40,7 @@ $(function() {
 	jq = jQuery.noConflict();
 });
 </script>
-<script type="text/javascript" src="../../jquery/cycle2-master/build/jquery.cycle2.js"></script>
-
+<script src="../jquery/cycle2-master/build/jquery.cycle2.min.js"></script>
 
 </head>
 <body id="Background">

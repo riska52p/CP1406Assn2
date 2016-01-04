@@ -11,7 +11,7 @@
 #Container {
 	background-color: #50c0a8;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 0px;
 	width: 1080px;
 	text-align: right;
 }
@@ -35,7 +35,24 @@ body{
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
+/*Single Product Page Style*/
+.thumbnail{
+	height:300px;
+	width:300px;
+	margin-left:20px;
+	margin-top:20px;
+	float:left;
+	border:#999;
+	border:thin;
+}
 
+.productdesc{
+	float:left;
+	margin-left:50px;
+	margin-top:20px;
+	width:60%;
+}
+	
 
 #header{	
 	width:100%;
@@ -460,8 +477,8 @@ a:hover, a:active{
 /*footer_bottom*/
 .footer_bottom {
     background-color:#5D4B33;
-	margin-top:0;
-    padding-top: 0;
+	margin-top:0px;
+    padding-top: 10px;
     text-align: center;
 	height:60px;
     color: #fff;
