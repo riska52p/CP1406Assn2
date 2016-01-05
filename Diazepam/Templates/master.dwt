@@ -20,10 +20,10 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="../Images/logo.png" alt="logo"></a>
+        	<a href="#"><img src="../Images/logo.png" alt="logo"></a>            
         </div>
-       
-      <div id="social_icons">
+                
+        <div id="social_icons">
         	<ul>
             	<li><a href="#"><img src="../Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
                 <li><a href="#"><img src="../Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
@@ -58,29 +58,28 @@
       <div id="banner"> 
       	<div id="sliderFrame">
         	<div id="slider">
+            	<a href="../Images/Banners/grandopening.jpg" target="_blank">
+                <img src="../Images/Banners/grandopening.jpg" alt="Grand openning"/></a>
             	<a href="../Images/Banners/banner1.jpg" target="_blank">
                	 <img src="../Images/Banners/banner1.jpg" alt="Welcome to Diazepam1" /></a>
 	            <a href="../Images/Banners/banner2.jpg" target="_blank">
                 <img src="../Images/Banners/banner2.jpg" alt="Welcome to Diazepam2" /></a>
     	        <a href="../Images/Banners/banner3.jpg" target="_blank">
-                <img src="../Images/Banners/banner3.jpg" alt="Welcome to Diazepam3" /></a>   	    
-            	<a href="../Images/Banners/banner4.jpg" target="_blank">
-               	 <img src="../Images/Banners/banner4.jpg" alt="Welcome to Diazepam1" /></a>
-            	<a href="../Images/Banners/banner5.jpg" target="_blank">
-               	 <img src="../Images/Banners/banner5.jpg" alt="Welcome to Diazepam1" /></a>
-            	<a href="../Images/Banners/banner6.jpg" target="_blank">
-               	 <img src="../Images/Banners/banner6.jpg" alt="Welcome to Diazepam1" /></a>
-	        </div>
-    	    <div id="htmlcaption" style="display: none;">
-        	    <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
-        	</div>
+                <img src="../Images/Banners/banner3.jpg" alt="Welcome to Diazepam3" /></a>
+                <a href="../Images/Banners/banner4.jpg" target="_blank"> 
+                <img src="../Images/Banners/banner4.jpg" alt="Welcome to Diazepam4" /></a>
+                <a href="../Images/Banners/banner5.jpg" target="_blank"> 
+                <img src="../Images/Banners/banner5.jpg" alt="Welcome to Diazepam5" /></a>
+                <a href="../Images/Banners/banner6.jpg" target="_blank"> 
+                <img src="../Images/Banners/banner6.jpg" alt="Welcome to Diazepam6" /></a>   	       	       	    
+	        </div>    	    
     	</div>
      </div><!--//banner-->
       
       <!--products-->
      <div id="products">
-     	<h2 class="label_products"><a href="products.html">Our Products</a></h2>
-        <div class="content_products">   	        
+     	<h2 id="label_products"><a href="products.html">Our Products</a></h2>
+        <div id="content_products">   	        
         	<div id="sliderFrameProd">
    			     <div id="sliderProd">
             		<a href="http://www.google.com.sg/">
@@ -116,8 +115,8 @@
       
       <!--services-->
       <div id="services">
-        <h2 class="label_services"><a href="services.html">Our Services</a></h2>
-        <div class="content_services">
+        <h2 id="label_services"><a href="services.html">Our Services</a></h2>
+        <div id="content_services">
           <div class="grid_services">
             <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
             <h3><a href="#">Party Planner-Free flow-NEW</a></h3>
@@ -138,7 +137,7 @@
       <!--//services-->    
       
       <!--subscribe-->
-	<div class="subscribe">
+	<div id="subscribe">
 		<h3>Newsletter</h3>
 		 <form>
 			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == ''){this.value = 'Email';}">
@@ -152,26 +151,41 @@
     </div>   <!--//maincontent-->
  
     <!--sidebar right-->
+    <aside id="search_box">
+    	<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>				
+			<img src="../Images/Socialicons/toolbar_find.png" alt="search icon">
+            <div class="search">            	
+				<form class="navbar-form">
+					<input type="text" class="form-control">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+					</button>
+				</form>
+			</div>	
+    </aside>
+    
+    
+    
     <aside id="sidebar_right_top">
-   		<h3 class="label_support">Online support</h3>
-        <p><img src="../Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
-        <ul class="support_icons">
+   		<h3 id="label_support">Online support</h3>
+        <p><img class="img_phone" src="../Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <ul id="support_icons">
         	<li><img src="../Images/Socialicons/yahoo.png" alt="support via yahoo"></li>
             <li><img src="../Images/Socialicons/skype.png" alt="support via skype"></li>
             <li><img src="../Images/Socialicons/whatsapp.png" alt="support via whatsapp"></li>
             <li><img src="../Images/Socialicons/viber.png" alt="support via viber"></li>
             <li><img src="../Images/Socialicons/line.png" alt="support via linechat"></li>
             <li><img src="../Images/Socialicons/googleplusblue.png" alt="support via Googleplus"></li>
-            <li><img src="../Images/Socialicons/email_mail_post_letter_stamp.png" alt="support by email"></li>
+            <li><img src="../Images/Socialicons/email_mail_post_letter_stamp.png" alt="support via email"></li>            
+            <li><img src="../Images/Socialicons/wechat.png" alt="support via wechat"></li>
         </ul>
    	</aside>    
         
    <aside id="sidebar_right_bottom">
-   		<h3 class="label_reviews">Reviews &amp; Comments</h3>
+   		<h3 id="label_reviews">Reviews &amp; Comments</h3>
         <p class="review_detail">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus</p>
         <p class="review_detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
         <p class="review_detail">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</p>
-		<div class="leave_comments">
+		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="post" action="">
     	    	<p>        	    	
@@ -184,15 +198,12 @@
         	</form>        	
         </div>
 	</aside>  
-    <!--//sidebar_right-->
-    
-    <div class="clearfix"></div> 
-    
+    <!--//sidebar_right-->   
 
    <!-- footer_top -->    
   	<div class="clearfix"></div>
-    <div class="footer_top">			
-        <div class="content_footer_top">
+    <div id="footer_top">			
+        <div id="content_footer_top">
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
@@ -235,8 +246,7 @@
 	<!--//footer_top-->
     
     <!--//footer_bottom-->
-	<div class="footer_bottom">
-    <br/>
+	<div id="footer_bottom">
     	<div>© 2015 Diazepam. All rights reserved.</div>
         <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
 		</div>
