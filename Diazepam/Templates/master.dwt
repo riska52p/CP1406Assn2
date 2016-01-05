@@ -87,23 +87,14 @@
 		            <a href="http://www.google.com.sg/">
         		        <img src="../Images/Products/prodcat2.jpg" alt="Welcome to Prodcat2" />Let's try Prodcat2</a>
             		<a href="http://www.google.com.sg/">
-                		<img src="../Images/Products/prodcat3.jpg" alt="Welcome to Prodcat3" />Let's try Prodcat3</a>
-		            <a href="http://www.google.com.sg/">
-        		        <img src="../Images/Products/prodcat4.jpg" alt="Welcome to Prodcat4" />Let's try Prodcat4</a>            
-		            <a href="http://www.google.com.sg/">
-        		        <img src="../Images/Products/prodcat5.jpg" alt="Welcome to Prodcat5" />Let's try Prodcat5</a>
-            		<a href="http://www.google.com.sg/">
-                		<img src="../Images/Products/prodcat6.jpg" alt="Welcome to Prodcat6" />Let's try Prodcat6</a>        
-        		</div>
+                		<img src="../Images/Products/prodcat3.jpg" alt="Welcome to Prodcat3" />     
+        		</div></div>
                  
         		<!--thumbnails-->
         		<div id="thumbs">
             		<div class="thumb"><img src="../Images/Products/thumb1.jpg" /></div>
 		            <div class="thumb"><img src="../Images/Products/thumb2.jpg" /></div>
-        		    <div class="thumb"><img src="../Images/Products/thumb3.jpg" /></div>
-		            <div class="thumb"><img src="../Images/Products/thumb4.jpg" /></div>
-        		    <div class="thumb"><img src="../Images/Products/thumb5.jpg" /></div>
-		            <div class="thumb"><img src="../Images/Products/thumb6.jpg" /></div>            
+        		    <div class="thumb"><img src="../Images/Products/thumb3.jpg" />          
         		</div>
 		    </div> <!---//sliderFrameProd-->    
          
@@ -138,7 +129,8 @@
       
       <!--subscribe-->
 	<div id="subscribe">
-		<h3>Newsletter</h3>
+    <br/>
+		<h3><img src="../Images/newsletter.png" width="459" height="67" alt="newsletter"></h3>
 		 <form>
 			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == ''){this.value = 'Email';}">
 		   	<input type="submit" value="Subscribe">

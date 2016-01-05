@@ -19,10 +19,12 @@ body{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
+	background-image:url(../Images/bg.jpg);
+	background-attachment: fixed;
 }
 
 #container{
-	width:980px;	
+	width:1100px;	
 	padding-top:0;
 	margin:0 auto;	
 }
@@ -521,8 +523,8 @@ a:hover, a:active{
 	-webkit-border-radius:5px;
 	margin:2% 0% 2% 0%;
 	padding:0;	
-	background:url(../Images/background-Small.jpg)no-repeat 0px 0px fixed;
-	background-size:cover;
+	background:url(../Images/background-Small.jpg)repeat 0px 0px fixed;
+	/*background-size:cover;*/
 	text-align:center;
 	padding:5px 0;
 	border-radius:5px;
