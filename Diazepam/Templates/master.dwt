@@ -20,10 +20,10 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="../Images/logo.png" alt="logo"></a>            
+        	<a href="#"><img src="../Images/logo.png" alt="logo"></a>
         </div>
-        <h2 class="slogan"><span class="liftup">Lift up</span> yourself and <span class="refresh">refresh</span> with our <span class="delicious">delicious</span> ice-cream!</h2>
-        <div id="social_icons">
+       
+      <div id="social_icons">
         	<ul>
             	<li><a href="#"><img src="../Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
                 <li><a href="#"><img src="../Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
@@ -64,6 +64,12 @@
                 <img src="../Images/Banners/banner2.jpg" alt="Welcome to Diazepam2" /></a>
     	        <a href="../Images/Banners/banner3.jpg" target="_blank">
                 <img src="../Images/Banners/banner3.jpg" alt="Welcome to Diazepam3" /></a>   	    
+            	<a href="../Images/Banners/banner4.jpg" target="_blank">
+               	 <img src="../Images/Banners/banner4.jpg" alt="Welcome to Diazepam1" /></a>
+            	<a href="../Images/Banners/banner5.jpg" target="_blank">
+               	 <img src="../Images/Banners/banner5.jpg" alt="Welcome to Diazepam1" /></a>
+            	<a href="../Images/Banners/banner6.jpg" target="_blank">
+               	 <img src="../Images/Banners/banner6.jpg" alt="Welcome to Diazepam1" /></a>
 	        </div>
     	    <div id="htmlcaption" style="display: none;">
         	    <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
@@ -230,6 +236,7 @@
     
     <!--//footer_bottom-->
 	<div class="footer_bottom">
+    <br/>
     	<div>© 2015 Diazepam. All rights reserved.</div>
         <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
 		</div>
