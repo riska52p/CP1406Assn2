@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------Individual Product-------------------------*/
+#product1nav {
+	color: #360;
+	font-size:0.85em;
+	text-align:left;
+	font-weight: bold;
+}
+
+#product1image{
+	height:300px;
+	width:300px;
+	float:left;
+	margin-top:20px;
+}
+
+#product1descPrice{
+	width:60%;
+	margin-left:20px;
+	margin-top:0px;
+	float:right;
+}
+#product1nav h1 {
+	color:#3C0;
+	font-size:2.0em;
+	font-weight:900;
+	text-align: left;
+}
+
+#product1descPrice h2 {
+	padding-top:5px;
+	color: #3C0;
+	font-size:1.75em;
+	text-align:left;
+}
+#product1descPrice h3 {
+	color: #360;
+	font-size: 1.25em;
+	text-align: left;
+}
+#product1descPrice p{
+	color:#000;
+	font-size:1.0em;
+	text-align:left;
+	font-weight:normal;
+}
+#product1flavoursList{
+	font-size:1.0em;
+	font-weight:normal;
+	width:150px;
+}
+
+#product1Qty{
+	width:50px;
+	font-size:1.0em;
+}
+
+#product1AddtoCart{
+	font-size:1.5em;
+	background-color:#80FF80;
+	color:#360;
+	font-weight:bold;
+	padding:5px;
+}
+
+#product1desc{
+	float:left;
+	margin-top:20px;
+	width:100%;
+}
+#product1desc h3{
+	color: #360;
+	font-size: 1.25em;
+	text-align: left;
+}
+.product1hrTop{
+	height:2px;
+	background-color:#060;
+}
+
+.product1navlink a{
+	color:#360;
+	text-decoration:none;
+}
+
+.product1navlink a:link{
+	color:#360;
+	text-decoration:none;
+}
+.product1navlink a:visited{
+	color:#360;
+	text-decoration:none;
+}
+.product1navlink a:active{
+	color:#390;
+	text-decoration:underline;
+}
+.product1navlink a:hover{
+	color:#390;
+	text-decoration:underline;
+}
+/*<--------------------------------End of Individual Product Style --------------------------------------->*/
+
+/*<--------------------------ProductList Style ------------------------------------------------------------>*/
+.productlistimg{
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	border: 1px solid #CEFFCE;
+	float:left;
+	width:250px;
+}
+.productlistimg:hover{
+	border: 1px solid #6F0;
+}
+.productlistimg img{
+	margin-left:30px;
+	margin-right:30px;
+	width:72%;
+	height:180px;
+	padding:5px;
+}
+
+.productlistdesc{
+	padding:10px;
+	text-align:center;
+	border-top:solid 1px #6F0;
+	alignment-adjust:central;
+}
+.productlistdesc h2{
+	color:#090;
+	font-size:1.25em;
+}
+.productlistdesc h3{
+	color:#3C0;
+	font-size:1.15em;
+}
+#productListViewDetail{
+	font-size:0.9em;
+	background-color:#80FF80;
+	color:#360;
+	font-weight:bold;
+	padding:2px;
+}
+#productListAddtoCart{
+	font-size:0.9em;
+	background-color:#360;
+	color:#80FF80;
+	font-weight:bold;
+	padding:2px;
+}
+#productListViewDetail:hover{
+	background-color:#360;
+	color:#80FF80;
+}
+#productListAddtoCart:hover{
+	background-color:#80FF80;
+	color:#360;
+}
