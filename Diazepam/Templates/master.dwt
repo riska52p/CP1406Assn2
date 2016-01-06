@@ -38,7 +38,7 @@
     <div id="nav_bar">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about.html">About us</a></li>
+            <li><a href="../about us.html">About us</a></li>
             <li class="dropdown">
             	<a class="dropbtn">Products</a>
 					<div class="dropdown-content">
@@ -207,7 +207,7 @@
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
-                    <li><a href="#">About us</a></li>
+                    <li><a href="../about us.html">About us</a></li>
                     <li><a href="#">Work Here</a></li>                
                     <li><a href="#">Upcomming Events</a></li>
                     <li><a href="#">Outlets</a></li>

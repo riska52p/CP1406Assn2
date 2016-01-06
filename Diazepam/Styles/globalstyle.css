@@ -144,6 +144,11 @@ a:hover, a:active{
 	color:#FFF;
 }
 
+/*hyperlinkcolor green (was white and not visible)*/
+a.internal {
+    color:#6C6
+}
+
 #nav_bar a:hover, #nav_bar a:active,
 #nav_bar .active a:link, #nav_bar .active a:visited{
 	background-color:pink;
@@ -526,52 +531,6 @@ a:hover, a:active{
 	-webkit-border-radius:5px;
 	
 }
-
-.grid_services{ /*for each service*/
-	width:27%;
-	margin:0% 2% 2% 2%;
-	padding:1%;
-	height:350px;	
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #F2FFFE; /*lightblue*/
-	float:left;	
-}
-
-.grid_services img{
-	width:150px;
-	height:150px;
-	padding:1% 12.5%;
-	margin:0 auto;
-	text-align:center;
-}
-
-.grid_services h3{
-	text-align:center;
-	font-size: 1.5em;
-    font-family: 'Marvel-Regular';    
-}
-
-.grid_services h3 a{
-	text-decoration:none;
-	color:lightblue;
-    font-weight: 800;
-}
-
-.grid_services:hover{/*change color when mouse hovers over each service*/
-	border:1px solid blue; /*lightblue*/
-	color:blue;
-}
-
-.grid_services h3 a:hover{
-	color:green;
-}
-.grid_services{
-	text-align:justify;
-}
-
-/*--//service--*/
 
 /*--subscribe--*/
 #subscribe{

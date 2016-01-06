@@ -3,139 +3,196 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Home Page</title>
+<title>About us page Diazepam Ice-cream</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<script src="jquery/jquery-1.11.3.min.js"></script>
-
 <link href="Styles/globalstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-$(function() {
-    // Stick the #nav to the top of the window
-    var nav = $('#header');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
-	jq = jQuery.noConflict();
-});
-</script>
-<script src="jquery/cycle2-master/build/jquery.cycle2.min.js"></script>
+<link href="Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--for banner slider-->
+<link href="Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css">
+<script src="Styles/forBanner/js-image-slider.js"></script><!--for banner slider-->
+<script src="Styles/forProducts/js-image-slider-products.js"></script>
 
 </head>
-<body id="Background">
+
+<body>
 <div id="container">
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/logo.png" alt="logo"></a>
+        	<a href="#"><img src="Images/logo.png" alt="logo"></a>            
         </div>
-        <div id="navWrap">
-        	<div id="nav_bar">
-          	<ul>
-            	<li class="active"><a href="Templates/index.html">Home</a></li>
-            	<li><a href="#about.html" class="scroll">About us</a></li>
-            	<li><a href="#product" class="scroll">Products</a></li>
-            	<li><a href="#services" class="scroll">Services</a></li>
-            	<li><a href="#events" class="scroll">Events</a></li>
-            	<li><a href="#faq" class="scroll">FAQ</a></li>
-            	<li><a href="#contact" class="scroll">Contact</a></li>
-            	<li><a href="#signup" class="scroll">Sign-up</a></li>
-            	<li><a href="#order" class="scroll">Order</a></li>
-          	</ul>
-          </div>                
-	  	</div>
+                
         <div id="social_icons">
         	<ul>
-            	<li><a href="#"><img src="Images/facebook_resize.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="Images/instagram_resize.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="Images/twitter_resize.png" alt="twitter icon"></a></li>
+            	<li><a href="#"><img src="Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/youtube.png" alt="youtube icon"></a></li>
            </ul>
         </div>
         <div class="clearfix"></div>
 	</div><!--//header -->
-<div id="Container">
-
+    
+    <!--nav_bar-->
+    <div id="nav_bar">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about.html" class="scroll">About us</a></li>
+            <li><a href="#product" class="scroll">Products</a></li>
+            <li><a href="#services" class="scroll">Services</a></li>
+            <li><a href="#events" class="scroll">Events</a></li>
+            <li><a href="#faq" class="scroll">FAQ</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
+            <li><a href="#signup" class="scroll">Sign-up</a></li>
+            <li><a href="#order" class="scroll">Order</a></li>
+          </ul>                
+	 </div> <!--//nav_bar-->
+	
+	
     <!--//maincontent-->
+    <div id="maincontent">
+    <!-- InstanceBeginEditable name="maincontent" -->
+    
       <!--banner-->
-      <div id="banner">
-      <div id="banner_con">
-      <center><div id="slider">
-      	<div class="cycle-slideshow"
-    		data-cycle-fx="scrollHorz"
-    		data-cycle-pause-on-hover="true"
-    		data-cycle-speed="200">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner1-small.jpg" width="100%" height="300" alt="banner1">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner2-small.jpg" width="100%" height="300" alt="banner2"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner3.jpg" width="100%" height="300" alt="banner3"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner4.jpg" width="100%" height="300" alt="banner4">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner5.jpg" width="100%" height="300" alt="banner5"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner6.jpg" width="100%" height="300" alt="banner6">
-      </div>
-      </div>
-      </div>
-      </div>
-      <!--//banner-->
-      <div id="Maincontent"><!-- InstanceBeginEditable name="EditRegion3" -->
- <!--welcome-->
-      <div id="welcome">
-      <body>
-      <h2 class="heading2">Welcome to <span>Diazepam!</span></h2>
-      </div>
-      <!--//welcome-->
-      <!--about us-->
-      <div id="about us">
-        <h2 class="label"><a href="about us.html">About us</a></h2>
-        <div class="content">
-          
-          
-    You love ice cream? – We live and breathe them. <br>
-    Desert time is the best time of the day – so why not enjoying it as often as you want to? Diazepam café will enchant you with unique ice cream creations and hand-crafted deserts all made with natural flavors and no artificial additives, because we believe that you deserve the best taste and culinary pleasure every day. Try our latest mouthwatering <a href="#" class="internal">ice-cream creations</a> on a rainy afternoon, take a sip from our delicious <a href="#" class="internal">ice-cream floats</a> before work or dream away on our soft  <a href="#" class="internal">tasteful cakes</a> with your best friends, all in a cozy vintage atmosphere. You will be overwhelmed by the wide variety of our flavors and lovely products but no worries – our service team loves to recommend the desert best suiting for you.
-
-          </ul>
-        </div>
+      <div id="banner"> 
+      	<div id="sliderFrame">
+        	<div id="slider">
+            	<a href="Images/Banners/grandopening.jpg" target="_blank">
+                <img src="Images/Banners/grandopening.jpg" alt="Grand openning"/></a>
+            	<a href="Images/Banners/banner1.jpg" target="_blank">
+               	 <img src="Images/Banners/banner1.jpg" alt="Welcome to Diazepam1" /></a>
+	            <a href="Images/Banners/banner2.jpg" target="_blank">
+                <img src="Images/Banners/banner2.jpg" alt="Welcome to Diazepam2" /></a>
+    	        <a href="Images/Banners/banner3.jpg" target="_blank">
+                <img src="Images/Banners/banner3.jpg" alt="Welcome to Diazepam3" /></a>
+                <a href="Images/Banners/banner4.jpg" target="_blank"> 
+                <img src="Images/Banners/banner4.jpg" alt="Welcome to Diazepam4" /></a>
+                <a href="Images/Banners/banner5.jpg" target="_blank"> 
+                <img src="Images/Banners/banner5.jpg" alt="Welcome to Diazepam5" /></a>
+                <a href="Images/Banners/banner6.jpg" target="_blank"> 
+                <img src="Images/Banners/banner6.jpg" alt="Welcome to Diazepam6" /></a>   	       	       	    
+	        </div>    	    
+    	</div>
+     </div><!--//banner-->
+      
+      <!--products-->
+     <div id="products">
+     	<h2 id="label_products"><a href="products.html">Our Products</a></h2>
+        <div id="content_products">   	        
+        	<div id="sliderFrameProd">
+   			     <div id="sliderProd">
+            		<a href="http://www.google.com.sg/">
+                		<img src="Images/Products/prodcat1.jpg" alt="Welcome to Prodcat1" />Let's taste Prodcat1</a>
+		            <a href="http://www.google.com.sg/">
+        		        <img src="Images/Products/prodcat2.jpg" alt="Welcome to Prodcat2" />Let's try Prodcat2</a>
+            		<a href="http://www.google.com.sg/">
+                		<img src="Images/Products/prodcat3.jpg" alt="Welcome to Prodcat3" />Let's try Prodcat3</a>
+		            <a href="http://www.google.com.sg/">
+        		        <img src="Images/Products/prodcat4.jpg" alt="Welcome to Prodcat4" />Let's try Prodcat4</a>            
+		            <a href="http://www.google.com.sg/">
+        		        <img src="Images/Products/prodcat5.jpg" alt="Welcome to Prodcat5" />Let's try Prodcat5</a>
+            		<a href="http://www.google.com.sg/">
+                		<img src="Images/Products/prodcat6.jpg" alt="Welcome to Prodcat6" />Let's try Prodcat6</a>        
+        		</div>
+                 
+        		<!--thumbnails-->
+        		<div id="thumbs">
+            		<div class="thumb"><img src="Images/Products/thumb1.jpg" /></div>
+		            <div class="thumb"><img src="Images/Products/thumb2.jpg" /></div>
+        		    <div class="thumb"><img src="Images/Products/thumb3.jpg" /></div>
+		            <div class="thumb"><img src="Images/Products/thumb4.jpg" /></div>
+        		    <div class="thumb"><img src="Images/Products/thumb5.jpg" /></div>
+		            <div class="thumb"><img src="Images/Products/thumb6.jpg" /></div>            
+        		</div>
+		    </div> <!---//sliderFrameProd-->    
+         
+        </div> <!---//content-->
+        
         <div class="clearfix"></div>
       </div>
-      <!--//review-->
-    </div>
-    </body>
-<!-- InstanceEndEditable --></div>
-    <!--//maincontent-->
-    </div>
+      <!--//products-->
+      
+      <!--about-->
+      <div id="about">
+        <h2 id="label_about">
+        <div id="content_about">
+           You love ice cream? – We live and breathe them. <br>
+    Desert time is the best time of the day – so why not enjoying it as often as you want to? Diazepam café will enchant you with unique ice cream creations and hand-crafted deserts all made with natural flavors and no artificial additives, because we believe that you deserve the best taste and culinary pleasure every day. Try our latest mouthwatering <a href="#" class="internal">ice-cream creations</a> on a rainy afternoon, take a sip from our delicious <a href="#" class="internal">ice-cream floats</a> before work or dream away on our soft  <a href="#" class="internal">tasteful cakes</a> with your best friends, all in a cozy vintage atmosphere. You will be overwhelmed by the wide variety of our flavors and lovely products but no worries – our service team loves to recommend the desert best suiting for you.
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!--//about-->    
+      
+      <!--subscribe-->
+	<div id="subscribe">
+		<h3>Newsletter</h3>
+		 <form>
+			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == ''){this.value = 'Email';}">
+		   	<input type="submit" value="Subscribe">
+		</form>		
+	</div>
+	<!--//subscribe-->     
+      
+      
+  <!-- InstanceEndEditable -->      
+    </div>   <!--//maincontent-->
+ 
     <!--sidebar right-->
+    <aside id="search_box">
+    	<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>				
+			<img src="Images/Socialicons/toolbar_find.png" alt="search icon">
+            <div class="search">            	
+				<form class="navbar-form">
+					<input type="text" class="form-control">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+					</button>
+				</form>
+			</div>	
+    </aside>
+    
+    
+    
     <aside id="sidebar_right_top">
-   		<h2>Online support</h2>
+   		<h3 id="label_support">Online support</h3>
+        <p><img class="img_phone" src="Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <ul id="support_icons">
+        	<li><img src="Images/Socialicons/yahoo.png" alt="support via yahoo"></li>
+            <li><img src="Images/Socialicons/skype.png" alt="support via skype"></li>
+            <li><img src="Images/Socialicons/whatsapp.png" alt="support via whatsapp"></li>
+            <li><img src="Images/Socialicons/viber.png" alt="support via viber"></li>
+            <li><img src="Images/Socialicons/line.png" alt="support via linechat"></li>
+            <li><img src="Images/Socialicons/googleplusblue.png" alt="support via Googleplus"></li>
+            <li><img src="Images/Socialicons/email_mail_post_letter_stamp.png" alt="support via email"></li>            
+            <li><img src="Images/Socialicons/wechat.png" alt="support via wechat"></li>
+        </ul>
    	</aside>    
         
    <aside id="sidebar_right_bottom">
-   		<h2>Leave comments</h2>
+   		<h3 id="label_reviews">Reviews &amp; Comments</h3>
+        <p class="review_detail">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus</p>
+        <p class="review_detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <p class="review_detail">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</p>
+		<div id="leave_comments">
+        <h5>Leave a comment</h5>   		
+	        <form name="form1" method="post" action="">
+    	    	<p>        	    	
+            		<textarea name="comment" cols="10" id="comment"></textarea>
+          		</p>
+          		<p>
+            		<input type="submit" name="Submit" id="Submit" value="Submit">
+            		<input type="submit" name="Clear" id="Clear" value="Clear">
+          		</p>
+        	</form>        	
+        </div>
 	</aside>  
-    <!--//sidebar_right-->
-    
+    <!--//sidebar_right-->   
+
    <!-- footer_top -->    
   	<div class="clearfix"></div>
-    <div class="footer_top">			
-        <div class="content_footer_top">
+    <div id="footer_top">			
+        <div id="content_footer_top">
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
@@ -148,8 +205,8 @@ $(function() {
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="Templates/products.html">Products</a></li>
-                    <li><a href="Templates/services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Warranty</a></li>
                 </ul>
@@ -166,27 +223,26 @@ $(function() {
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="Templates/contact.html"><img src="Images/Apps-Google-Maps-icon.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/facebook_resize.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/instagram_resize.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/twitter_resize.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a href="contact.html"><img src="Images/Socialicons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/Socialicons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
-      </div></div>
+      </div>
     </div>
 	<!--//footer_top-->
     
     <!--//footer_bottom-->
-	<div class="footer_bottom">
+	<div id="footer_bottom">
     	<div>© 2015 Diazepam. All rights reserved.</div>
         <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
 		</div>
 	</div>
     <!--//footer_bottom -->
   
-  </div> <!--end div "container"-->	    
-    
+  </div> <!--end div "container"-->	        
     
 </body>
 <!-- InstanceEnd --></html>
