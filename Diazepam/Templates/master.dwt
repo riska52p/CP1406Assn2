@@ -116,9 +116,9 @@
         
    <aside id="sidebar_right_bottom">
    		<h3 id="label_reviews">Reviews &amp; Comments</h3>
-        <p class="review_detail">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus</p>
-        <p class="review_detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-        <p class="review_detail">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</p>
+     <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
+        <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
+        <p class="review_detail"> I brought my son here last tuesday and we were welcomed with smiles and good ice cream.</p>
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
@@ -126,7 +126,7 @@
           		<input type="submit" name="Submit" id="Submit" value="Submit">
             	<input type="reset" name="Clear" id="Clear" value="Clear">          		
        	  </form>        	
-        </div>
+     </div>
 	</aside>  
     <!--//sidebar_right-->   
 
