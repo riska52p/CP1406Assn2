@@ -7,7 +7,7 @@
 /*slider frame*/
 #sliderFrameProd 
 {
-    width:820px;
+    width:740px;
     margin:0 auto; /*center-aligned*/
     padding:17px;
     background:#F2FFFE;
@@ -16,7 +16,7 @@
 } 
 
 #sliderProd, #sliderProd div.sliderProdInner {
-    width:820px;height:300px;/* Must be the same size as the slider images */
+    width:740px;height:300px;/* Must be the same size as the slider images */
 }
 
 #sliderProd {

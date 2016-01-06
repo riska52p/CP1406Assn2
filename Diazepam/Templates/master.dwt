@@ -38,14 +38,14 @@
     <div id="nav_bar">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="../about us.html">About us</a></li>
+            <li><a href="#about.html">About us</a></li>
             <li class="dropdown">
             	<a class="dropbtn">Products</a>
 					<div class="dropdown-content">
-					    <a href="#">Typical Ice cream</a>
-					    <a href="#">Indulgent Ice cream</a>
-					    <a href="#">Ice cream Drink</a>
-                        <a href="#">All products</a>
+					    <a href="#">Classic Ice Cream</a>
+					    <a href="#">Ice Cream Creations</a>
+					    <a href="#">Iced Drinks</a>
+                        <a href="#">All Products</a>
   					</div>				       
 	        </li>            	
             <li><a href="#services" class="scroll">Services</a></li>
@@ -61,90 +61,24 @@
     <!--//maincontent-->
     <div id="maincontent">
     <!-- TemplateBeginEditable name="maincontent" -->
-    
-      <!--banner-->
+    <!--banner-->
       <div id="banner"> 
-      	<div id="sliderFrame">
-        	<div id="slider">
-            	<a href="../Images/Banners/grandopening.jpg" target="_blank">
-                <img src="../Images/Banners/grandopening.jpg" alt="Grand openning"/></a>
-            	<a href="../Images/Banners/banner1.jpg" target="_blank">
-               	 <img src="../Images/Banners/banner1.jpg" alt="Welcome to Diazepam1" /></a>
-	            <a href="../Images/Banners/banner2.jpg" target="_blank">
-                <img src="../Images/Banners/banner2.jpg" alt="Welcome to Diazepam2" /></a>
-    	        <a href="../Images/Banners/banner3.jpg" target="_blank">
-                <img src="../Images/Banners/banner3.jpg" alt="Welcome to Diazepam3" /></a>
-                <a href="../Images/Banners/banner4.jpg" target="_blank"> 
-                <img src="../Images/Banners/banner4.jpg" alt="Welcome to Diazepam4" /></a>
-                <a href="../Images/Banners/banner5.jpg" target="_blank"> 
-                <img src="../Images/Banners/banner5.jpg" alt="Welcome to Diazepam5" /></a>
-                <a href="../Images/Banners/banner6.jpg" target="_blank"> 
-                <img src="../Images/Banners/banner6.jpg" alt="Welcome to Diazepam6" /></a>   	       	       	    
-	        </div>    	    
-    	</div>
+      	<p>Banner</p>
      </div><!--//banner-->
       
       <!--products-->
      <div id="products">
-     	<h2 id="label_products"><a href="products.html">Our Products</a></h2>
-        <div id="content_products">   	        
-        	<div id="sliderFrameProd">
-   			     <div id="sliderProd">
-            		<a href="http://www.google.com.sg/">
-                		<img src="../Images/Products/prodcat1.jpg" alt="Welcome to Prodcat1" />Let's taste Prodcat1</a>
-		            <a href="http://www.google.com.sg/">
-        		        <img src="../Images/Products/prodcat2.jpg" alt="Welcome to Prodcat2" />Let's try Prodcat2</a>
-            		<a href="http://www.google.com.sg/">
-                		<img src="../Images/Products/prodcat3.jpg" alt="Welcome to Prodcat3" />     
-        		</div></div>
-                 
-        		<!--thumbnails-->
-        		<div id="thumbs">
-            		<div class="thumb"><img src="../Images/Products/thumb1.jpg" /></div>
-		            <div class="thumb"><img src="../Images/Products/thumb2.jpg" /></div>
-        		    <div class="thumb"><img src="../Images/Products/thumb3.jpg" />          
-        		</div>
-		    </div> <!---//sliderFrameProd-->    
-         
-        </div> <!---//content-->
+     	
+         <p>Products categories</p>      
         
         <div class="clearfix"></div>
-      </div>
-      <!--//products-->
+      </div>  <!--//products-->
       
       <!--services-->
       <div id="services">
-        <h2 id="label_services"><a href="services.html">Our Services</a></h2>
-        <div id="content_services">
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Party Planner-Free flow-NEW</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-          </div>
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Free n Fast Delivery</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>          </div>
-          <div class="grid_services">
-            <div><img src="../Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Exchange n Return</a></h3>
-            <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
-          </div>
-          <div class="clearfix"></div>
-        </div>
+        <p>Services</p>
       </div>
       <!--//services-->    
-      
-      <!--subscribe-->
-	<div id="subscribe">
-    <br/>
-		<h3><img src="../Images/newsletter.png" width="459" height="67" alt="newsletter"></h3>
-		 <form>
-			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == ''){this.value = 'Email';}">
-		   	<input type="submit" value="Subscribe">
-		</form>		
-	</div>
-	<!--//subscribe-->     
       
       
   <!-- TemplateEndEditable -->      
@@ -182,21 +116,17 @@
         
    <aside id="sidebar_right_bottom">
    		<h3 id="label_reviews">Reviews &amp; Comments</h3>
-        <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
-        <p class="review_detail">The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
-        <p class="review_detail">I brought my son here last tuesday and we were welcomed with smiles and good ice cream.		</p>
-        <div id="leave_comments">
+        <p class="review_detail">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus</p>
+        <p class="review_detail">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <p class="review_detail">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</p>
+		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
-	        <form name="form1" method="post" action="">
-    	    	<p>        	    	
-            		<textarea name="comment" cols="10" id="comment"></textarea>
-          		</p>
-          		<p>
-            		<input type="submit" name="Submit" id="Submit" value="Submit">
-            		<input type="submit" name="Clear" id="Clear" value="Clear">
-          		</p>
-        	</form>        	
-     </div>
+	        <form name="form1" method="get" action="">
+                <textarea name="comment" rows="5" class="commentbox" id="comment"></textarea>
+          		<input type="submit" name="Submit" id="Submit" value="Submit">
+            	<input type="reset" name="Clear" id="Clear" value="Clear">          		
+       	  </form>        	
+        </div>
 	</aside>  
     <!--//sidebar_right-->   
 
@@ -207,7 +137,7 @@
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
-                    <li><a href="../about us.html">About us</a></li>
+                    <li><a href="#">About us</a></li>
                     <li><a href="#">Work Here</a></li>                
                     <li><a href="#">Upcomming Events</a></li>
                     <li><a href="#">Outlets</a></li>

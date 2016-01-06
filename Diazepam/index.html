@@ -38,14 +38,22 @@
     <div id="nav_bar">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about.html" class="scroll">About us</a></li>
-            <li><a href="#product" class="scroll">Products</a></li>
+            <li><a href="#about.html">About us</a></li>
+            <li class="dropdown">
+            	<a class="dropbtn">Products</a>
+					<div class="dropdown-content">
+					    <a href="#">Classic Ice Cream</a>
+					    <a href="#">Ice Cream Creations</a>
+					    <a href="#">Iced Drinks</a>
+                        <a href="#">All Products</a>
+  					</div>				       
+	        </li>            	
             <li><a href="#services" class="scroll">Services</a></li>
             <li><a href="#events" class="scroll">Events</a></li>
             <li><a href="#faq" class="scroll">FAQ</a></li>
             <li><a href="#contact" class="scroll">Contact</a></li>
-            <li><a href="#signup" class="scroll">Sign-up</a></li>
-            <li><a href="#order" class="scroll">Order</a></li>
+            <li><a href="#signup" class="scroll">Membership</a></li>
+            <li><a href="#order" class="scroll">Shopping Cart</a></li>
           </ul>                
 	 </div> <!--//nav_bar-->
 	
@@ -119,7 +127,7 @@
         <div id="content_services">
           <div class="grid_services">
             <div><img src="Images/cat_vanilla.png" alt="Ice-cream"></div>
-            <h3><a href="#">Party Planner-Free flow-NEW</a></h3>
+            <h3><a href="#">Party Planner</a></h3>
             <p class="text_justify">Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et</p>
           </div>
           <div class="grid_services">
@@ -187,15 +195,11 @@
         <p class="review_detail">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</p>
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
-	        <form name="form1" method="post" action="">
-    	    	<p>        	    	
-            		<textarea name="comment" cols="10" id="comment"></textarea>
-          		</p>
-          		<p>
-            		<input type="submit" name="Submit" id="Submit" value="Submit">
-            		<input type="submit" name="Clear" id="Clear" value="Clear">
-          		</p>
-        	</form>        	
+	        <form name="form1" method="get" action="">
+                <textarea name="comment" rows="5" class="commentbox" id="comment"></textarea>
+          		<input type="submit" name="Submit" id="Submit" value="Submit">
+            	<input type="reset" name="Clear" id="Clear" value="Clear">          		
+       	  </form>        	
         </div>
 	</aside>  
     <!--//sidebar_right-->   
