@@ -118,7 +118,7 @@ body{
 	margin:0;
 }
 
-#nav_bar ul li a{
+#nav_bar ul li a, .dropbtn{
 	display:block;
 	border-radius:5px;
 	-noz-border-radius:5px;
@@ -127,7 +127,7 @@ body{
 	height:40px;
 	padding:2.5px 10px;
 	margin:2.5px 5px;
-	font-size:1.5em;
+	font-size:1.5em; /*remember to change on the drop-down */
 	color:lightgreen;
 }
 #nav_bar ul li a:hover{
@@ -150,7 +150,66 @@ a:hover, a:active{
 	text-shadow:none;
 	color:#09F;
 }
+
+
+/*CSS for dopdown Products*/
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style The Dropdown Button */
+.dropbtn{
+	background-color: #FFF;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FFF;
+    min-width: 12em;
+    box-shadow: 0px 8px 16px 0px orange;
+    padding: 12px 16px;
+    z-index: 1;
+	font-size:0.7em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;	
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: yellow;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*--//CSS for dopdown Products--*/
+
+
 /*--//header--*/
+
 
 .clearfix{
 	clear:both;

@@ -38,8 +38,16 @@
     <div id="nav_bar">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about.html" class="scroll">About us</a></li>
-            <li><a href="#product" class="scroll">Products</a></li>
+            <li><a href="#about.html">About us</a></li>
+            <li class="dropdown">
+            	<a class="dropbtn">Products</a>
+					<div class="dropdown-content">
+					    <a href="#">Typical Ice cream</a>
+					    <a href="#">Indulgent Ice cream</a>
+					    <a href="#">Ice cream Drink</a>
+                        <a href="#">All products</a>
+  					</div>				       
+	        </li>            	
             <li><a href="#services" class="scroll">Services</a></li>
             <li><a href="#events" class="scroll">Events</a></li>
             <li><a href="#faq" class="scroll">FAQ</a></li>
