@@ -37,8 +37,8 @@
     <!--nav_bar-->
     <div id="nav_bar">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about.html">About us</a></li>
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="../about-us.html">About us</a></li>
             <li class="dropdown">
             	<a class="dropbtn">Products</a>
 					<div class="dropdown-content">
