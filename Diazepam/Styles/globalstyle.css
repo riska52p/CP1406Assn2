@@ -802,3 +802,15 @@ p.disc {
 p.pric1 {
     margin: 0;
 }
+
+/*<------------------------------Individual Page Content Style-------------------------------------------------> */
+#content{
+	float:left;
+	height:auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#content h1{
+	color:#3C0;
+}
