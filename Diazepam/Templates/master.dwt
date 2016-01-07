@@ -10,6 +10,7 @@
 <link href="../Styles/globalstyle.css" rel="stylesheet" type="text/css">
 <link href="../Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--for banner slider-->
 <link href="../Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css">
+<link href="../Styles/productstyle.css" rel="stylesheet" type="text/css">
 <script src="../Styles/forBanner/js-image-slider.js"></script><!--for banner slider-->
 <script src="../Styles/forProducts/js-image-slider-products.js"></script>
 
@@ -43,7 +44,7 @@
             	<a class="dropbtn">Products</a>
 					<div class="dropdown-content">
 					    <a href="#">Classic Ice Cream</a>
-					    <a href="#">Ice Cream Creations</a>
+					    <a href="../product-list.html">Ice Cream Creations</a>
 					    <a href="#">Iced Drinks</a>
                         <a href="#">All Products</a>
   					</div>				       
@@ -61,26 +62,9 @@
     <!--//maincontent-->
     <div id="maincontent">
     <!-- TemplateBeginEditable name="maincontent" -->
-    <!--banner-->
-      <div id="banner"> 
-      	<p>Banner</p>
-     </div><!--//banner-->
-      
-      <!--products-->
-     <div id="products">
-     	
-         <p>Products categories</p>      
-        
-        <div class="clearfix"></div>
-      </div>  <!--//products-->
-      
-      <!--services-->
-      <div id="services">
-        <p>Services</p>
-      </div>
-      <!--//services-->    
-      
-      
+    <div>
+    <p>Place the content here</p>
+    </div>
   <!-- TemplateEndEditable -->      
     </div>   <!--//maincontent-->
  
@@ -117,7 +101,7 @@
    <aside id="sidebar_right_bottom">
    		<h3 id="label_reviews">Reviews &amp; Comments</h3>
      <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
-        <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
+          <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
         <p class="review_detail"> I brought my son here last tuesday and we were welcomed with smiles and good ice cream.</p>
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		

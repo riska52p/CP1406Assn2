@@ -7,96 +7,61 @@
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<script src="jquery/jquery-1.11.3.min.js"></script>
-
 <link href="Styles/globalstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-$(function() {
-    // Stick the #nav to the top of the window
-    var nav = $('#header');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
-	jq = jQuery.noConflict();
-});
-</script>
-<script src="jquery/cycle2-master/build/jquery.cycle2.min.js"></script>
+<link href="Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--for banner slider-->
+<link href="Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css">
+<link href="Styles/productstyle.css" rel="stylesheet" type="text/css">
+<script src="Styles/forBanner/js-image-slider.js"></script><!--for banner slider-->
+<script src="Styles/forProducts/js-image-slider-products.js"></script>
 
 </head>
-<body id="Background">
+
+<body>
 <div id="container">
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/logo.png" alt="logo"></a>
+        	<a href="#"><img src="Images/logo.png" alt="logo"></a>            
         </div>
-        <div id="navWrap">
-        	<div id="nav_bar">
-          	<ul>
-            	<li class="active"><a href="Templates/index.html">Home</a></li>
-            	<li><a href="#about.html" class="scroll">About us</a></li>
-            	<li><a href="#product" class="scroll">Products</a></li>
-            	<li><a href="#services" class="scroll">Services</a></li>
-            	<li><a href="#events" class="scroll">Events</a></li>
-            	<li><a href="#faq" class="scroll">FAQ</a></li>
-            	<li><a href="#contact" class="scroll">Contact</a></li>
-            	<li><a href="#signup" class="scroll">Sign-up</a></li>
-            	<li><a href="#order" class="scroll">Order</a></li>
-          	</ul>
-          </div>                
-	  	</div>
+                
         <div id="social_icons">
         	<ul>
-            	<li><a href="#"><img src="Images/facebook_resize.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="Images/instagram_resize.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="Images/twitter_resize.png" alt="twitter icon"></a></li>
+            	<li><a href="#"><img src="Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/youtube.png" alt="youtube icon"></a></li>
            </ul>
         </div>
         <div class="clearfix"></div>
 	</div><!--//header -->
-<div id="Container">
-
+    
+    <!--nav_bar-->
+    <div id="nav_bar">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li class="dropdown">
+            	<a class="dropbtn">Products</a>
+					<div class="dropdown-content">
+					    <a href="#">Classic Ice Cream</a>
+					    <a href="product-list.html">Ice Cream Creations</a>
+					    <a href="#">Iced Drinks</a>
+                        <a href="#">All Products</a>
+  					</div>				       
+	        </li>            	
+            <li><a href="#services" class="scroll">Services</a></li>
+            <li><a href="#events" class="scroll">Events</a></li>
+            <li><a href="#faq" class="scroll">FAQ</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
+            <li><a href="#signup" class="scroll">Membership</a></li>
+            <li><a href="#order" class="scroll">Shopping Cart</a></li>
+          </ul>                
+	 </div> <!--//nav_bar-->
+	
+	
     <!--//maincontent-->
-      <!--banner-->
-      <div id="banner">
-      <div id="banner_con">
-      <center><div id="slider">
-      	<div class="cycle-slideshow"
-    		data-cycle-fx="scrollHorz"
-    		data-cycle-pause-on-hover="true"
-    		data-cycle-speed="200">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner1-small.jpg" width="100%" height="300" alt="banner1">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner2-small.jpg" width="100%" height="300" alt="banner2"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner3.jpg" width="100%" height="300" alt="banner3"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner4.jpg" width="100%" height="300" alt="banner4">
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner5.jpg" width="100%" height="300" alt="banner5"> 
-      <img src="file:///C|/Users/Riska/Desktop/CP1406Assn2/Photoshopped%20images/Banners/banner6.jpg" width="100%" height="300" alt="banner6">
-      </div>
-      </div>
-      </div>
-      </div>
-      <!--//banner-->
-      <div id="Maincontent"><!-- InstanceBeginEditable name="EditRegion3" -->
+    <div id="maincontent">
+    <!-- InstanceBeginEditable name="maincontent" -->
  <!--welcome-->
       <div id="welcome">
       <body>
@@ -122,23 +87,59 @@ Our Grand Opening is January 15, 2016 – visit us to enjoy discounts and specia
       <!--//review-->
     </div>
     </body>
-<!-- InstanceEndEditable --></div>
-    <!--//maincontent-->
-    </div>
+<!-- InstanceEndEditable -->      
+    </div>   <!--//maincontent-->
+ 
     <!--sidebar right-->
+    <aside id="search_box">
+    	<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>				
+			<img src="Images/Socialicons/toolbar_find.png" alt="search icon">
+            <div class="search">            	
+				<form class="navbar-form">
+					<input type="text" class="form-control">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+					</button>
+				</form>
+			</div>	
+    </aside>
+    
+    
+    
     <aside id="sidebar_right_top">
-   		<h2>Online support</h2>
+   		<h3 id="label_support">Online support</h3>
+        <p><img class="img_phone" src="Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <ul id="support_icons">
+        	<li><img src="Images/Socialicons/yahoo.png" alt="support via yahoo"></li>
+            <li><img src="Images/Socialicons/skype.png" alt="support via skype"></li>
+            <li><img src="Images/Socialicons/whatsapp.png" alt="support via whatsapp"></li>
+            <li><img src="Images/Socialicons/viber.png" alt="support via viber"></li>
+            <li><img src="Images/Socialicons/line.png" alt="support via linechat"></li>
+            <li><img src="Images/Socialicons/googleplusblue.png" alt="support via Googleplus"></li>
+            <li><img src="Images/Socialicons/email_mail_post_letter_stamp.png" alt="support via email"></li>            
+            <li><img src="Images/Socialicons/wechat.png" alt="support via wechat"></li>
+        </ul>
    	</aside>    
         
    <aside id="sidebar_right_bottom">
-   		<h2>Leave comments</h2>
+   		<h3 id="label_reviews">Reviews &amp; Comments</h3>
+     <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
+          <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
+        <p class="review_detail"> I brought my son here last tuesday and we were welcomed with smiles and good ice cream.</p>
+		<div id="leave_comments">
+        <h5>Leave a comment</h5>   		
+	        <form name="form1" method="get" action="">
+                <textarea name="comment" rows="5" class="commentbox" id="comment"></textarea>
+          		<input type="submit" name="Submit" id="Submit" value="Submit">
+            	<input type="reset" name="Clear" id="Clear" value="Clear">          		
+       	  </form>        	
+     </div>
 	</aside>  
-    <!--//sidebar_right-->
-    
+    <!--//sidebar_right-->   
+
    <!-- footer_top -->    
   	<div class="clearfix"></div>
-    <div class="footer_top">			
-        <div class="content_footer_top">
+    <div id="footer_top">			
+        <div id="content_footer_top">
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
@@ -169,27 +170,26 @@ Our Grand Opening is January 15, 2016 – visit us to enjoy discounts and specia
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="Templates/contact.html"><img src="Images/Apps-Google-Maps-icon.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/facebook_resize.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/instagram_resize.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/twitter_resize.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a href="Templates/contact.html"><img src="Images/Socialicons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/Socialicons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
-      </div></div>
+      </div>
     </div>
 	<!--//footer_top-->
     
     <!--//footer_bottom-->
-	<div class="footer_bottom">
+	<div id="footer_bottom">
     	<div>© 2015 Diazepam. All rights reserved.</div>
         <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
 		</div>
 	</div>
     <!--//footer_bottom -->
   
-  </div> <!--end div "container"-->	    
-    
+  </div> <!--end div "container"-->	        
     
 </body>
 <!-- InstanceEnd --></html>
