@@ -65,6 +65,25 @@
     <div>
     <p>Place the content here</p>
     </div>
+    <!--banner-->
+      <div id="banner"> 
+      	<p>Banner</p>
+     </div><!--//banner-->
+      
+      <!--products-->
+     <div id="products">
+     	
+         <p>Products categories</p>      
+        
+        <div class="clearfix"></div>
+      </div>  <!--//products-->
+      
+      <!--services-->
+      <div id="services">
+        <p>Services</p>
+      </div>
+      <!--//services-->    
+
   <!-- TemplateEndEditable -->      
     </div>   <!--//maincontent-->
  
