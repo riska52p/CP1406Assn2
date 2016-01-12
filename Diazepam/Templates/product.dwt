@@ -40,10 +40,10 @@
             <li class="dropdown">
             	<a class="dropbtn">Products</a>
 					<div class="dropdown-content">
-					    <a href="#">Classic Ice Cream</a>
-					    <a href="../product-list.html">Ice Cream Creations</a>
-					    <a href="#">Iced Drinks</a>
-                        <a href="#">All Products</a>
+					    <a href="../prodcat_classic.html">Classic Ice Cream</a>
+					    <a href="../prodcat_creation.html">Ice Cream Creations</a>
+					    <a href="../prodcat_drink.html">Iced Drinks</a>
+                        <a href="../allproducts.html">All Products</a>
   					</div>				       
 	        </li>            	
             <li><a href="#services" class="scroll">Services</a></li>

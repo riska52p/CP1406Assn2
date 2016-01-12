@@ -1,16 +1,17 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/product.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Fried Ice Cream - Product Page</title>
+<title>Classic Ice Cream</title>
 <!-- InstanceEndEditable -->
-<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
-<script src="SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
-<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
-<link href="SpryAssets/SpryValidationConfirm.css" rel="stylesheet" type="text/css">
-<link href="Styles/productstyle.css" rel="stylesheet" type="text/css">
 <link href="Styles/globalstyle.css" rel="stylesheet" type="text/css">
+<link href="Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--for banner slider-->
+<link href="Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css">
+<link href="Styles/productstyle.css" rel="stylesheet" type="text/css">
+<script src="Styles/forBanner/js-image-slider.js"></script><!--for banner slider-->
+<script src="Styles/forProducts/js-image-slider-products.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/logo.png" alt="logo"></a>            
+        	<a href="index.html"><img src="Images/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
@@ -59,51 +60,24 @@
     <!--//maincontent-->
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-     <div id="product1nav">
-      <p id="product1nav" class="product1navlink"><a href="allproducts.html">Products</a> &gt; <a href="procat_creation.html">Ice Cream Creations</a> &gt; <a href="product_friedicecream.html">Fried Ice Cream</a></p>
-      <hr class="product1hrTop">
-      <div id="product1image">
-      <img src="Images/Products/fried-icecream.png" width="300" height="300" alt="product1"></div>
-      <div id="product1descPrice">
-        <h1>Fried Ice Cream</h1>
-        <h3>Ice Cream Creations</h3>
-        <hr>
-        <form name="form2" method="post" action="">
-          <p>Flavours:    
-            <select name="falvoursList" size="1" id="product1flavoursList">
-               <option>Vanilla</option>
-              <option>Chocolate</option>
-              <option>Mango</option>
-              <option>Coconut</option>
-              <option>Mixed Berry</option>
-              <option>Nata de Coco</option>
-              <option>Dark Chocolate</option>
-              <option>Pistachio</option>
-              <option>Cotton Candy</option>
-           </select>
-          </p>
-          <label for="flavours"></label>
-          <p>Quantity: 
-            <label for="product1Qty"></label>
-            <span id="QtyTF">
-            <label for="product1Qty"></label>
-            <input type="text" name="product1Qty" id="product1Qty">
-          <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
-          <h2>S$ 5.90 &nbsp;</h2>          
-            <p><input type="submit" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart">
-        </form></p>
-      </div>
-    </div>
-    <div id="product1desc">
-    <hr class="product1hrTop">
-    <h3>Description</h3>
-    <p>Enjoy any of our classic creations of ice cream in a deep fried medium, coated in a savory batter that brings out the flavour of the ice cream in a new way. Enjoy this ice cream bathed in whipped cream in our signature waffle bowl, with a cherry on top to finish off the creation perfectly.</p>
-    </div>
-    <script type="text/javascript">
-var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {minValue:0, maxChars:3});
-    </script>
+       <div id="banner"><img src="Images/Products/prodcat1.jpg" width="820" height="300" alt="Classic Ice Cream banner"> 
+       </div><!--//banner-->
+<center><h1>Classic Ice Cream</h1></center>
+        <div id="content_services">
+    <div class="grid_services">
+            <div><img src="Images/Products/icecreamscoop.png" alt="Ice-cream"></div>
+            <h3><a href="product_icecreamscoop.html">Ice Cream Scoop</a></h3>
+            <p class="text_justify">2.5 oz of classic ice cream in each scoop.</p>
+          </div>
+          <div class="grid_services">
+            <div><img src="Images/Products/icecreampint.png" alt="Ice-cream"></div>
+            <h3><a href="product_icecreampint.html">Ice Cream Pint</a></h3>
+            <p class="text_justify">16 oz of our classic ice cream, packaged in a pint.</p>          </div>
+            </div>
+      <!--//services-->    
 
-  <!-- InstanceEndEditable -->      
+  
+<!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
  
     <!--sidebar right-->
