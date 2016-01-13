@@ -4,17 +4,20 @@
 @import url("../webfonts/ERASBD/stylesheet.css");
 
 
-
 @font-face {
 	font-family: 'Dimbo Regular';
 	src: url('Dimbo Regular.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'ERASBD';
+	src: url('ERASBD.TTF') format('truetype');
+}
+
 body{
 	background-color:#FFF;
-/*	font-family:Verdana, Geneva, sans-serif;*/
-	/*font-family: 'Dimbo Regular';*/
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#000;
 	margin-top:0;
 	margin-left:0;
 	margin-right:0;
@@ -99,17 +102,17 @@ body{
 	display:block;
 }
 
-/*Navigation bar*/
 #nav_bar{	
 	margin-top:1.5%;
 	height:50px;	
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border-top: 2px dashed green;
-	border-bottom:2px	dashed green;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
 	font-family: 'Dimbo Regular';
 	font-size:20px;
+	background-color:#6b3e26;
 }
 
 #nav_bar ul{
@@ -131,12 +134,12 @@ body{
 	padding:2.5px 5px;
 	margin:2.5px 5px;
 	font-size:1.5em; /*remember to change on the drop-down */
-	color:#3C0;
+	color:#fdf5c9;
 }
 #nav_bar ul li a:hover{
-	background-color:lightblue;
+	background-color:#fdf5c9;
 	text-shadow:none;
-	color:#FFF;
+	color:#6b3e26;
 }
 
 a:link, a:visited{
@@ -149,9 +152,9 @@ a:hover, a:active{
 
 #nav_bar a:hover, #nav_bar a:active,
 #nav_bar .active a:link, #nav_bar .active a:visited{
-	background-color:#CF0;/*green lemon*//*inital: pink*/
+	background-color:#fdf5c9;/*green lemon*//*inital: pink*/
 	text-shadow:none;
-	color:#09F;
+	color:#6b3e26;
 }
 
 /*CSS for dopdown Products*/
@@ -176,17 +179,19 @@ a:hover, a:active{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:#FFF;
+    background-color:#6b3e26;
     min-width: 12em;
-    box-shadow: 0px 8px 16px 0px orange;
+    box-shadow: 0px 8px 16px 0px #ffcb85;
     padding: 12px 16px;
     z-index: 1;
 	font-size:0.7em;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content > a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;	
@@ -203,10 +208,10 @@ a:hover, a:active{
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color:#CF0;/*green lemon*//*inital: pink*/
+.dropdown:hover a.dropbtn {
 	text-shadow:none;
-	color:#30F;
+	background-color:orange;
+	
 }
 
 /*--//CSS for dopdown Products--*/
@@ -224,7 +229,7 @@ a:hover, a:active{
 /*--search_box--*/ /*Go back later to check out how to fix it latter: 05/01/2015*/
 
 #search_box{
-	background-color:lightblue;
+	background-color:#c2f2d0;
 	float:right;
 	width:19%;
 	height:50px;
@@ -296,23 +301,28 @@ a:hover, a:active{
 	margin:2% 0 0 1%;
 	height:200px;	
 	overflow:hidden;
-	background-color:lightblue;
+	background-color:#c2f2d0;
 	background: 1px solid back;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
 
-#label_support{
-	color:#3C0;
-	font-size:1.8em;
-	font-weight:900;
+h3#label_support{
+	font-size:1.7em;
+	font-weight:300;
 	text-align:center;
-	border-top: 2px dashed green;
-	border-bottom:2px	dashed green;
-	margin:7%;
+	color:#fdf5c9;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
+	background-color:#6b3e26;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:5%;
 	padding:1%;
 	font-family: 'Dimbo Regular';
+	font-stretch:extra-expanded;
 }
 
 #sidebar_right_top img{
@@ -320,8 +330,8 @@ a:hover, a:active{
 	height:30px;
 }
 
-.number{
-	color:black;
+a.number{
+	color:#6b3e26;
 	font-size:1.1em;
 	font-weight:400;
 	text-decoration:none;
@@ -357,23 +367,28 @@ a:hover, a:active{
 	margin:2% 0 0 1%;
 	height:auto;	
 	overflow:hidden;
-	background-color:lightblue;
+	background-color:#c2f2d0;
 	background: 1px solid back;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;	
 }
 
-#label_reviews{
-	color:#3C0;
-	font-size:1.8em;
-	font-weight:900;
+h3#label_reviews{
+	font-size:1.65em;
+	font-weight:300;
 	text-align:center;
-	border-top: 2px dashed green;
-	border-bottom:2px	dashed green;
-	margin:7%;
+	color:#fdf5c9;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
+	background-color:#6b3e26;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:5%;
 	padding:1%;
 	font-family: 'Dimbo Regular';
+	font-stretch:extra-expanded;
 }
 
 .review_detail{
@@ -385,7 +400,7 @@ a:hover, a:active{
 }
 
 #leave_comments{	
-	font-weight:700;
+	font-weight:300;
 	color:#3C0;
 	text-align:center;
 	width:96%;
@@ -394,12 +409,20 @@ a:hover, a:active{
 }
 
 #leave_comments h5 {
-    color: green;/*#fff*/
-    padding-top:5%;
-	padding-bottom:5%;
-	margin:0 auto;    
-    font-size: 1.5em;
+    padding-top:2%;
+	padding-bottom:2%;	
+	margin:7%;    
+    font-size: 1.2em;
 	font-family: 'Dimbo Regular';
+	font-weight:100;	
+	color:#fdf5c9;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
+	background-color:#6b3e26;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
 }
 #leave_comments form{
 	width:100%;	
@@ -467,28 +490,35 @@ a:hover, a:active{
 /*--products--*/
 #products{
 	width:99%;
-	margin:1% 1% 1% 0%;
-	padding:3% 0% 0% 0%;
+	margin:0.5% 1% 1% 0%;
+	padding:1% 0% 0% 0%;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
 
 
-#label_products{
+h2#label_products{
 	text-align:center;
-	font-size: 2em;
-    font-family: 'ERASBD';
-    color: #F07818;
-    font-weight: 800;	
+	font-size: 2.5em;
+	font-family: 'Dimbo Regular';    
+    font-weight: 800;
+	font-stretch:expanded;	
 }
-
 #label_products a{
 	text-decoration:none;
-	color:#F00;
-	border-top: 2px dashed green;
-	border-bottom:2px	dashed green;
-
+	color:#fdf5c9;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
+	background-color:#6b3e26;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding:0% 5%;
+}
+#label_products a:hover{
+	color:#6b3e26;
+	background-color:#fdf5c9;
 }
 
 #content_products{	
@@ -512,20 +542,24 @@ a:hover, a:active{
 	-webkit-border-radius:5px;
 }
 
-#label_services{
+h2#label_services{
 	text-align:center;
-	font-size: 2em;
-    font-family: 'ERASBD';
-    color: #F07818;
+	font-size: 2.5em;
+	font-family: 'Dimbo Regular';
     font-weight: 800;
+	font-stretch:expanded;
 }
 
 #label_services a{
 	text-decoration:none;
-	color:#F00;
-	margin-bottom:0%;
-	border-top: 2px dashed green;
-	border-bottom:2px	dashed green;
+	color:#fdf5c9;
+	border-top: 1px solid #ffcb85;
+	border-bottom:1px	solid #ffcb85;
+	background-color:#6b3e26;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding:0% 5%;
 
 }
 
@@ -546,41 +580,47 @@ a:hover, a:active{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border:1px solid #F2FFFE; /*lightblue*/
-	float:left;	
+	border:1px solid #c2f2d0; /*lightblue*/
+	float:left;
 }
 
 .grid_services img{
 	width:150px;
 	height:150px;
-	padding:1% 18%;
+	padding:3% 18%;
 	margin:0 auto;
 	text-align:center;
 }
 
 .grid_services h3{
 	text-align:center;
-	font-size: 1.5em;
-    font-family: 'ERASBD';    
+	font-size: 2em;
+	font-family:"Dimbo Regular";
+	font-stretch:expanded;
+	margin-top:2%;
+	margin-bottom:2%;
 }
 
 .grid_services h3 a{
 	text-decoration:none;
-	color:green;
-    font-weight: 800;
+	color:#FC6;
+    font-weight:800;
 }
 
-.grid_services:hover{/*change color when mouse hovers over each service*/
-	border:1px solid blue; /*lightblue*/
-	color:blue;
-}
-
-.grid_services h3 a:hover{
-	color: #090;
-	font-family: ERASBD;
-}
-.grid_services{
+.text_justify{
 	text-align:justify;
+	padding-left:5%;
+	padding-right:5%;
+	line-height:1.5em;
+	color:#999;
+}
+
+.grid_services:hover{
+	border:2px solid #c2f2d0;	
+}
+
+.grid_services:hover .text_justify, .grid_services:hover h3 a{/*change color when mouse hovers over each service*/
+	color:#6b3e26;	
 }
 
 /*--//service--*/
@@ -601,13 +641,6 @@ a:hover, a:active{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-}
-#subscribe h3 {
-    color: #F07818;/*#fff*/
-    padding-bottom: 0.5em;
-    margin: 0;
-    font-size: 3em;
-    font-family: 'ERASBD';
 }
 #subscribe form{
 	width:100%;
@@ -630,13 +663,13 @@ a:hover, a:active{
 }
 #subscribe form input[type="submit"] {
     outline: none;
-    border: 1px solid blue;/*#F07818*/
+    border: 1px solid #c2f2d0;/*#F07818*/
     width: 20%;
     padding: 0.92em;
     font-size: 1em;
     background: none;
-    color: #fff;
-    background-color:blue;/*#F07818*/
+    color: #fdf5c9;
+    background-color:#6b3e26;/*#F07818*/
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -648,8 +681,8 @@ a:hover, a:active{
 
 }
 #subscribe form input[type="submit"]:hover {
-    background-color: rgba(255, 255, 255, 0.21);
-    color: blue;/*#F07818*/
+    background-color: #fdf5c9;
+    color: #6b3e26;/*#F07818*/
 }
 /*--//subscribe--*/
 
@@ -659,7 +692,7 @@ a:hover, a:active{
 	margin:2% 0% 0% 0%;
 	width:100%;
     padding-top:0%;
-	background-color:#DFDFDF; /*#f2f6f7;*/
+	background-color: #fdf5c9; /*#f2f6f7;*/
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -680,9 +713,11 @@ a:hover, a:active{
 
 .footer_grid h4{
     font-size: 1.1em;
-    color: #F07818;    
-    /*font-family: 'Trebuchet';*/
+    color: #F07818;
+	font-family:"Dimbo Regular";
 	text-transform:uppercase;
+	font-size:1.4em;
+	margin:2%;
 }
 
 .ul_footer{
@@ -702,7 +737,7 @@ a:hover, a:active{
     text-transform: capitalize;
 }
 .footer_grid ul li a:hover {
-    color: #F07818;
+    color:#3C0; /*#F07818*/
 }
 
 .footer_grid ul li a img {
@@ -712,19 +747,19 @@ a:hover, a:active{
 
 /*footer_bottom*/
 #footer_bottom {
-    background-color:#5D4B33;
+    background-color:#6b3e26;
 	margin-top:0;
     padding-top: 10px;
     text-align: center;
 	height:40px;
-    color: #fff;
+    color: #fdf5c9;
 	font-size:11px;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
 #footer_bottom span {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.8em;
 	height:40px;
 	margin:10px;
@@ -805,7 +840,7 @@ p.pric1 {
     margin: 0;
 }
 
-/*<------------------------------Individual Page Content Style-------------------------------------------------> */
+/*
 #content{
 	float:left;
 	height:auto;
@@ -816,3 +851,22 @@ p.pric1 {
 #content h1{
 	color:#3C0;
 }
+*/
+
+/*iframe on Upcoming events*/
+iframe{
+	width:100%;
+	border-width:0;
+	height:400px;
+	frameborder:20px;
+	scrolling:no;
+}
+
+h2.page_heading{
+	color: #6b3e26;
+	font-size:1.8em;
+	margin-top:0%;
+	font-family:"Dimbo Regular";
+	font-weight:400;
+}
+
