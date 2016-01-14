@@ -5,6 +5,7 @@
 
 
 
+
 @font-face {
 	font-family: 'Dimbo Regular';
 	src: url('Dimbo Regular.ttf') format('truetype');
@@ -209,7 +210,7 @@ a:hover, a:active{
 	color:#30F;
 }
 
-/*--//CSS for dopdown Products--*/
+/*--//CSS for dropdown Products--*/
 
 
 /*--//header--*/
@@ -816,3 +817,70 @@ p.pric1 {
 #content h1{
 	color:#3C0;
 }
+
+/*----------------------------------------about us page-------------------------------------------------------*/
+#about{
+	margin: 0px;
+	padding-left: 50px;
+	padding-right:60px;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+p.about{ 
+	line-height: 200%;
+}
+
+em{
+	font-style: normal;
+	font-size: 150%;
+	text-transfor: uppercase;
+}
+
+A.class2 {color:#09F;}
+A.class2:link {text-decoration: none; color: #09F;}
+A.class2:visited {text-decoration: none; color:#09F8;}
+A.class2:hover {text-decoration: none; color:#FD1B62;}
+A.class2:active {text-decoration: none; color:#09F;}
+
+
+ul.about{
+	list-style-type: none;
+}
+
+li.ice{
+	background: url(../Images/new%20bullet%20points/ice2.png) no-repeat left top;
+	height: 45px;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+/*--//about us--*/
+
+/*----------------------------------------contact page-------------------------------------------------------*/
+#contact{
+	margin: 0px;
+	padding-left: 50px;
+	padding-right:60px;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+p.contact{ 
+	line-height: 200%;
+}
+
+em{
+	font-style: normal;
+	font-size: 150%;
+	text-transfor: uppercase;
+}
+
+A.class2 {color:#09F;}
+A.class2:link {text-decoration: none; color: #09F;}
+A.class2:visited {text-decoration: none; color:#09F8;}
+A.class2:hover {text-decoration: none; color:#FD1B62;}
+A.class2:active {text-decoration: none; color:#09F;}
+
+/*--//contact--*/
