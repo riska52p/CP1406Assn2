@@ -923,6 +923,31 @@ A.class2:visited {text-decoration: none; color:#09F8;}
 A.class2:hover {text-decoration: none; color:#FD1B62;}
 A.class2:active {text-decoration: none; color:#09F;}
 
+ul.contact{
+	list-style-type: none;
+}
+
+li.phone{
+	background:url(../Images/Socialicons/phon.png) no-repeat left top;
+	height: 45px;
+	padding-left: 40px;
+	
+}
+
+li.mail{
+	background: url(../Images/Socialicons/mail.png) no-repeat left top;
+	height: 45px;
+	padding-left: 40px;
+	
+}
+
+li.loc{
+	background: url(../Images/Socialicons/loc.png) no-repeat left top;
+	height: 45px;
+	padding-left: 40px;
+	
+}
+
 /*--//contact--*/
 =======
 */
