@@ -4,11 +4,6 @@
 @import url("../webfonts/ERASBD/stylesheet.css");
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
 @font-face {
 	font-family: 'Dimbo Regular';
 	src: url('Dimbo Regular.ttf') format('truetype');
@@ -219,7 +214,7 @@ a:hover, a:active{
 	
 }
 
-/*--//CSS for dropdown Products--*/
+/*--//CSS for dopdown Products--*/
 
 
 /*--//header--*/
@@ -232,12 +227,12 @@ a:hover, a:active{
 
 /*==================================================SEARCH BOX====================================*/
 /*--search_box--*/ /*Go back later to check out how to fix it latter: 05/01/2015*/
-
+/*
 #search_box{
 	background-color:#c2f2d0;
 	float:right;
 	width:19%;
-	height:50px;
+	height:80px;
 	margin:2% 0 0 1%;
 	background: 1px solid back;
 	border-radius:5px;
@@ -279,7 +274,7 @@ a:hover, a:active{
     color: #fff;
     padding: 0.5em;
 }
-/*
+
 .header-right.search-box:hover div.search {
 	display:block;
 }
@@ -294,6 +289,59 @@ a:hover, a:active{
 }
 */
 /*--//search_box--*/
+
+#searchbox{
+	background-color:#c2f2d0;	
+	float:right;
+	width:19%;
+	height:107px;
+	margin:2% 0 0 1%;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#search{
+	width:90%;
+	margin:0 5%;
+	padding:0;
+	height:35px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	 
+}
+
+#submit_search{
+	width:50%;
+	height:30px;
+	margin:0 25%;	
+	cursor: pointer;
+	font: bold 1em Arial, Helvetica;
+    color: #6b3e26; /*chocolate*/   
+	background-color:#fdf5c9;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#submit_search:hover {       
+    background-color:#6b3e26;   
+	color:#fdf5c9;
+}   
+
+#submit_search:active {       
+    background: #6b3e26;
+    outline: none;
+}
+
+#submit_search::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+#search.placeholder {
+   color: #9c9c9c !important;
+   font-style: bold;
+}
+
 
 /*==================================================///SEARCH BOX: COME BACK LATER====================================*/
 
@@ -373,6 +421,7 @@ a.number{
 	height:auto;	
 	overflow:hidden;
 	background-color:#c2f2d0;
+/*	background-image: linear-gradient(#c2f2d0, #fff);*/
 	background: 1px solid back;
 	border-radius:5px;
 	-noz-border-radius:5px;
@@ -429,42 +478,102 @@ h3#label_reviews{
 	-webkit-border-radius:5px;
 	
 }
+
 #leave_comments form{
 	width:100%;	
 }
 
-/*
-.leave_comments form textarea[type=""] {
-    border: 0;
-    outline: 0;
-    width: 90%;
-    font-size: 0.8em;
-    padding: 0em;
-    color: #FFFFFF;
+#comments {
+    width:90%;
+	height:100px;
+	margin:5%;
+    padding: 0em;    
+	overflow:auto;
+    font-size: 0.9em;
     float: left;
-    background-color: rgba(251, 250, 250, 0.2);
+    background-color: white;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-*/
-.leave_comments form input[type="submit"] {
-    outline: none;
-    border: 1px solid blue;/*#F07818*/
+
+#submit_comments{
     width: 40%;
-    padding: 0em;
-    font-size: 0.9em;
-    background: none;
-    color: #fff;
-    background-color:blue;/*#F07818*/
+	margin: 5% 2% 5% 8%;    
+	padding: 1%;	
+	font: bold 1em Arial, Helvetica;
+    color: #6b3e26; /*chocolate*/   
+	background-color:#fdf5c9;
+	cursor:pointer;
+	float:left;
+
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
+	outline: none;
+    border: 1px solid #c2f2d0;    
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
-.leave_comments form input[type="reset"]:hover {
-    background-color: rgba(255, 255, 255, 0.21);
-    color: blue;/*#F07818*/
+
+#submit_comments:hover {       
+    background-color:#6b3e26;   
+	color:#fdf5c9;
+}   
+
+#submit_comments:active {       
+    background: #6b3e26;
+    outline: none;
 }
+
+#submit_comments::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+#reset_comments{
+	width: 40%;
+	margin: 5% 8% 5% 2%;    
+	padding: 1%;	
+	font: bold 1em Arial, Helvetica;
+    color:blue ;
+	background-color:#fdf5c9 ;
+	cursor:pointer;
+	float:right;
+
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	outline: none;
+    border: 1px solid #c2f2d0;    
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#reset_comments:hover {       
+    background-color:white;   
+	color:#ffc5d9;
+}   
+
+#reset_comments:active {       
+    background: #6b3e26;
+    outline: none;
+}
+
+#reset_comments::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+
+
+
+
 
 /*--//sidebar_right_bottom--*/
 
@@ -857,6 +966,7 @@ p.pric1 {
 	color:#3C0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /*----------------------------------------about us page-------------------------------------------------------*/
 #about{
@@ -950,6 +1060,8 @@ li.loc{
 
 /*--//contact--*/
 =======
+=======
+>>>>>>> origin/master
 */
 
 /*iframe on Upcoming events*/
@@ -969,4 +1081,3 @@ h2.page_heading{
 	font-weight:400;
 }
 
->>>>>>> origin/master
