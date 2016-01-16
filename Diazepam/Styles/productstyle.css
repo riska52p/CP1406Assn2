@@ -80,9 +80,11 @@
 	background-color:#060;
 }
 
-.product1navlink a{
+.product1navlink{
 	color:#360;
 	text-decoration:none;
+	font-size:2em;
+	font-family:"Dimbo Regular";
 }
 
 .product1navlink a:link{

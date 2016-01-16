@@ -24,7 +24,7 @@ body{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-	background-image:url(../Images/bg.jpg);
+	background-image:url(../Images/icons/bg.jpg);
 	background-attachment: fixed;
 
 }
@@ -155,6 +155,11 @@ a:hover, a:active{
 	background-color:#fdf5c9;/*green lemon*//*inital: pink*/
 	text-shadow:none;
 	color:#6b3e26;
+}
+
+.active_product{
+	background-color:orange;
+	text-shadow:none;	
 }
 
 /*CSS for dopdown Products*/
@@ -379,8 +384,8 @@ h3#label_support{
 }
 
 #sidebar_right_top img{
-	width:30px;
-	height:30px;
+	width:25px;
+	height:25px;
 }
 
 a.number{
@@ -390,7 +395,7 @@ a.number{
 	text-decoration:none;
 }
 .img_phone{
-	padding:0.8% 1.5% 0.8% 1.5% ;
+	padding:0.8% 1.5% 0% 1.5% ;
 }
 .number:hover{
 	color:orange;
@@ -400,17 +405,13 @@ a.number{
 	font-size:1.5em;
 	font-weight:800;
 }
-#support_icons{
-	list-style-type:none;	
-	margin: 0 auto;
-	padding:2% 8.5%;
-}
 
-#support_icons li{
-	float:left;
-	margin:0px 6px;
+#MyLiveChatContainer img{
+	width:90%;
+	margin:0 5%;
+	padding:0;
+	height:70px;
 }
-
 /*--//sidebar_right_top--*/
 
 /*--sidebar_right_bottom--*/
@@ -730,7 +731,7 @@ h2#label_services{
 }
 
 .grid_services:hover{
-	border:2px solid #c2f2d0;	
+	border:2px solid #6b3e26;	
 }
 
 .grid_services:hover .text_justify, .grid_services:hover h3 a{/*change color when mouse hovers over each service*/
@@ -747,8 +748,8 @@ h2#label_services{
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 	margin:2% 0% 2% 0%;
-	padding:0;	
-	background:url(../Images/background-Small.jpg)repeat 0px 0px fixed;
+	padding:0;
+	background:url(../Images/icons/background-Small.jpg)repeat 0px 0px fixed;
 	/*background-size:cover;*/
 	text-align:center;
 	padding:5px 0;
@@ -965,8 +966,7 @@ p.pric1 {
 #content h1{
 	color:#3C0;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+*/
 
 /*----------------------------------------about us page-------------------------------------------------------*/
 #about{
@@ -976,10 +976,7 @@ p.pric1 {
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-}
-
-p.about{ 
-	line-height: 200%;
+	line-height: 1.5em;
 }
 
 em{
@@ -994,13 +991,12 @@ A.class2:visited {text-decoration: none; color:#09F8;}
 A.class2:hover {text-decoration: none; color:#FD1B62;}
 A.class2:active {text-decoration: none; color:#09F;}
 
-
 ul.about{
 	list-style-type: none;
 }
 
 li.ice{
-	background: url(../Images/new%20bullet%20points/ice2.png) no-repeat left top;
+	background: url(../Images/icons/ice2.png) no-repeat left top;
 	height: 45px;
 	padding-left: 40px;
 	padding-top: 3px;
@@ -1015,10 +1011,7 @@ li.ice{
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-}
-
-p.contact{ 
-	line-height: 200%;
+	line-height:1.5em;
 }
 
 em{
@@ -1038,35 +1031,40 @@ ul.contact{
 }
 
 li.phone{
-	background:url(../Images/Socialicons/phon.png) no-repeat left top;
+	background:url(../Images/icons/phone.png) no-repeat left top;
 	height: 45px;
 	padding-left: 40px;
 	
 }
 
 li.mail{
-	background: url(../Images/Socialicons/mail.png) no-repeat left top;
+	background: url(../Images/icons/mail.png) no-repeat left top;
 	height: 45px;
 	padding-left: 40px;
 	
 }
 
 li.loc{
-	background: url(../Images/Socialicons/loc.png) no-repeat left top;
+	background: url(../Images/icons/loc.png) no-repeat left top;
 	height: 45px;
 	padding-left: 40px;
 	
 }
 
-/*--//contact--*/
-=======
-=======
->>>>>>> origin/master
-*/
+#contact iframe{
+	width:98%;
+	margin:0 auto;
+	border-width:0;
+	height:400px;
+	frameborder:20px;
+	scrolling:no;
+}
+/*============================Upcomming events===================================*/
 
 /*iframe on Upcoming events*/
-iframe{
-	width:100%;
+#upcoming_events iframe{
+	width:98%;
+	margin:0 auto;
 	border-width:0;
 	height:400px;
 	frameborder:20px;
@@ -1075,7 +1073,7 @@ iframe{
 
 h2.page_heading{
 	color: #6b3e26;
-	font-size:1.8em;
+	font-size:2em;
 	margin-top:0%;
 	font-family:"Dimbo Regular";
 	font-weight:400;

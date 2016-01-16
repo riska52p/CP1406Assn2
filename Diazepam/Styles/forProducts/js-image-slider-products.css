@@ -40,7 +40,7 @@
 /* Caption styles */
 #sliderProd div.mc-caption-bg, #sliderProd div.mc-caption-bg2 {
 	position:absolute;
-	width:400px;
+	width:500px;
 	height:auto;
 	padding:10px 0;
 	left: 100px; /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px;*/
@@ -58,7 +58,7 @@
 }
 #sliderProd div.mc-caption {
 	font:bold 13px/16px Arial;
-	color:#ccc;
+	color:green;
 	z-index:4;
 	text-align:center;
     background:none;
