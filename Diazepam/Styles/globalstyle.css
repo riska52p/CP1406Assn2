@@ -1059,6 +1059,49 @@ li.loc{
 	frameborder:20px;
 	scrolling:no;
 }
+
+/*----------------------------------------membership page-------------------------------------------------------*/
+
+#member{
+	margin: 0px;
+	padding-left: 50px;
+	padding-right:60px;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+
+#mainForm {
+    border: thin gray solid;
+    border-radius: 15px;
+    width: 700px;
+}
+#mainForm input, #mainForm select, #mainForm textarea, #mainForm fieldset {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 7px;
+}
+#mainForm label {
+    float: left;
+    clear:both;
+    width: 300px;
+    text-align:right;
+}
+#mainForm fieldset input, #mainForm fieldset label, #submission input {
+    float:none;
+    width:auto;
+}
+#submission {
+    text-align:center;
+    width: 620px;
+}
+br {
+    clear: left;
+}
+#message { padding-left: 5em; }
+
 /*============================Upcomming events===================================*/
 
 /*iframe on Upcoming events*/
