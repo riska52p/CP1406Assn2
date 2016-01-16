@@ -1,0 +1,210 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Upcoming Events</title>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+<link href="Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for Template & index.html-->
+<link href="Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--css for banner slider @Homepage-->
+<link href="Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css"><!--css for product slider @Homepage-->
+<link href="Styles/productstyle.css" rel="stylesheet" type="text/css"> <!--css for All Products, Product Categories, Each Product-->
+<script src="Styles/forBanner/js-image-slider.js"></script><!--js for banner slider @Homepage-->
+<script src="Styles/forProducts/js-image-slider-products.js"></script><!--js for product slider @Homepage-->
+
+</head>
+
+<body>
+<div id="container">
+ 	<!-- header -->
+	<div id="header">		
+    	<div id="logo">
+        	<a href="#"><img src="Images/logo.png" alt="logo"></a>            
+        </div>
+                
+        <div id="social_icons">
+        	<ul>
+            	<li><a href="#"><img src="Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon"></a></li>
+                <li><a href="#"><img src="Images/Socialicons/youtube.png" alt="youtube icon"></a></li>
+           </ul>
+        </div>
+        <div class="clearfix"></div>
+	</div><!--//header -->
+	
+	<!-- InstanceBeginEditable name="Navigation_bar" -->
+    <!--nav_bar-->
+    <div id="nav_bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li class="dropdown"> <a class="dropbtn">Products</a>
+          <div class="dropdown-content"> <a href="#">Classic Ice Cream</a> <a href="product-list.html">Ice Cream Creations</a> <a href="#">Iced Drinks</a> <a href="#">All Products</a> </div>
+        </li>
+        <li><a href="#services" class="scroll">Services</a></li>
+        <li><a href="upcoming-events.html">Events</a></li>
+        <li><a href="#faq" class="scroll">FAQ</a></li>
+        <li><a href="contact.html" class="scroll">Contact</a></li>
+        <li class="active"><a href="member.html" class="scroll">Membership</a></li>
+        <li><a href="#order" class="scroll">Shopping Cart</a></li>
+      </ul>
+    </div>
+    <!--//nav_bar-->
+    <!-- InstanceEndEditable -->
+    
+    <!--//maincontent-->    
+    <div id="maincontent">
+    <!-- InstanceBeginEditable name="maincontent" -->
+       	<div id="member">
+     <h2 class="page_heading">Sign up for our membership!</h2>
+     <p>We have a special reward program for our loyal customers including a birthday present! Don't miss it and join us for FREE! Fill out the form below and you will receive a mail and information how to pick up your Diazepam Membercard (required fields are shown by *.)</p>
+
+    <form action="" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+        <p>
+            <label for="first">First Name: <img src="Images/cross.png" alt="X" name="nameTick" width="12" height="12"
+                                              id="nameTick"/></label>
+            <input type="text" name="first" id="first" size="40" autofocus onKeyUp="nameEntered(this);"/>
+        </p>
+        <div class="notebox" id="output">&nbsp;</div>
+        <br>
+        
+          <label for="family">Family Name: <img src="Images/cross.png" alt="X" name="nameTick" width="12" height="12"
+                                              id="nameTick"/></label>
+            <input type="text" name="family" id="family" size="40" autofocus onKeyUp="nameEntered(this);"/>
+        <br>
+        <label for="birthday">Your birthday:</label>
+        <input type="text" name="birthday" id="birthday" size="40" style="color:#000000" onFocus="changeStyle('birthday')"
+               onBlur="changeStyle2('birthday')"/>
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email" size="40" style="color:#000000" onFocus="changeStyle('email')"
+               onBlur="changeStyle2('email')"/>
+       	 <br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" size="40" style="color:#000000"
+               onKeyUp="setColourBasedOnLength('phone', 8)"/>
+        <br/>
+        <div id="submission">
+            <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
+            <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
+            or
+            <input type="submit" value="Submit"/>
+        </div>
+        <div><span id="message"></span></div>
+    </form>
+    <script src="scripts.js"></script>
+     </div>   
+    
+  <!-- InstanceEndEditable -->      
+    </div>   <!--//maincontent-->
+ 
+    <!--sidebar right-->
+    <aside id="search_box">
+    	<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>				
+			<img src="Images/Socialicons/toolbar_find.png" alt="search icon">
+            <div class="search">            	
+				<form class="navbar-form">
+					<input type="text" class="form-control">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+					</button>
+				</form>
+			</div>	
+    </aside>
+    
+    
+    
+    <aside id="sidebar_right_top">
+   		<h3 id="label_support">Online support</h3>
+        <p><img class="img_phone" src="Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <ul id="support_icons">
+        	<li><img src="Images/Socialicons/yahoo.png" alt="support via yahoo"></li>
+            <li><img src="Images/Socialicons/skype.png" alt="support via skype"></li>
+            <li><img src="Images/Socialicons/whatsapp.png" alt="support via whatsapp"></li>
+            <li><img src="Images/Socialicons/viber.png" alt="support via viber"></li>
+            <li><img src="Images/Socialicons/line.png" alt="support via linechat"></li>
+            <li><img src="Images/Socialicons/wechat.png" alt="support via wechat"></li>
+            <li><img src="Images/Socialicons/email_mail_post_letter_stamp.png" alt="support via email"></li>         
+            <li><img src="Images/Socialicons/googleplusblue.png" alt="support via Googleplus"></li>
+               
+            
+        </ul>
+   	</aside>    
+        
+   <aside id="sidebar_right_bottom">
+   		<h3 id="label_reviews">Reviews &amp; Comments</h3>
+     <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
+          <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
+        <p class="review_detail"> I brought my son here last tuesday and we were welcomed with smiles and good ice cream.</p>
+		<div id="leave_comments">
+        <h5>Leave a comment</h5>   		
+	        <form name="form1" method="get" action="">
+                <textarea name="comment" rows="5" class="commentbox" id="comment"></textarea>
+          		<input type="submit" name="Submit" id="Submit" value="Submit">
+            	<input type="reset" name="Clear" id="Clear" value="Clear">          		
+       	  </form>        	
+     </div>
+	</aside>  
+    <!--//sidebar_right-->   
+
+   <!-- footer_top -->    
+  	<div class="clearfix"></div>
+    <div id="footer_top">			
+        <div id="content_footer_top">
+            <div class="footer_grid">
+                <h4>Company</h4>
+                <ul class="ul_footer">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Work Here</a></li>                
+                    <li><a href="#">Upcomming Events</a></li>
+                    <li><a href="#">Outlets</a></li>
+                </ul>
+            </div>
+            <div class="footer_grid">
+                <h4>Products/Services</h4>
+                <ul class="ul_footer">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer_grid">
+                <h4>Order/Return</h4>
+                <ul class="ul_footer">                
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Digital Gift Card</a></li>
+                </ul>
+            </div>        
+            <div class="footer_grid">
+                <h4>Connect with Us</h4>
+                <ul class="ul_footer">
+		           	<li><a href="contact.html"><img src="Images/Socialicons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/Socialicons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+            	</ul>
+        	</div>       
+            <div class="clearfix"></div>
+      </div>
+    </div>
+	<!--//footer_top-->
+    
+    <!--//footer_bottom-->
+	<div id="footer_bottom">
+    	<div>© 2015 Diazepam. All rights reserved.</div>
+        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
+		</div>
+	</div>
+    <!--//footer_bottom -->
+  
+  </div> <!--end div "container"-->	        
+    
+</body>
+<!-- InstanceEnd --></html>
