@@ -1257,3 +1257,29 @@ a.services:hover{
 
 
 /*===================== Order form ==================================*/
+.imgWrap {
+  position:relative;
+  height: 50px;
+  width: 100px;
+}
+
+.imgDescription {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#32F483;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
