@@ -1088,15 +1088,18 @@ li.ice{
 }
 li.phone{
 	background:url(../Images/icons/phone.png) no-repeat left top;
-	padding-left:4%;		
+	padding-left: 4%;		
 }
 li.mail{
 	background: url(../Images/icons/mail.png) no-repeat left top;
 	padding-left:4%;
+
 }
 li.loc{
 	background: url(../Images/icons/loc.png) no-repeat left top;
 	padding-left:4%;
+	
+
 }
 
 #list_outlets{
