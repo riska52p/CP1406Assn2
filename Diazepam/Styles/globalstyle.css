@@ -728,6 +728,7 @@ h2#label_services{
     font-weight:800;
 }
 
+
 .text_justify{
 	text-align:justify;
 	padding-left:5%;
@@ -943,6 +944,12 @@ h3.product_headingh3{
 
 .grid_1colsOf3:hover{
 	border:2px solid #6b3e26;	
+}
+.grid_1colsOf3 ul li {
+	font-size: 0.8em;
+	line-height: normal;
+	list-style-position: outside;
+	margin-top: 0px;
 }
 
 h3.product_headingh3 a{
@@ -1199,27 +1206,30 @@ br {
 #shoppingcart_total{
 	float:left;
 	clear:left;
-	margin-top:20px;
-	margin-left:20px;
 	text-align:left;
 	font-size:1.2em;
+	margin-left:10px;
+	color:#FFB062;
+	margin-top:15px;
 }
 
 .simpleCart_total{
-	float:left;
-	margin-top:20px;
-	margin-left:10px;
-	text-align:left;
-	font-size:1.2em;
-	font-weight:bold;
-	color:#6b3e26;
+	float: left;
+	margin-left: 10px;
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: #fdf5c9;
+	font-family: "Dimbo Regular";
+	letter-spacing: 0.2em;
+	margin-top:15px;
 }
 
 .shoppingcart_button{
-	float:left;
-	clear:left;
-	margin-top:5px;
-	margin-left:40px;
+	float:right;
+	clear:right;
+	margin-top:10px;
+	margin-right:20px;
 	text-align:center;
 	font-size:1.1em;
 	font-weight:bold;
@@ -1233,6 +1243,19 @@ br {
 	color:inherit;
 	text-decoration:none;
 }
+
+.shoppingcart_button a:hover{
+	color:#6b3e26;
+}
+
+#shoppingCart{
+	width:90%;
+	background-color:#6b3e26;
+	margin-top:0px;
+	margin-left:20px;
+	height:60px;
+}
+	
 
 /*===================== Services page==================================*/
 #site_service{
