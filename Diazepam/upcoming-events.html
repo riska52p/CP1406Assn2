@@ -23,7 +23,7 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
+        	<a href="index.html"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
@@ -50,9 +50,9 @@
             <a href="list_products.html">All Products</a>
             <a href="list_categories.html">All Categories</a> </div>
         </li>
-        <li><a href="#services" class="scroll">Services</a></li>
-        <li  class="active"><a href="upcoming-events.html">Events</a></li>
-        <li><a href="#faq" class="scroll">FAQ</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="active"><a href="upcoming-events.html">Events</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#signup">Membership</a></li>
         <li><a href="#order">Shopping Cart</a></li>
@@ -69,14 +69,14 @@
        	<h2 class="page_headingh2">Upcoming Events</h2>
         
         <h3 class="page_headingh3">Our Grand Opening</h3>
-		<p>Our <span style="color:green; font-weight:500; font-size:1.2em;">Grand Opening</span> is <span style="color:darkblue; font-weight:bold; font-size:1.2em;">January 15, 2016</span> – visit us to enjoy <span style="color:red; font-size:large;">discounts and special giveaways!</span></p>
-        <br>
+		<p>Our <span style="color:green; font-weight:500; font-size:1.2em;">Grand Opening</span> is <span style="color:darkblue; font-weight:bold; font-size:1.2em;">January 15, 2016</span> – visit us to enjoy <span class="discount">discounts and special giveaways!</span></p>
         
         <h3 class="page_headingh3">Our calendar</h3>
-        <p>Every desert is a <span class="italic_bold">highlight</span> for us and we know it is <span class="italic_bold">for you</span> as well!. So why not celebrate it with events just focusing on ice-cream? <img src="Images/icons/ice2.png" alt="ice-cream cone"><img src="Images/icons/ice2.png" alt="ice-cream cone"><img src="Images/icons/ice2.png" alt="ice-cream cone"></p>       
-		<p>Check out our event calendar and don’t miss out our next desert events:</p>
+        <p>Every desert is a <span class="italic_bold">highlight</span> for us and we know it is <span class="italic_bold">for you</span> as well!. So why not <span <span class="italic_bold_green">celebrate it</span> with events just focusing on ice-cream? <img src="Images/icons/ice2.png" alt="ice-cream cone"><img src="Images/icons/ice2.png" alt="ice-cream cone"><img src="Images/icons/ice2.png" alt="ice-cream cone"></p>       
+		<p>Check out our <span class="italic_bold_green">event calendar</span> and <span class="italic_bold_green">don’t miss out </span>our next desert events</p>
 		<!--calendar area-->
 		<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=diazepamcafe%40gmail.com&amp;color=%236B3304&amp;ctz=Asia%2FSingapore" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+   	
    	</div>
        	
   <!-- InstanceEndEditable -->      
@@ -85,7 +85,7 @@
  
     <!--sidebar right for search box-->
     <aside>
-		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     		<input name="q" type="hidden" />
             <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
 	    	<p><input id="submit_search" type="submit" value="Search"></p>
@@ -104,8 +104,7 @@
 			curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 		}
 	</script>
-   
-    
+       
     <!-- web browsers that are not supporting the this new HTML5 attribute, make fallback: http://red-team-design.com/how-to-create-a-cool-and-usable-css3-search-box/-->
     <script>
     	$(document).ready(function() {           
@@ -142,7 +141,8 @@
    		<h3 id="label_support">Online support</h3>
         <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
-		<div id="MyLiveChatContainer"></div>
+		<a name="livechat" id="livechat"></a>
+        <div id="MyLiveChatContainer"></div>
 	</aside>
 	<!--//sidebar right for online support-->
     
@@ -171,36 +171,35 @@
                 <h4>Company</h4>
                 <ul class="ul_footer">
                     <li><a href="about-us.html">About us</a></li>
-                    <li><a href="#">Work Here</a></li>                
+                    <li><a href="faq.html#work_here">Work Here</a></li>                
                     <li><a href="upcoming-events.html">Upcomming Events</a></li>
-                    <li><a href="#">Outlets</a></li>
+                    <li><a href="contact.html#outlets">Outlets</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="list_products.html">Products</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Warranty</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Order/Return</h4>
                 <ul class="ul_footer">                
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Digital Gift Card</a></li>
+                    <li><a href="terms_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="terms_conditions.html#order_shipping">Order and Shipping Policy</a></li>                    
+                    <li><a href="terms_conditions.html#delivery_policy">Delivery Policy</a></li>
+                    <li><a href="terms_conditions.html#return_refund">Return Policy</a></li>
                 </ul>
             </div>        
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a target="_self" href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
@@ -211,8 +210,10 @@
     <!--//footer_bottom-->
 	<div id="footer_bottom">
     	<div>© 2015 Diazepam. All rights reserved.</div>
-        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200 Diazepam Crescent,#01-175, Singapore 100000</span>
-		</div>
+        <p><span><a target="_blank" href="http://www.skype.com/en/"><img src="Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+        <span><a target="_blank" href="https://www.gmail.com"><img src="Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
+       <span><a target="_self" href="contact.html"> <img src="Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
+		</p>
 	</div>
     <!--//footer_bottom -->
   

@@ -25,7 +25,7 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
+        	<a href="index.html"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
@@ -54,11 +54,11 @@
           </div>            
         </li>
         <li><a href="#services">Services</a></li>
-        <li><a href="upcoming-events.html" class="scroll">Events</a></li>
-        <li><a href="#faq" class="scroll">FAQ</a></li>
-        <li><a href="contact.html" class="scroll">Contact</a></li>
-        <li><a href="#signup" class="scroll">Membership</a></li>
-        <li><a href="#order" class="scroll">Shopping Cart</a></li>
+        <li><a href="upcoming-events.html">Events</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html">Membership</a></li>
+        <li><a href="#order">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -139,17 +139,19 @@
         <h2 id="label_services"><a href="services.html">Our Services</a></h2>
         <div id="content_services">
           <div class="grid_services">
-            <div><img src="Images/icons/party.png" alt="Ice-cream"></div>
-            <h3><a href="#">Party Planner</a></h3>
+            <div><a href="services.html#party_planer"><img src="Images/icons/party.png" alt="Ice-cream"></a></div>
+            <h3><a href="services.html#party_planer">Party Planner</a></h3>
             <p class="text_justify">Connect with our reliable and diligent party planners. We offer free-flow ice cream parties for kids to adults.</p>
           </div>
           <div class="grid_services">
-            <div><img src="Images/icons/truck.png" alt="Ice-cream"></div>
-            <h3><a href="#">Free & Fast Delivery</a></h3>
-            <p class="text_justify">We offer free &amp; fast deliveries when a minimum purchase is made. Don't worry, your ice cream won't melt.</p>          </div>
+            <div><a href="services.html#delivery_service"><img src="Images/icons/truck.png" alt="Ice-cream"></a></div>
+            <h3><a href="services.html#delivery_service">Free & Fast Delivery</a></h3>
+            <p class="text_justify">We offer free &amp; fast deliveries when a minimum purchase is made. Don't worry, your ice cream won't melt.</p> 
+          </div>
+            
           <div class="grid_services">
-            <div><img src="Images/icons/shake.png" alt="Ice-cream"></div>
-            <h3><a href="#">Exchange & Return</a></h3>
+            <div><a href="services.html#exchange_return"><img src="Images/icons/shake.png" alt="Ice-cream"></a></div>
+            <h3><a href="services.html#exchange_return">Exchange & Return</a></h3>
             <p class="text_justify">We have a generous exchange and return policy that allows you to exchange your ice cream flavour.</p>
           </div>
           <div class="clearfix"></div>
@@ -175,7 +177,7 @@
  
     <!--sidebar right for search box-->
     <aside>
-		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     		<input name="q" type="hidden" />
             <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
 	    	<p><input id="submit_search" type="submit" value="Search"></p>
@@ -194,8 +196,7 @@
 			curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 		}
 	</script>
-   
-    
+       
     <!-- web browsers that are not supporting the this new HTML5 attribute, make fallback: http://red-team-design.com/how-to-create-a-cool-and-usable-css3-search-box/-->
     <script>
     	$(document).ready(function() {           
@@ -232,7 +233,8 @@
    		<h3 id="label_support">Online support</h3>
         <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
-		<div id="MyLiveChatContainer"></div>
+		<a name="livechat" id="livechat"></a>
+        <div id="MyLiveChatContainer"></div>
 	</aside>
 	<!--//sidebar right for online support-->
     
@@ -261,36 +263,35 @@
                 <h4>Company</h4>
                 <ul class="ul_footer">
                     <li><a href="about-us.html">About us</a></li>
-                    <li><a href="#">Work Here</a></li>                
+                    <li><a href="faq.html#work_here">Work Here</a></li>                
                     <li><a href="upcoming-events.html">Upcomming Events</a></li>
-                    <li><a href="#">Outlets</a></li>
+                    <li><a href="contact.html#outlets">Outlets</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="list_products.html">Products</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Warranty</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Order/Return</h4>
                 <ul class="ul_footer">                
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Digital Gift Card</a></li>
+                    <li><a href="terms_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="terms_conditions.html#order_shipping">Order and Shipping Policy</a></li>                    
+                    <li><a href="terms_conditions.html#delivery_policy">Delivery Policy</a></li>
+                    <li><a href="terms_conditions.html#return_refund">Return Policy</a></li>
                 </ul>
             </div>        
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a target="_self" href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
@@ -301,8 +302,10 @@
     <!--//footer_bottom-->
 	<div id="footer_bottom">
     	<div>© 2015 Diazepam. All rights reserved.</div>
-        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200 Diazepam Crescent,#01-175, Singapore 100000</span>
-		</div>
+        <p><span><a target="_blank" href="http://www.skype.com/en/"><img src="Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+        <span><a target="_blank" href="https://www.gmail.com"><img src="Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
+       <span><a target="_self" href="contact.html"> <img src="Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
+		</p>
 	</div>
     <!--//footer_bottom -->
   
