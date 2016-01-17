@@ -681,25 +681,28 @@ h2#label_services{
 
 }
 
-#content_services{	
-	color:#09F; /*change when it hovers*/
-	width:100%;
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
+#content_services{
+	color: #6b3e26; /*change when it hovers*/
+	width: 100%;
+	border-radius: 5px;
+	-noz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	
 }
 
 .grid_services{ /*for each service*/
-	width:27%;
-	margin:0% 2% 2% 2%;
-	padding:1%;
-	height:350px;	
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #c2f2d0; /*lightblue*/
-	float:left;
+	width: 27%;
+	padding: 1%;
+	height: 420px;
+	border-radius: 5px;
+	-noz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #c2f2d0; /*lightblue*/
+	float: left;
+	margin-top: 2.5%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
 }
 
 .grid_services img{
@@ -944,14 +947,17 @@ h3.product_headingh3{
 
 h3.product_headingh3 a{
 	text-decoration:none;
+	color: #FC6;
 }
 
 h3.product_headingh3 a:hover{
-	color:#6b3e26 ;
+	background-color:#fdf5c9;
+	color: #6b3e26;
 }
 
 h3.product_headingh3:hover{	
 	background-color:#fdf5c9;
+	color: #6b3e26;
 }
 
 
@@ -1088,37 +1094,21 @@ li.ice{
 }
 li.phone{
 	background:url(../Images/icons/phone.png) no-repeat left top;
-	padding-left: 4%;		
+	padding-left:4%;		
 }
 li.mail{
 	background: url(../Images/icons/mail.png) no-repeat left top;
 	padding-left:4%;
-
 }
 li.loc{
 	background: url(../Images/icons/loc.png) no-repeat left top;
 	padding-left:4%;
-	
-
 }
 
 #list_outlets{
 	float:left;
 	width:40%;
 }
-
-#contact iframe{
-	width:55%;
-	margin:0 auto;
-	border-width:0;
-	height:500px;
-	frameborder:10px;
-	scrolling:no;
-	float:right;
-}
-
-
-
 /*----------------------------------------membership page-------------------------------------------------------*/
 
 #member{
@@ -1164,10 +1154,18 @@ br {
 #message { padding-left: 5em; }
 
 /*============================Upcomming events===================================*/
-=======
->>>>>>> origin/master
 
-/*<-------------------Shopping Cart--------------------------->*/
+#contact iframe{
+	width:55%;
+	margin:0 auto;
+	border-width:0;
+	height:500px;
+	frameborder:10px;
+	scrolling:no;
+	float:right;
+}
+
+/*<-------------------Shopping Cart-------------------------*/
 
 .simpleCart_items{
 	float:left;
@@ -1180,6 +1178,7 @@ br {
 .simpleCart_items table{
 	border:#6b3e26 thick solid;
 	padding:5px;
+	width:90%;
 }
 
 .simpleCart_items table th{

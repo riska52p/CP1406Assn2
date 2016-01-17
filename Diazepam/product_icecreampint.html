@@ -21,8 +21,11 @@
     }
   });
 </script>
-
-
+<script type="text/javascript">
+simpleCart.bind( "afterAdd" , function( item ){
+  window.alert( item.get("name") + " was added to the cart!" );
+});
+</script>
 </head>
 
 <body>
@@ -35,9 +38,9 @@
                 
         <div id="social_icons">
         	<ul>
-            	<li><a href="#"><img src="Templates/Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="Templates/Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="Templates/Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a href="#"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -46,21 +49,21 @@
     <!--nav_bar-->
     <div id="nav_bar">
       <ul>
-        <li><a href="Templates/index.html">Home</a></li>
-        <li><a href="Templates/about-us.html">About us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
         <li class="dropdown"> <a class="dropbtn active_product">Products</a>
           <div class="dropdown-content"> 
-          	<a href="Templates/prodcat_classic.html">Classic Ice Cream</a> 
-            <a href="Templates/prodcat_creation.html">Ice Cream Creations</a> 
-            <a href="Templates/prodcat_drink.html">Iced Drinks</a> 
-            <a href="Templates/product-list.html">All Products</a> </div>
+          	<a href="prodcat_classic.html">Classic Ice Cream</a> 
+            <a href="prodcat_creation.html">Ice Cream Creations</a> 
+            <a href="prodcat_drink.html">Iced Drinks</a> 
+            <a href="product-list.html">All Products</a> </div>
         </li>
         <li><a href="#services" class="scroll">Services</a></li>
-        <li><a href="Templates/upcoming-events.html" class="scroll">Events</a></li>
+        <li><a href="upcoming-events.html" class="scroll">Events</a></li>
         <li><a href="#faq" class="scroll">FAQ</a></li>
         <li><a href="#contact" class="scroll">Contact</a></li>
         <li><a href="#signup" class="scroll">Membership</a></li>
-        <li><a href="#order" class="scroll">Shopping Cart</a></li>
+        <li><a href="shopping-cart.html" class="scroll">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -74,21 +77,22 @@
       <div id="product1image">
       <img src="Images/Products/prodcat1_icecreampint.png" width="300" height="300" alt="Ice cream pint"></div>
       <div id="product1descPrice">
-        <h1>Ice Cream Pint</h1>
+      <div class="simpleCart_shelfItem">
+        <h1 class="item_name">Ice Cream Pint</h1>
         <h3>Classic Ice Cream</h3>
         <hr>
         <form name="form2" method="post" action="">
           <p>Flavours:    
-            <select name="falvoursList" size="1" id="product1flavoursList">
-              <option>Vanilla</option>
-              <option>Chocolate</option>
-              <option>Mango</option>
-              <option>Coconut</option>
-              <option>Mixed Berry</option>
-              <option>Nata de Coco</option>
-              <option>Dark Chocolate</option>
-              <option>Pistachio</option>
-              <option>Cotton Candy</option>
+            <select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
+              <option value="Vanilla">Vanilla</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Mango">Mango</option>
+              <option value="Coconut">Coconut</option>
+              <option value="Mixed Berry">Mixed Berry</option>
+              <option value="Nata de Coco">Nata de Coco</option>
+              <option value="Dark Chocolate">Dark Chocolate</option>
+              <option value="Pistachio">Pistachio</option>
+              <option value="Cotton Candy">Cotton Candy</option>
             </select>
           </p>
           <label for="flavours"></label>
@@ -96,11 +100,12 @@
             <label for="product1Qty"></label>
             <span id="QtyTF">
             <label for="product1Qty"></label>
-            <input type="text" name="product1Qty" id="product1Qty">
+            <input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity">
           <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
-          <h2>S$ 16.50 &nbsp;</h2>          
-            <p><input type="submit" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart">
+          <h2 class="item_price">S$ 16.50 &nbsp;</h2>          
+            <p><input type="submit" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;">
         </form></p>
+        </div>
       </div>
     </div>
     <div id="product1desc">
@@ -112,7 +117,6 @@
     <script type="text/javascript">
 var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {minValue:0, maxChars:3});
     </script>
-
   <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
  
@@ -173,7 +177,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
     <!--sidebar right for online support-->         
     <aside id="sidebar_right_top">
    		<h3 id="label_support">Online support</h3>
-        <p><img class="img_phone" src="Templates/Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
 		<div id="MyLiveChatContainer"></div>
 	</aside>
@@ -230,10 +234,10 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="Templates/contact.html"><img src="Templates/Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Templates/Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Templates/Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Templates/Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a href="Templates/contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
