@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Soft Drink</title>
+<title>Soft Drink - Iced Drinks - Diazepam</title>
 <!-- InstanceEndEditable -->
 <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
 <link href="SpryAssets/SpryValidationConfirm.css" rel="stylesheet" type="text/css">
 <link href="Styles/productstyle.css" rel="stylesheet" type="text/css">
-<link href="Styles/globalstyle.css" rel="stylesheet" type="text/css">
+<link href="Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for globalstyle-->
 <script src="jquery/jquery-1.11.3.min.js"></script>
 <script src="jquery/wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
 <script type="text/javascript">
@@ -33,14 +33,14 @@ simpleCart.bind( "afterAdd" , function( item ){
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
+        	<a href="index.html"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
         	<ul>
-            	<li><a href="#"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -56,14 +56,16 @@ simpleCart.bind( "afterAdd" , function( item ){
           	<a href="prodcat_classic.html">Classic Ice Cream</a> 
             <a href="prodcat_creation.html">Ice Cream Creations</a> 
             <a href="prodcat_drink.html">Iced Drinks</a> 
-            <a href="product-list.html">All Products</a> </div>
+            <a href="list_categories.html">All Categories</a>
+            <a href="list_products.html">All Products</a>
+          </div>            
         </li>
-        <li><a href="#services" class="scroll">Services</a></li>
-        <li><a href="upcoming-events.html" class="scroll">Events</a></li>
-        <li><a href="#faq" class="scroll">FAQ</a></li>
-        <li><a href="#contact" class="scroll">Contact</a></li>
-        <li><a href="#signup" class="scroll">Membership</a></li>
-        <li><a href="shopping-cart.html" class="scroll">Shopping Cart</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="upcoming-events.html">Events</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="member.html">Membership</a></li>
+        <li><a href="shopping-cart.html">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -71,44 +73,62 @@ simpleCart.bind( "afterAdd" , function( item ){
     <!--//maincontent-->
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-     <div id="product1nav">
-      <p class="product1navlink"><a href="list_categories.html">Products</a> &gt; <a href="prodcat_drink.html">Iced Drinks</a>&gt; <a href="product_softdrinks.html">Soft Drinks</a></p>
-      <hr class="product1hrTop">
-      <div id="product1image">
-      <img src="Images/Products/prodcat3_softdrink.png" width="300" height="300" alt="soft drink"></div>
-      <div id="product1descPrice">
-      <div class="simpleCart_shelfItem">
-        <h1 class="item_name">Soft Drinks</h1>
-        <h3>Iced Drinks</h3>
-        <hr>
-        <form name="form2" method="post" action="">
-          <p>Flavours:    
-            <select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
-              <option value="Coca-Cola">Coca-Cola</option>
-              <option value="Sprite">Sprite</option>
-              <option value="Fanta Orange">Fanta Orange</option>
-              <option value="Root Beer">Root Beer</option>
-            </select>
-          </p>
-          <label for="flavours"></label>
-          <p>Quantity: 
-            <label for="product1Qty"></label>
-            <span id="QtyTF">
-            <label for="product1Qty"></label>
-            <input type="text" name="product1Qty" id="product1Qty" class="item_Quantity" value="1">
-          <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
-          <h2 class="item_price">S$ 1.90 &nbsp;</h2>          
-            <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;">
-        </form></p>
-        </div>
+		<p>
+        	<span class="headprod_level1"><a href="list_categories.html">Product Categories</a></span>
+            <span class="arrow">&gt;</span>
+            <span class="headprod_level2"><a href="prodcat_drink.html">Iced Drinks</a></span>
+            <span class="arrow">&gt;</span>
+            <span class="headprod_level3">Soft Drinks</span>
+        </p>
+    
+    	<div class="content_3cols">
+        
+      		<div id="product1image">
+      			<img src="Images/Products/prodcat3_softdrink.png" width="300" height="300" alt="soft drink">
+            </div>
+      
+      		<div id="product1descPrice">
+           		<hr class="hr_line">
+                <h1 class="item_name_1">Soft Drinks</h1>        
+        		
+        		<form name="form2" method="post" action="">
+          		<p>Flavours:    
+            	<select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
+              		<option value="Coca-Cola">Coca-Cola</option>
+              		<option value="Sprite">Sprite</option>
+              		<option value="Fanta Orange">Fanta Orange</option>
+              		<option value="Root Beer">Root Beer</option>
+            	</select>
+          		</p>
+          		<label for="flavours"></label>
+          		<p>Quantity: 
+            	<label for="product1Qty"></label>
+            	<span id="QtyTF">
+            	<label for="product1Qty"></label>
+            	<input type="text" name="product1Qty" id="product1Qty" class="item_Quantity" value="1"></span>
+          		<span class="textfieldRequiredMsg">A value is required.</span>
+                <span class="textfieldInvalidFormatMsg">Invalid format.</span>
+                <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
+                <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
+                </p>
+          		<p>Unit Price:</p>
+                <h2 class="item_price">S$ 1.90 &nbsp;</h2>          
+            	<p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
+        		</form>
+        	</div>
+      
+    		<div id="product1desc">
+    			<hr>
+    			<h3>Description</h3>
+    			<p>A simple glass of  soft drink to quench your thirst and craving for sugar. It complements well with our ice cream products. The soft drink is bottled for our delivery option.</p>
+                <p class="italic_bold_green">More info about benifit of soft drinks</p>
+                <p>It has been established that using large amounts of soft drinks regularly can be detrimental to your health. If used in moderation soft drinks can have some beneficial effects on your body <a class="anc_link" href="http://www.livestrong.com/article/260283-what-are-the-benefits-of-soft-drinks/">(Dr. Robert Petros)</a></p>
+                <ul>
+                	<li>Caffeine Benefits</li>
+                    <li>Carbonated Water</li>
+                </ul>
+    		</div>
       </div>
-    </div>
-    <div id="product1desc">
-    <hr class="product1hrTop">
-    <h3>Description</h3>
-    <p>A simple glass of  soft drink to quench your thirst and craving for sugar. It complements well with our ice cream products.</p>
-    <p>The soft drink is bottled for our delivery option.</p>
-    </div>
     <script type="text/javascript">
 var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {minValue:0, maxChars:3});
     </script>
@@ -118,7 +138,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
  
      <!--sidebar right for search box-->
     <aside>
-		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     		<input name="q" type="hidden" />
             <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
 	    	<p><input id="submit_search" type="submit" value="Search"></p>
@@ -175,6 +195,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
    		<h3 id="label_support">Online support</h3>
         <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
+        <a name="livechat" id="livechat"></a>
 		<div id="MyLiveChatContainer"></div>
 	</aside>
 	<!--//sidebar right for online support-->
@@ -203,39 +224,38 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Work Here</a></li>                
-                    <li><a href="#">Upcomming Events</a></li>
-                    <li><a href="#">Outlets</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="faq.html#work_here">Work Here</a></li>                
+                    <li><a href="upcoming-events.html">Upcomming Events</a></li>
+                    <li><a href="contact.html#outlets">Outlets</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="Templates/products.html">Products</a></li>
-                    <li><a href="Templates/services.html">Services</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Warranty</a></li>
+                    <li><a href="list_products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Order/Return</h4>
                 <ul class="ul_footer">                
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Digital Gift Card</a></li>
+                    <li><a href="terms_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="terms_conditions.html#order_shipping">Order and Shipping Policy</a></li>                    
+                    <li><a href="terms_conditions.html#delivery_policy">Delivery Policy</a></li>
+                    <li><a href="terms_conditions.html#return_refund">Return Policy</a></li>
                 </ul>
             </div>        
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="Templates/contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a target="_self" href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
-        	</div>       
+            </div>      
             <div class="clearfix"></div>
       </div>
     </div>
@@ -243,9 +263,12 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
     
     <!--//footer_bottom-->
 	<div id="footer_bottom">
-    	<div>© 2015 Diazepam. All rights reserved.</div>
-        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200, Diazepam Crescent, 100000 Singapore</span>
-		</div>
+    	<p>
+        	<span>© 2015 Diazepam. All rights reserved.</span>
+        	<span><a target="_blank" href="http://www.skype.com/en/"><img src="Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+        	<span><a target="_blank" href="https://www.gmail.com"><img src="Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
+       		<span><a target="_self" href="contact.html"> <img src="Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
+		</p>
 	</div>
     <!--//footer_bottom -->
   
