@@ -55,8 +55,8 @@
         <li><a href="upcoming-events.html" class="scroll">Events</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="#signup">Membership</a></li>
-        <li><a href="#order" class="scroll">Shopping Cart</a></li>
+        <li><a href="member.html">Membership</a></li>
+        <li><a href="shopping-cart.html">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -199,8 +199,8 @@
     
     <!--//footer_bottom-->
 	<div id="footer_bottom">
-    	<p>© 2015 Diazepam. All rights reserved.</p>
-        <p><span><a target="_blank" href="http://www.skype.com/en/"><img src="../Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+    	<p><span>© 2015 Diazepam. All rights reserved.</span>
+        <span><a target="_blank" href="http://www.skype.com/en/"><img src="../Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
         <span><a target="_blank" href="https://www.gmail.com"><img src="../Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
        <span><a target="_self" href="../contact.html"> <img src="../Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
 		</p>

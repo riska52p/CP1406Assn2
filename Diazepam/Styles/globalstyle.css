@@ -29,7 +29,7 @@ body{
 
 #container{
 	width:1100px;	
-	padding-top:0;
+	padding:0;
 	margin:0 auto;	
 }
 
@@ -864,19 +864,19 @@ h2#label_services{
 
 /*footer_bottom*/
 #footer_bottom {
-    background-color:#6b3e26;
-    padding-top:1%;
-	margin-bottom:-15%;
-	padding-bottom:1%;
-    text-align: center;
-	height:40px;
-    color: #fdf5c9;
-	font-size:11px;
+    background-color:#6b3e26;    
+	text-align:center;
+	height:45px;
+    color: #fdf5c9;	
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-    font-size:0.9em;
-	line-height:0.5em;
+    
+}
+#footer_bottom p{
+	padding-top:10px;
+	margin-top:10px;
+	font-size:0.9em;	
 }
 
 #footer_bottom span{
@@ -1000,10 +1000,20 @@ span.headprod_level2{
 	color:#6b3e26;	
 }
 
+span.headprod_level3{
+	font-size:1.5em;
+	text-align:center;
+	margin:0%;
+	padding:0%;
+	font-family:"Dimbo Regular";
+	font-weight:400;
+	color:#6b3e26;	
+}
 span.arrow{
 	color:green;
-	font-size:0.9em;
-	margin:0% 0.8%;
+	font-size:2em;
+	margin:0% 0.1%;
+	font-weight:900;
 }
 
 
@@ -1179,8 +1189,7 @@ li.loc{
 	float:right;
 }
 /*================faq===================*/
-.fqa_questions{
-	font-style:italic;
+.fqa_questions{	
 	font-weight:bold;
 	font-size:1.2em;
 	color:#6b3e26;

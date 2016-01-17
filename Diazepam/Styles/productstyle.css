@@ -2,11 +2,12 @@
 /* CSS Document */
 
 /*--------------------------------Individual Product-------------------------*/
-#product1nav {
-	color:#600;
-	font-size:0.85em;
-	text-align:left;
-	font-weight: normal;
+.item_name_h1{
+	font-size:2.3em;
+	font-weight:bold;
+	margin-bottom:10%;
+	font-family:"Dimbo Regular";
+	
 }
 
 #product1image{
@@ -18,32 +19,18 @@
 
 #product1descPrice{
 	width:60%;
-	margin-left:20px;
-	margin-top:0px;
+	margin-left:2%;
+	margin-top:2%;
 	float:right;
-}
-#product1nav h1 {
-	color: #6b3e26;
-	font-size: 2.0em;
-	font-weight: 900;
-	text-align: left;
-	font-family: "Dimbo Regular";
-	letter-spacing: 0.1em;
+	line-height:1.3em;
 }
 
-#product1descPrice h2 {
-	padding-top:5px;
-	color: #6b3e26;
-	font-size:1.75em;
-	text-align:left;
-	font-family: "Dimbo Regular";
-	letter-spacing: 0.1em;
-}
 #product1descPrice h3 {
-	color: #F07818;
+	color: green;
 	font-size: 1.25em;
 	text-align: left;
 }
+
 #product1descPrice p{
 	color:#000;
 	font-size:1.0em;
@@ -75,18 +62,32 @@
 
 #product1desc{
 	float:left;
-	margin-top:20px;
-	width:100%;
+	margin-top:5%;
+	width:96%;
+	line-height:1.3em;
 }
 #product1desc h3{
 	color: #6b3e26;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	text-align: left;
 }
-.product1hrTop{
-	height:2px;
-	background-color:#c2f2d0;
+
+.hr_line{
+	width:60%;
+	margin:0% 40% 0% 0%;
+	
 }
+
+
+.item_price{
+	margin-top:-5%;
+	padding-top:0%;
+	margin-left:18%;
+	padding-left:0%;
+	font-size:1.8em;
+	color:green;
+}
+
 
 .product1navlink{
 	color:#F07818;
