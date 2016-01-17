@@ -1236,7 +1236,7 @@ br {
 }
 
 /*===================== Services page==================================*/
-#services{
+#site_service{
 	margin:0 2%;		
 	border-radius:5px;
 	-noz-border-radius:5px;
@@ -1254,3 +1254,6 @@ a.services:link, a.services:visited, a.services:active{
 a.services:hover{
 	color:green;
 }
+
+
+/*===================== Order form ==================================*/
