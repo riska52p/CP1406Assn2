@@ -3,10 +3,10 @@
 
 /*--------------------------------Individual Product-------------------------*/
 #product1nav {
-	color: #360;
+	color:#600;
 	font-size:0.85em;
 	text-align:left;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #product1image{
@@ -23,20 +23,24 @@
 	float:right;
 }
 #product1nav h1 {
-	color:#3C0;
-	font-size:2.0em;
-	font-weight:900;
+	color: #6b3e26;
+	font-size: 2.0em;
+	font-weight: 900;
 	text-align: left;
+	font-family: "Dimbo Regular";
+	letter-spacing: 0.1em;
 }
 
 #product1descPrice h2 {
 	padding-top:5px;
-	color: #3C0;
+	color: #6b3e26;
 	font-size:1.75em;
 	text-align:left;
+	font-family: "Dimbo Regular";
+	letter-spacing: 0.1em;
 }
 #product1descPrice h3 {
-	color: #360;
+	color: #F07818;
 	font-size: 1.25em;
 	text-align: left;
 }
@@ -59,10 +63,14 @@
 
 #product1AddtoCart{
 	font-size:1.5em;
-	background-color:#80FF80;
-	color:#360;
+	background-color:#fdf5c9;
+	color:#F07818;
 	font-weight:bold;
 	padding:5px;
+}
+
+#product1AddtoCart:hover{
+	color:#6b3e26;
 }
 
 #product1desc{
@@ -71,41 +79,41 @@
 	width:100%;
 }
 #product1desc h3{
-	color: #360;
+	color: #6b3e26;
 	font-size: 1.25em;
 	text-align: left;
 }
 .product1hrTop{
 	height:2px;
-	background-color:#060;
+	background-color:#c2f2d0;
 }
 
 .product1navlink{
-	color:#360;
+	color:#F07818;
 	text-decoration:none;
 	font-size:2em;
 	font-family:"Dimbo Regular";
 }
 
 .product1navlink a:link{
-	color:#360;
+	color:inherit;
 	text-decoration:none;
 }
 .product1navlink a:visited{
-	color:#360;
+	color:#F07818;
 	text-decoration:none;
 }
 .product1navlink a:active{
-	color:#390;
+	color:#630;;
 	text-decoration:underline;
 }
 .product1navlink a:hover{
-	color:#390;
+	color:#630;
 	text-decoration:underline;
 }
-/*<--------------------------------End of Individual Product Style --------------------------------------->*/
+/*<--------------------------------End of Individual Product Style -------------------------------------*/
 
-/*<--------------------------ProductList Style ------------------------------------------------------------>*/
+/*<--------------------------ProductList Style ----------------------------------------------------------*/
 .productlistimg{
 	margin-top:20px;
 	margin-left:10px;
