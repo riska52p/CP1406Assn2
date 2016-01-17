@@ -53,6 +53,7 @@ body{
 	width:142px;
 	height:135px;
 	display:inline-block;		
+	margin-top:-2px;
 }
 
 #logo a{
@@ -87,6 +88,8 @@ body{
 #social_icons{
 	height:20px;
 	float:right;
+	margin-top:-14px;
+	padding-top:0;
 }
 
 #social_icons ul{
@@ -96,6 +99,7 @@ body{
 #social_icons ul li{	
 	margin:0 2px;
 	padding:0;
+	float:left;
 }
 
 #social_icon ul li a{
@@ -306,14 +310,15 @@ a:hover, a:active{
 	-webkit-border-radius:5px;
 }
 
+
 #search{
 	width:90%;
 	margin:0 5%;
 	padding:0;
 	height:35px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
-	 
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);	 
 }
+
 
 #submit_search{
 	width:50%;
@@ -539,7 +544,7 @@ h3#label_reviews{
 	margin: 5% 8% 5% 2%;    
 	padding: 1%;	
 	font: bold 1em Arial, Helvetica;
-    color:blue ;
+    color:green;
 	background-color:#fdf5c9 ;
 	cursor:pointer;
 	float:right;
@@ -571,11 +576,6 @@ h3#label_reviews{
 }
 
 
-
-
-
-
-
 /*--//sidebar_right_bottom--*/
 
 /*--maincontent--*/
@@ -583,6 +583,10 @@ h3#label_reviews{
 	width:79%;
 	margin:2% 1% 2% 0%;
 	float:left;
+	line-height:1.2em;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;	
 }
 
 /*--banner--*/
@@ -597,7 +601,6 @@ h3#label_reviews{
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;	
 }
-
 
 
 /*--//banner--*/
@@ -882,24 +885,9 @@ h2#label_services{
 /*--//footer--*/
 
 
-/*----------------------------------------allproduct pages-------------------------------------------------------*/
-#allproducts{
-	margin:0 auto;
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
-}
-
-.label_allproducts{
-	text-align:center;
-	font-size: 2em;
-    font-family: 'Marvel-Regular';
-    color: #F07818;
-    font-weight: 800;	
-}
-
-.content_allproducts{	
-	color:blue; /*change when it hovers*/
+/*=============Product Categories============================*/
+.content_3cols{	
+	color:#6b3e26; /*change when it hovers*/
 	width:100%;
 	border-radius:5px;
 	-noz-border-radius:5px;
@@ -907,30 +895,67 @@ h2#label_services{
 	margin:-1%;
 	padding:0;	
 }
-
-.grid_allproducts{ /*for each service*/
+.grid_1colsOf3{ /*for each service*/
 	width:27%;
-	margin:2%;
+	margin:1.5%;
 	padding:0% 1%;
-	height:350px;	
+	height:450px;	
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border:1px solid #F2FFFE; /*lightblue*/
-	float:left;	
+	float:left;
+	border:2px solid #ffcb85 ; 	
 }
 
-.grid_allproducts img{
-	width:150px;
-	height:150px;
-	padding:1% 12.5%;
+h3.product_headingh3{
+	font-size:1.5em;
+	text-align:center;
+	margin:5%;
+	padding:5%;
+	font-family:"Dimbo Regular";
+	font-weight:400;	
+	background-color:#6b3e26;
+	text-shadow:none;
+	color:#fdf5c9;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.grid_1colsOf3 img{
+	width:220px;
+	height:220px;
+	padding:1% 2%;
 	margin:0 auto;
 	text-align:center;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;	
 }
 
-.grid_allproducts{
-	text-align:justify;
+.grid_1colsOf3 img:hover{
+	border:1px solid #c2f2d0;
 }
+
+.grid_1colsOf3:hover{
+	border:2px solid #6b3e26;	
+}
+
+h3.product_headingh3 a{
+	text-decoration:none;
+}
+
+h3.product_headingh3 a:hover{
+	color:#6b3e26 ;
+}
+
+h3.product_headingh3:hover{	
+	background-color:#fdf5c9;
+}
+
+
+
 
 span.item_price{
 	color: #000;
@@ -968,30 +993,76 @@ p.pric1 {
 }
 */
 
-/*----------------------------------------about us page-------------------------------------------------------*/
-#about{
-	margin: 0px;
-	padding-left: 50px;
-	padding-right:60px;
+
+/*============================Upcomming events===================================*/
+
+/*iframe on Upcoming events*/
+#upcoming_events iframe{
+	width:98%;
+	margin:0 auto;
+	border-width:0;
+	height:400px;
+	frameborder:20px;
+	scrolling:no;
+}
+
+h2.page_headingh2{
+	color: #6b3e26;
+	font-size:2em;
+	margin-top:0%;
+	font-family:"Dimbo Regular";
+	font-weight:400;
+}
+
+h3.page_headingh3{
+	font-size:1.5em;
+	margin:0% 78% 0% 0%;
+	padding:1%;
+	font-family:"Dimbo Regular";
+	font-weight:400;	
+	background-color:#6b3e26;
+	text-shadow:none;
+	color:#fdf5c9;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-	line-height: 1.5em;
 }
 
-em{
-	font-style: normal;
-	font-size: 150%;
-	text-transfor: uppercase;
+.italic_bold{
+	font-style:italic;
+	font-weight:bold;
 }
 
-A.class2 {color:#09F;}
-A.class2:link {text-decoration: none; color: #09F;}
-A.class2:visited {text-decoration: none; color:#09F8;}
-A.class2:hover {text-decoration: none; color:#FD1B62;}
-A.class2:active {text-decoration: none; color:#09F;}
+/*===============About-us page==========================*/
+#about{
+	margin:0 2%;		
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	line-height:1.2em;
+}
+#about p{
+	line-height:1.2em;
+}
 
-ul.about{
+a.anc_5outlets:link,a.anc_5outlets:visited, a.anc_5outlets:active,
+a.anc_product:link, a.anc_product:visited, a.anc_product:active{
+	font-weight:bold;
+	color:blue;	
+	text-decoration:none;
+}
+
+a.anc_5outlets:hover, a.anc_product:hover{
+	color:green;
+}
+
+#vision, #mission{
+	font-weight:bold;
+	font-size:1.1em;
+	color:#6b3e26;
+}
+
+#about ul{
 	list-style-type: none;
 }
 
@@ -1003,62 +1074,46 @@ li.ice{
 }
 /*--//about us--*/
 
-/*----------------------------------------contact page-------------------------------------------------------*/
+/*=====================Contact page==================================*/
 #contact{
-	margin: 0px;
-	padding-left: 50px;
-	padding-right:60px;
+	margin:0 2%;		
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-	line-height:1.5em;
+	line-height:1.2em;
 }
-
-em{
-	font-style: normal;
-	font-size: 150%;
-	text-transfor: uppercase;
-}
-
-A.class2 {color:#09F;}
-A.class2:link {text-decoration: none; color: #09F;}
-A.class2:visited {text-decoration: none; color:#09F8;}
-A.class2:hover {text-decoration: none; color:#FD1B62;}
-A.class2:active {text-decoration: none; color:#09F;}
-
-ul.contact{
+#contact ul{
 	list-style-type: none;
+	line-height:1.8em;
 }
-
 li.phone{
 	background:url(../Images/icons/phone.png) no-repeat left top;
-	height: 45px;
-	padding-left: 40px;
-	
+	padding-left:4%;		
 }
-
 li.mail{
 	background: url(../Images/icons/mail.png) no-repeat left top;
-	height: 45px;
-	padding-left: 40px;
-	
+	padding-left:4%;
 }
-
 li.loc{
 	background: url(../Images/icons/loc.png) no-repeat left top;
-	height: 45px;
-	padding-left: 40px;
-	
+	padding-left:4%;
+}
+
+#list_outlets{
+	float:left;
+	width:40%;
 }
 
 #contact iframe{
-	width:98%;
+	width:55%;
 	margin:0 auto;
 	border-width:0;
-	height:400px;
-	frameborder:20px;
+	height:500px;
+	frameborder:10px;
 	scrolling:no;
+	float:right;
 }
+<<<<<<< HEAD
 
 /*----------------------------------------membership page-------------------------------------------------------*/
 
@@ -1105,22 +1160,74 @@ br {
 #message { padding-left: 5em; }
 
 /*============================Upcomming events===================================*/
+=======
+>>>>>>> origin/master
 
-/*iframe on Upcoming events*/
-#upcoming_events iframe{
-	width:98%;
-	margin:0 auto;
-	border-width:0;
-	height:400px;
-	frameborder:20px;
-	scrolling:no;
+/*<-------------------Shopping Cart--------------------------->*/
+
+.simpleCart_items{
+	float:left;
+	clear:left;
+	width:100%;
+	margin:20px;
+	color:#6b3e26;
 }
 
-h2.page_heading{
-	color: #6b3e26;
-	font-size:2em;
-	margin-top:0%;
-	font-family:"Dimbo Regular";
-	font-weight:400;
+.simpleCart_items table{
+	border:#6b3e26 thick solid;
+	padding:5px;
+}
+
+.simpleCart_items table th{
+	background-color:#c2f2d0;
+	padding:5px;
+	border-bottom:#6b3e26 medium solid;
+}
+
+.simpleCart_items table td{
+	padding:5px;
+}
+
+.simpleCart_items a{
+	text-decoration:none;
+	color:#F07818;
+}
+
+#shoppingcart_total{
+	float:left;
+	clear:left;
+	margin-top:20px;
+	margin-left:20px;
+	text-align:left;
+	font-size:1.2em;
+}
+
+.simpleCart_total{
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+	text-align:left;
+	font-size:1.2em;
+	font-weight:bold;
+	color:#6b3e26;
+}
+
+.shoppingcart_button{
+	float:left;
+	clear:left;
+	margin-top:5px;
+	margin-left:40px;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:bold;
+	background-color:#fdf5c9;
+	color:#F07818;
+	padding:5px;
+	border:medium solid #FFB062;
+}
+
+.shoppingcart_button a{
+	color:inherit;
+	text-decoration:none;
 }
 
