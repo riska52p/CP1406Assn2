@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Upcoming Events</title>
+<title>Diazepam | Contact Us</title>
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -23,15 +23,14 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/logo.png" alt="logo"></a>            
+        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
         	<ul>
-            	<li><a href="#"><img src="Images/Socialicons/facebook.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon"></a></li>
-                <li><a href="#"><img src="Images/Socialicons/youtube.png" alt="youtube icon"></a></li>
+            	<li><a href="#"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -44,12 +43,16 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About us</a></li>
         <li class="dropdown"> <a class="dropbtn">Products</a>
-          <div class="dropdown-content"> <a href="#">Classic Ice Cream</a> <a href="product-list.html">Ice Cream Creations</a> <a href="#">Iced Drinks</a> <a href="#">All Products</a> </div>
+          <div class="dropdown-content"> 
+          	<a href="prodcat_classic.html">Classic Ice Cream</a> 
+            <a href="prodcat_creation.html">Ice Cream Creations</a> 
+            <a href="prodcat_drink.html">Iced Drinks</a> 
+            <a href="product-list.html">All Products</a> </div>
         </li>
         <li><a href="#services" class="scroll">Services</a></li>
         <li><a href="upcoming-events.html">Events</a></li>
         <li><a href="#faq" class="scroll">FAQ</a></li>
-        <li><a href="contact.html" class="scroll">Contact</a></li>
+        <li><a href="#contact" class="scroll">Contact</a></li>
         <li class="active"><a href="member.html" class="scroll">Membership</a></li>
         <li><a href="#order" class="scroll">Shopping Cart</a></li>
       </ul>
@@ -60,82 +63,111 @@
     <!--//maincontent-->    
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-       	<div id="member">
+    <div id="member">
      <h2 class="page_heading">Sign up for our membership!</h2>
-     <p>We have a special reward program for our loyal customers including a birthday present! Don't miss it and join us for FREE! Fill out the form below and you will receive a mail and information how to pick up your Diazepam Membercard (required fields are shown by *.)</p>
+     <p>We have a special reward program for our loyal customers including a birthday present! Don't miss it and join us for FREE! Fill out the form below and you will receive a mail and information how to pick up your Diazepam Membercard.</p>
+     <br>
 
     <form action="" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
-        <p>
-            <label for="first">First Name: <img src="" alt="X" name="nameTick" width="12" height="12"
-                                              id="nameTick"/></label>
-            <input type="text" name="first" id="first" size="40" autofocus onKeyUp="nameEntered(this);"/>
-        </p>
-        <div class="notebox" id="output">&nbsp;</div>
+        <br>
+            <label for="first">First Name: </label>
+            <input type="text" name="first" id="first" size="40" autofocus onKeyUp="nameEntered(this);"/ required>
+       
         <br>
         
-          <label for="family">Family Name: <img src="Images/cross.png" alt="X" name="nameTick" width="12" height="12"
-                                              id="nameTick"/></label>
-            <input type="text" name="family" id="family" size="40" autofocus onKeyUp="nameEntered(this);"/>
+          <label for="family">Family Name: </label>
+            <input type="text" name="family" id="family" size="40" autofocus onKeyUp="nameEntered(this);"/required>
         <br>
         <label for="birthday">Your birthday:</label>
         <input type="text" name="birthday" id="birthday" size="40" style="color:#000000" onFocus="changeStyle('birthday')"
-               onBlur="changeStyle2('birthday')"/>
+               onBlur="changeStyle2('birthday')"/required>
         <br>
         <label for="email">Email Address:</label>
         <input type="text" name="email" id="email" size="40" style="color:#000000" onFocus="changeStyle('email')"
-               onBlur="changeStyle2('email')"/>
+               onBlur="changeStyle2('email')"/required>
        	 <br>
         <label for="phone">Phone:</label>
-        <input type="text" name="phone" id="phone" size="40" style="color:#000000"
-               onKeyUp="setColourBasedOnLength('phone', 8)"/>
+      <input type="text" name="phone" id="phone" size="40" style="color:#000000"
+               onKeyUp="setColourBasedOnLength('phone', 8)"/required>
         <br/>
         <div id="submission">
             <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
             <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
             or
             <input type="submit" value="Submit"/>
+            
         </div>
-        <div><span id="message"></span></div>
-    </form>
-    <script src="scripts.js"></script>
-     </div>   
-    
+</form>
+     </div>       
   <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
+
  
-    <!--sidebar right-->
-    <aside id="search_box">
-    	<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>				
-			<img src="Images/Socialicons/toolbar_find.png" alt="search icon">
-            <div class="search">            	
-				<form class="navbar-form">
-					<input type="text" class="form-control">
-					<button type="submit" class="btn btn-default" aria-label="Left Align">
-					</button>
-				</form>
-			</div>	
+    <!--sidebar right for search box-->
+    <aside>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)>
+    		<input name="q" type="hidden" />
+            <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
+	    	<p><input id="submit_search" type="submit" value="Search"></p>
+		</form>
     </aside>
     
+    <script type="text/javascript">
+		// Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+		// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+		// This notice must stay intact for use
+
+		//Enter domain of site to search.
+		var domainroot="www.diazepam.com"
+
+		function Gsitesearch(curobj){
+			curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+		}
+	</script>
+   
     
-    
+    <!-- web browsers that are not supporting the this new HTML5 attribute, make fallback: http://red-team-design.com/how-to-create-a-cool-and-usable-css3-search-box/-->
+    <script>
+    	$(document).ready(function() {           
+    if (!Modernizr.input.placeholder)
+    {       
+        var placeholderText = $('#search').attr('placeholder');
+        
+        $('#search').attr('value',placeholderText);
+        $('#search').addClass('placeholder');
+        
+        $('#search').focus(function() {             
+            if( ($('#search').val() == placeholderText) )
+            {
+                $('#search').attr('value','');
+                $('#search').removeClass('placeholder');
+            }
+        });
+        
+        $('#search').blur(function() {              
+            if ( ($('#search').val() == placeholderText) || (($('#search').val() == '')) )                      
+            {   
+                $('#search').addClass('placeholder');                     
+                $('#search').attr('value',placeholderText);
+            }
+        });
+    }                
+});
+    </script>  
+    <!--//sidebar right for search box-->
+        
+        
+    <!--sidebar right for online support-->         
     <aside id="sidebar_right_top">
    		<h3 id="label_support">Online support</h3>
-        <p><img class="img_phone" src="Images/Socialicons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
-        <ul id="support_icons">
-        	<li><img src="Images/Socialicons/yahoo.png" alt="support via yahoo"></li>
-            <li><img src="Images/Socialicons/skype.png" alt="support via skype"></li>
-            <li><img src="Images/Socialicons/whatsapp.png" alt="support via whatsapp"></li>
-            <li><img src="Images/Socialicons/viber.png" alt="support via viber"></li>
-            <li><img src="Images/Socialicons/line.png" alt="support via linechat"></li>
-            <li><img src="Images/Socialicons/wechat.png" alt="support via wechat"></li>
-            <li><img src="Images/Socialicons/email_mail_post_letter_stamp.png" alt="support via email"></li>         
-            <li><img src="Images/Socialicons/googleplusblue.png" alt="support via Googleplus"></li>
-               
-            
-        </ul>
-   	</aside>    
-        
-   <aside id="sidebar_right_bottom">
+        <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <!--Chat button will appear here-->
+		<div id="MyLiveChatContainer"></div>
+	</aside>
+	<!--//sidebar right for online support-->
+    
+    <!--sidebar right for comments-->         
+       <aside id="sidebar_right_bottom">
    		<h3 id="label_reviews">Reviews &amp; Comments</h3>
      <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
           <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
@@ -143,13 +175,13 @@
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comment" rows="5" class="commentbox" id="comment"></textarea>
-          		<input type="submit" name="Submit" id="Submit" value="Submit">
-            	<input type="reset" name="Clear" id="Clear" value="Clear">          		
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
+          		<input type="submit" name="submit" id="submit_comments" value="Submit">
+            	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	
      </div>
-	</aside>  
-    <!--//sidebar_right-->   
+	</aside>    <!--//sidebar right for comments-->  
+    
 
    <!-- footer_top -->    
   	<div class="clearfix"></div>
@@ -185,10 +217,10 @@
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="contact.html"><img src="Images/Socialicons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/Socialicons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/Socialicons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/Socialicons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
@@ -205,6 +237,28 @@
     <!--//footer_bottom -->
   
   </div> <!--end div "container"-->	        
-    
+  
+  
+  <!--script for BackToTop-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script> <!--Script copyright of http://arrow.scrolltotop.com/arrow79.js-->
+		var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="Images/icons/arrow79_backToTop.png" width="45" height="45" alt="backToTopArrow">',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+	</script>
+      <!--//script for BackToTop-->
+      
+      <!--script for chatbox-->      
+    	<!--Add the following script at the bottom of the web page (before </body></html>)-->
+        <!--A chat session happens on the same webpage instead of a separate browser window. The Embedded Chat Window floats on the page, never getting blocked by popup blockers. It scrolls up and down the page with the page-->        
+        	<script type="text/javascript" async defer data-cfasync="false" src=  "https://mylivechat.com/chatinline.aspx?hccid=38471262"></script>
+
+		<!--A graphic button with online or offline images. It allows you to monitor website visitors-->
+			<script type="text/javascript" async defer data-cfasync="false" src=	"https://mylivechat.com/chatbutton.aspx?hccid=38471262"></script>
+
+		<!--Chat Widget appears as an Image Chat button and it floats in a specified position. A Chat Widget will re-position itself when visitors scroll up and down your web page-->
+			<script type="text/javascript" async defer data-cfasync="false" src="https://mylivechat.com/chatwidget.aspx?hccid=38471262"></script>
+
+	<!--//script for chatbox-->
+
 </body>
 <!-- InstanceEnd --></html>

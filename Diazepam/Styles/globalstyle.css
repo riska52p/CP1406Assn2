@@ -1065,7 +1065,7 @@ li.loc{
 #member{
 	margin: 0px;
 	padding-left: 50px;
-	padding-right:60px;
+	padding-right:50px;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -1073,15 +1073,17 @@ li.loc{
 
 
 #mainForm {
-    border: thin gray solid;
-    border-radius: 15px;
-    width: 700px;
+    border-radius: 20px;
+	border-color: #92F3AF;
+	border-style: dashed;
+	border-width: thick;
+    width: 750px;
 }
 #mainForm input, #mainForm select, #mainForm textarea, #mainForm fieldset {
     float: left;
     margin-left: 10px;
     width: 300px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 #mainForm label {
     float: left;
@@ -1094,11 +1096,11 @@ li.loc{
     width:auto;
 }
 #submission {
-    text-align:center;
+    padding-left: 300px;
     width: 620px;
 }
 br {
-    clear: left;
+    clear:left;
 }
 #message { padding-left: 5em; }
 
