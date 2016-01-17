@@ -1257,29 +1257,26 @@ a.services:hover{
 
 
 /*===================== Order form ==================================*/
-.imgWrap {
-  position:relative;
-  height: 50px;
-  width: 100px;
+#orderForm {
+    border-radius: 20px;
+	border-color: #92F3AF;
+	border-style: dashed;
+	border-width: thick;
+    width: 850px;
 }
-
-.imgDescription {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background:#32F483;
-  color: #fff;
-
-
-  visibility: hidden;
-  opacity: 0;
-
+#orderForm input, #orderForm select, #orderForm textarea, #orderForm fieldset {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 10px;
 }
-
-
-.imgWrap:hover .imgDescription {
-  visibility: visible;
-  opacity: 1;
+#orderForm label {
+    float: left;
+    clear:both;
+    width: 300px;
+    text-align:right;
+}
+#orderForm fieldset input, #orderForm fieldset label, #submission input {
+    float:none;
+    width:auto;
 }
