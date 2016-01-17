@@ -9,8 +9,20 @@
 <script src="../SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
 <link href="../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
 <link href="../SpryAssets/SpryValidationConfirm.css" rel="stylesheet" type="text/css">
-<link href="Styles/productstyle.css" rel="stylesheet" type="text/css">
+<link href="../Styles/productstyle.css" rel="stylesheet" type="text/css">
 <link href="../Styles/globalstyle.css" rel="stylesheet" type="text/css">
+<script src="../jquery/jquery-1.11.3.min.js"></script>
+<script src="../jquery/wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+<script type="text/javascript">
+  simpleCart({
+    checkout: {
+      type: "PayPal",
+      email: "diazepamcafe@gmail.com"
+    }
+  });
+</script>
+
+
 </head>
 
 <body>
@@ -18,7 +30,7 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
+        	<a href="#"><img src="../Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
@@ -68,8 +80,8 @@
         <form name="form2" method="post" action="">
           <p>Flavours:    
             <select name="falvoursList" size="1" id="product1flavoursList">
-              <option>Vanilla</option>
-              <option>Chocolate</option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="Chocolate">Chocolate</option>
             </select>
           </p>
           <label for="flavours"></label>
@@ -80,7 +92,7 @@
             <input type="text" name="product1Qty" id="product1Qty">
           <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
           <h2>S$ 23.50 &nbsp;</h2>          
-            <p><input type="submit" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart">
+            <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;">
         </form></p>
       </div>
     </div>

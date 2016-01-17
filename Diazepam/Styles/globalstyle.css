@@ -1113,3 +1113,72 @@ li.loc{
 	scrolling:no;
 	float:right;
 }
+
+/*<-------------------Shopping Cart--------------------------->*/
+
+.simpleCart_items{
+	float:left;
+	clear:left;
+	width:100%;
+	margin:20px;
+	color:#6b3e26;
+}
+
+.simpleCart_items table{
+	border:#6b3e26 thick solid;
+	padding:5px;
+}
+
+.simpleCart_items table th{
+	background-color:#c2f2d0;
+	padding:5px;
+	border-bottom:#6b3e26 medium solid;
+}
+
+.simpleCart_items table td{
+	padding:5px;
+}
+
+.simpleCart_items a{
+	text-decoration:none;
+	color:#F07818;
+}
+
+#shoppingcart_total{
+	float:left;
+	clear:left;
+	margin-top:20px;
+	margin-left:20px;
+	text-align:left;
+	font-size:1.2em;
+}
+
+.simpleCart_total{
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+	text-align:left;
+	font-size:1.2em;
+	font-weight:bold;
+	color:#6b3e26;
+}
+
+.shoppingcart_button{
+	float:left;
+	clear:left;
+	margin-top:5px;
+	margin-left:40px;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:bold;
+	background-color:#fdf5c9;
+	color:#F07818;
+	padding:5px;
+	border:medium solid #FFB062;
+}
+
+.shoppingcart_button a{
+	color:inherit;
+	text-decoration:none;
+}
+
