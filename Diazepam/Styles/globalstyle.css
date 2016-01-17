@@ -1234,3 +1234,22 @@ br {
 	text-decoration:none;
 }
 
+/*===================== Services page==================================*/
+#services{
+	margin:0 2%;		
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	line-height:150%;
+	
+}
+
+a.services:link, a.services:visited, a.services:active{
+	font-weight:bold;
+	color:blue;	
+	text-decoration:none;
+}
+
+a.services:hover{
+	color:green;
+}
