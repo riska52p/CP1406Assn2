@@ -1,20 +1,46 @@
 <!doctype html>
-<html><!-- InstanceBegin template="../../../Documents/CP1406Assn2/Diazepam/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Order form - Diazepam</title>
+<title>Check Out</title>
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
+<script src="jquery/jquery-1.11.3.min.js"></script>
+<script src="jquery/wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+<script type="text/javascript">
+  simpleCart({
+	
+    // checkout
+    checkout: { 
+        type: "PayPal" , 
+        email: "diazepamcafe@gmail.com" 
+    },
+    // set the currency, see the currency 
+    currency: "SGD",
+	
+	// array representing the format and columns of the cart,
+    cartColumns: [
+        { attr: "name", label: "Name"},
+		{ attr: "flavour", label: "Flavour"},
+        { view: "currency", attr: "price", label: "Price"},
+        { attr: "quantity", label: "Qty"},
+        { view: "currency", attr: "total", label: "SubTotal" },
+    ],
+	
+    // display the chart as table
+    cartStyle: "table", 
+  });
+</script>
 <!-- InstanceEndEditable -->
 
-<link href="../../../Documents/CP1406Assn2/Diazepam/Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for Template & index.html-->
-<link href="../../../Documents/CP1406Assn2/Diazepam/Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--css for banner slider @Homepage-->
-<link href="../../../Documents/CP1406Assn2/Diazepam/Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css"><!--css for product slider @Homepage-->
-<link href="../../../Documents/CP1406Assn2/Diazepam/Styles/productstyle.css" rel="stylesheet" type="text/css"> <!--css for All Products, Product Categories, Each Product-->
-<script src="../../../Documents/CP1406Assn2/Diazepam/Styles/forBanner/js-image-slider.js"></script><!--js for banner slider @Homepage-->
-<script src="../../../Documents/CP1406Assn2/Diazepam/Styles/forProducts/js-image-slider-products.js"></script><!--js for product slider @Homepage-->
+<link href="Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for Template & index.html-->
+<link href="Styles/forBanner/js-image-slider.css" rel="stylesheet" type="text/css"> <!--css for banner slider @Homepage-->
+<link href="Styles/forProducts/js-image-slider-products.css" rel="stylesheet" type="text/css"><!--css for product slider @Homepage-->
+<link href="Styles/productstyle.css" rel="stylesheet" type="text/css"> <!--css for All Products, Product Categories, Each Product-->
+<script src="Styles/forBanner/js-image-slider.js"></script><!--js for banner slider @Homepage-->
+<script src="Styles/forProducts/js-image-slider-products.js"></script><!--js for product slider @Homepage-->
 
 </head>
 
@@ -23,14 +49,14 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/logo.png" alt="logo"></a>            
+        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
         	<ul>
-            	<li><a target="_blank" href="https://www.facebook.com/"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a target="_blank" href="https://twitter.com/"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -40,23 +66,23 @@
     <!--nav_bar-->
     <div id="nav_bar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About us</a></li>
+        <li><a href="Templates/index.html">Home</a></li>
+        <li><a href="Templates/about-us.html">About us</a></li>
         <li class="dropdown"> <a class="dropbtn">Products</a>
           <div class="dropdown-content"> 
-          	<a href="prodcat_classic.html">Classic Ice Cream</a> 
-            <a href="prodcat_creation.html">Ice Cream Creations</a> 
-            <a href="prodcat_drink.html">Iced Drinks</a> 
-            <a href="list_categories.html">All Categories</a>
-            <a href="list_products.html">All Products</a>
+          	<a href="Templates/prodcat_classic.html">Classic Ice Cream</a> 
+            <a href="Templates/prodcat_creation.html">Ice Cream Creations</a> 
+            <a href="Templates/prodcat_drink.html">Iced Drinks</a> 
+            <a href="Templates/list_categories.html">All Categories</a>
+            <a href="Templates/list_products.html">All Products</a>
           </div>            
         </li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="upcoming-events.html" class="scroll">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="member.html">Membership</a></li>
-        <li class="active"><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li><a href="Templates/services.html">Services</a></li>
+        <li><a href="Templates/upcoming-events.html" class="scroll">Events</a></li>
+        <li><a href="#faq" class="scroll">FAQ</a></li>
+        <li><a href="#contact" class="scroll">Contact</a></li>
+        <li><a href="#signup" class="scroll">Membership</a></li>
+        <li><a href="#order" class="scroll">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -65,52 +91,56 @@
     <!--//maincontent-->    
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-    <div>
-    <h2 class="page_headingh2">Online order form</h2>
-    <p><form action="" method="post" name="orderForm" id="orderForm" onsubmit="return checkForm();">
+   <div>
+    <h2 class="page_headingh2">Check Out</h2>
+    <p><form action="" method="post" name="orderForm" id="orderForm">
         <br>
         <label for="title">Title:</label>
 		<select name="title" width="60" style="width: 60px">
     	<option>Mrs </option>
-    	<option>Mr</option>
+    	<option selected>Mr</option>
     	<option>Ms</option>
 		</select>
             
         <br>
             <label for="first">First Name: </label>&nbsp;
-            <input type="text" name="first" id="first" size="40"/ required>&nbsp;<img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/rsz_11box.png" title="Please fill in your first name here."/>
+            <input type="text" name="firstName" id="firstName" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your first name here."/>
        
         <br>
         
           <label for="family">Family Name: </label>&nbsp;
-            <input type="text" name="family" id="family" size="40" /required>&nbsp;<img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/rsz_11box.png" title="Please fill in your family name here."/>
+            <input type="text" name="familyName" id="familyName" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your family name here."/>
         <br>
         <label for="address">Address:</label>&nbsp;
-        <input type="text" name="address" id="address" size="40" /required>&nbsp;<img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/rsz_11box.png" title="Please fill in your street name. Don't forget to give as much details as possible (e.g. block and flat number)"/>
+        <textarea name="address" cols="40" rows="3" required id="address"></textarea>
+        &nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your street name. Don't forget to give as much details as possible (e.g. block and flat number)"/>
         <br>
         <label for="code">Zip code:</label>
 <input type="text" name="code" id="code" size="40" style="width: 86px" /required> &nbsp; <i>Singapore</i>
         <br>
         <label for="phone">Phone:</label>&nbsp;
-      <input type="text" name="phone" id="phone" size="40" /required>&nbsp;<img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/rsz_11box.png" title="In case your delivery will be late e will call you"/>
+      <input type="text" name="phone" id="phone" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="In case your delivery will be late e will call you"/>
       <br>
       <br>
-        <label for="email">Payment:</label> &nbsp; <a href="https://www.paypal.com/home"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/rsz_paypal.jpg">
-       
-       	 <br>
+        <label for="payment">Payment via:</label> &nbsp; <img src="../Diazepam/Images/icons/rsz_paypal.jpg">
+        <br>
+        <br>
+       <label for="product">Shopping Cart:</label> &nbsp;
+       <img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow">
+       <div class="simpleCart_items"></div>
+        <br>
         
         <br/>
        <div id="submission">
             
             <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
             or
-            <input type="submit" value="Submit"/>
+            <input name="Button" type="button" value="Submit" onclick="return checkForm()" class="simpleCart_checkout">
         
         </div>
         </form>   
-        </div>
+    </div>
         <script src="scripts.js"></script>
-        
     
   <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
@@ -173,7 +203,7 @@
     <!--sidebar right for online support-->         
     <aside id="sidebar_right_top">
    		<h3 id="label_support">Online support</h3>
-        <p><img class="img_phone" src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
 		<div id="MyLiveChatContainer"></div>
 	</aside>
@@ -203,17 +233,17 @@
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
-                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="Templates/about-us.html">About us</a></li>
                     <li><a href="#">Work Here</a></li>                
-                    <li><a href="upcoming-events.html">Upcomming Events</a></li>
+                    <li><a href="Templates/upcoming-events.html">Upcomming Events</a></li>
                     <li><a href="#">Outlets</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Templates/products.html">Products</a></li>
+                    <li><a href="Templates/services.html">Services</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Warranty</a></li>
                 </ul>
@@ -230,10 +260,10 @@
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="contact.html"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="../../../Documents/CP1406Assn2/Diazepam/Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a href="Templates/contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
