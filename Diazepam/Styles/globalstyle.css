@@ -18,7 +18,9 @@ body{
 	background-color:#FFF;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	color:#000;
-	margin:0 auto;	
+	margin-top:0;
+	margin-left:0;
+	margin-right:0;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -29,7 +31,7 @@ body{
 
 #container{
 	width:1100px;	
-	padding:0;
+	padding-top:0;
 	margin:0 auto;	
 }
 
@@ -679,25 +681,28 @@ h2#label_services{
 
 }
 
-#content_services{	
-	color:#09F; /*change when it hovers*/
-	width:100%;
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
+#content_services{
+	color: #6b3e26; /*change when it hovers*/
+	width: 100%;
+	border-radius: 5px;
+	-noz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	
 }
 
 .grid_services{ /*for each service*/
-	width:27%;
-	margin:0% 2% 2% 2%;
-	padding:1%;
-	height:350px;	
-	border-radius:5px;
-	-noz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #c2f2d0; /*lightblue*/
-	float:left;
+	width: 27%;
+	padding: 1%;
+	height: 420px;
+	border-radius: 5px;
+	-noz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #c2f2d0; /*lightblue*/
+	float: left;
+	margin-top: 2.5%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
 }
 
 .grid_services img{
@@ -723,12 +728,13 @@ h2#label_services{
     font-weight:800;
 }
 
+
 .text_justify{
 	text-align:justify;
 	padding-left:5%;
 	padding-right:5%;
 	line-height:1.5em;
-	color:#6b3e26;
+	color:#999;
 }
 
 .grid_services:hover{
@@ -845,16 +851,15 @@ h2#label_services{
 	list-style-type:none;	
 }
 
-.footer_grid ul li a:link,.footer_grid ul li a:visited, .footer_grid ul li a:active{
+.footer_grid ul li a{
     font-size: 1em;
     text-decoration: none;
     line-height: 1.5em;
-    color:#6b3e26;    
+    color: #999;    
     text-transform: capitalize;
 }
-
 .footer_grid ul li a:hover {
-    color:orange; /*#F07818*/
+    color:#3C0; /*#F07818*/
 }
 
 .footer_grid ul li a img {
@@ -864,39 +869,22 @@ h2#label_services{
 
 /*footer_bottom*/
 #footer_bottom {
-    background-color:#6b3e26;    
-	text-align:center;
-	height:45px;
-    color: #fdf5c9;	
+    background-color:#6b3e26;
+	margin-top:0;
+    padding-top: 10px;
+    text-align: center;
+	height:40px;
+    color: #fdf5c9;
+	font-size:11px;
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
-    
 }
-#footer_bottom p{
-	padding-top:10px;
-	margin-top:10px;
-	font-size:0.9em;	
-}
-
-#footer_bottom span{
-	margin: 0 2%;
-}
-
-#footer_bottom a:visited, #footer_bottom a:link, #footer_bottom a:active{
-	text-decoration:none;
-	color:#fdf5c9;
-}
-
-#footer_bottom a:hover{
-	color:orange;
-}
-
-#footer_bottom img{
-	width:15px;
-	height:15px;
-	margin-right:1%;
-
+#footer_bottom span {
+    font-size: 1.1em;
+    line-height: 1.8em;
+	height:40px;
+	margin:10px;
 }
 /*--//footer--*/
 
@@ -915,7 +903,7 @@ h2#label_services{
 	width:27%;
 	margin:1.5%;
 	padding:0% 1%;
-	height:460px;	
+	height:450px;	
 	border-radius:5px;
 	-noz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -957,63 +945,26 @@ h3.product_headingh3{
 .grid_1colsOf3:hover{
 	border:2px solid #6b3e26;	
 }
+.grid_1colsOf3 ul li {
+	font-size: 0.8em;
+	line-height: normal;
+	list-style-position: outside;
+	margin-top: 0px;
+}
 
 h3.product_headingh3 a{
 	text-decoration:none;
+	color: #FC6;
 }
 
 h3.product_headingh3 a:hover{
-	color:#6b3e26 ;
+	background-color:#fdf5c9;
+	color: #6b3e26;
 }
 
 h3.product_headingh3:hover{	
 	background-color:#fdf5c9;
-}
-
-span.headprod_level1{
-	font-size:2em;
-	text-align:center;
-	margin:0% 0% 0% 2%;
-	padding:0%;
-	font-family:"Dimbo Regular";
-	font-weight:400;
-	color:#6b3e26;	
-}
-
-span.headprod_level1 a:visited, span.headprod_level1 a:link, span.headprod_level1 a:active,
-span.headprod_level2 a:visited, span.headprod_level2 a:link, span.headprod_level2 a:active{
-	color:#6b3e26;
-	text-decoration:none;
-}
-
-span.headprod_level1 a:hover, span.headprod_level2 a:hover{
-	color:orange;
-}
-
-span.headprod_level2{
-	font-size:1.8em;
-	text-align:center;
-	margin:0%;
-	padding:0%;
-	font-family:"Dimbo Regular";
-	font-weight:400;
-	color:#6b3e26;	
-}
-
-span.headprod_level3{
-	font-size:1.5em;
-	text-align:center;
-	margin:0%;
-	padding:0%;
-	font-family:"Dimbo Regular";
-	font-weight:400;
-	color:#6b3e26;	
-}
-span.arrow{
-	color:green;
-	font-size:2em;
-	margin:0% 0.1%;
-	font-weight:900;
+	color: #6b3e26;
 }
 
 
@@ -1093,18 +1044,6 @@ h3.page_headingh3{
 .italic_bold{
 	font-style:italic;
 	font-weight:bold;
-	color:#6b3e26;
-}
-
-.italic_bold_green{
-	font-style:italic;
-	font-weight:bold;
-	color:green;
-}
-
-.discount{
-	color:red; 
-	font-size:large;
 }
 
 /*===============About-us page==========================*/
@@ -1120,15 +1059,14 @@ h3.page_headingh3{
 }
 
 a.anc_5outlets:link,a.anc_5outlets:visited, a.anc_5outlets:active,
-a.anc_product:link, a.anc_product:visited, a.anc_product:active,
-a.anc_link:link, a.anc_link:visited, a.anc_link:active{
+a.anc_product:link, a.anc_product:visited, a.anc_product:active{
 	font-weight:bold;
 	color:blue;	
 	text-decoration:none;
 }
 
-a.anc_5outlets:hover, a.anc_product:hover, a.anc_link:hover{
-	color:orange;
+a.anc_5outlets:hover, a.anc_product:hover{
+	color:green;
 }
 
 #vision, #mission{
@@ -1178,6 +1116,51 @@ li.loc{
 	float:left;
 	width:40%;
 }
+/*----------------------------------------membership page-------------------------------------------------------*/
+
+#member{
+	margin: 0px;
+	padding-left: 50px;
+	padding-right:50px;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+
+#mainForm {
+    border-radius: 20px;
+	border-color: #92F3AF;
+	border-style: dashed;
+	border-width: thick;
+    width: 750px;
+}
+#mainForm input, #mainForm select, #mainForm textarea, #mainForm fieldset {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+#mainForm label {
+    float: left;
+    clear:both;
+    width: 300px;
+    text-align:right;
+}
+#mainForm fieldset input, #mainForm fieldset label, #submission input {
+    float:none;
+    width:auto;
+}
+#submission {
+    padding-left: 300px;
+    width: 620px;
+}
+br {
+    clear:left;
+}
+#message { padding-left: 5em; }
+
+/*============================Upcomming events===================================*/
 
 #contact iframe{
 	width:55%;
@@ -1188,14 +1171,7 @@ li.loc{
 	scrolling:no;
 	float:right;
 }
-/*================faq===================*/
-.fqa_questions{	
-	font-weight:bold;
-	font-size:1.2em;
-	color:#6b3e26;
-}
 
-/*==================================================================My and Riska=============================================*/
 /*<-------------------Shopping Cart-------------------------*/
 
 #shoppingcart_body{
@@ -1279,10 +1255,11 @@ li.loc{
 #shoppingCart{
 	width:90%;
 	background-color:#6b3e26;
-	margin-top:0px;
+	/*margin-top:0px;*/
 	margin-left:30px;
 	height:60px;
 }
+	
 
 /*===================== Services page==================================*/
 #site_service{
