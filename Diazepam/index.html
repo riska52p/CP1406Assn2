@@ -55,10 +55,10 @@
         </li>
         <li><a href="#services">Services</a></li>
         <li><a href="upcoming-events.html">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="faq.html">FAQ/Feedback</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="signup.html">Membership</a></li>
-        <li><a href="#order">Shopping Cart</a></li>
+        <li><a href="member.html">Membership</a></li>        
+        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>        
       </ul>
     </div>
     <!--//nav_bar-->
@@ -72,10 +72,10 @@
       <div id="banner"> 
       	<div id="sliderFrame">
         	<div id="slider">
-            	<a href="Images/Banners/grandopening.jpg" target="_blank" title="Our Grand Opening on 15 January">
+            	<a href="upcoming-events.html">
                 <img src="Images/Banners/grandopening.jpg" alt="Our Grand Opening on 15 January" title="Our Grand Opening on 15 January"/></a>
             	<a href="Images/Banners/banner1.jpg" target="_blank" title="Welcome to Diazepam: Indulge yourself in our irresistible Mix and Match Ice-cream sundade">
-               	 <img src="Images/Banners/banner1.jpg" alt="Welcome to Diazepam: Indulge yourself in our irresistible Mix and Match Ice-cream sundade" title="Welcome to Diazepam!" /></a>
+               	 <img src="Images/Banners/banner1.jpg" alt="Welcome to Diazepam!: Welcome to Diazepam: Indulge yourself in our irresistible Mix and Match Ice-cream sundade" title="Welcome to Diazepam!" /></a>
 	            <a href="Images/Banners/banner2.jpg" target="_blank" title="Feel to look around and recharge in our cozy place">
                 <img src="Images/Banners/banner2.jpg" alt="Feel free to look around, and recharge in our cozy place" title="Feel our cozy place"/></a>
     	        <a href="Images/Banners/banner3.jpg" target="_blank" title="We do our best to create freshly made ice-cream specially for you!">
@@ -98,20 +98,21 @@
         	<div id="sliderFrameProd">
    			     <div id="sliderProd">
             		<a href="prodcat_classic.html">
-                		<img src="Images/Products/prodcat1_classic1.jpg" alt="Classic Ice-cream: Rich creamy goodness. New flavours every month!" title="Classic ice-cream cone"/></a>
+                		<img src="Images/Products/prodcat1_classic1.jpg" alt="Classical Ice-cream: Rich creamy goodness, New flavours every month" title="Classic ice-cream cone"/></a>
                     <a href="prodcat_classic.html">
-                		<img src="Images/Products/prodcat1_classic2.jpg" alt="Classic Ice-cream: Unique recipes with high quality ingredients" title="Classic ice-cream cone"/></a>
+                		<img src="Images/Products/prodcat1_classic2.jpg" alt="Classical Ice-cream: Unique recipes and high quality" title="Classic ice-cream cone"/></a>
                     <a href="prodcat_classic.html">
-                		<img src="Images/Products/prodcat1_classic3.jpg" alt="Classic Ice-cream: Made with love and perfection" title="Classic ice-cream cone"/></a>                        
+                		<img src="Images/Products/prodcat1_classic3.jpg" alt="Classical Ice-cream: Made with love and perfection" title="Classic ice-cream cone"/></a>                        
                         
 		            <a href="prodcat_creation.html">
-        		        <img src="Images/Products/prodcat2_creation1.jpg" alt="Ice-cream Creations: A precious moment to share with your loved ones" title="Ice-cream creation" /><                    <a href="prodcat_creation.html">
-        		        <img src="Images/Products/prodcat2_creation2.jpg" alt="Ice-cream Creations: The perfect mix between sweetness and freshness" title="Ice cream creation" /></a>
+        		        <img src="Images/Products/prodcat2_creation1.jpg" alt="Ice-cream Creation: A precious moment sharing with the ones you love" title="Ice-cream creation" /></a>
                     <a href="prodcat_creation.html">
-        		        <img src="Images/Products/prodcat2_creation3.jpg" alt="Ice-cream Creations: Wonderful treats for special occasions" title="Ice cream creation" /></a>
+        		        <img src="Images/Products/prodcat2_creation2.jpg" alt="Ice-cream Creation: The perfect mix between sweetness and freshness" title="Ice cream creation" /></a>
+                    <a href="prodcat_creation.html">
+        		        <img src="Images/Products/prodcat2_creation3.jpg" alt="Ice-cream Creation: Wonderful treat in special occations" title="Ice cream creation" /></a>
                         
             		<a href="prodcat_drink.html">
-                		<img src="Images/Products/prodcat3_drink1.jpg" alt="Iced drinks: Wash away your tiredness and enjoy each sip" title="Ied drink" /></a>		            
+                		<img src="Images/Products/prodcat3_drink1.jpg" alt="Iced drink: Wash away all tiredness and enjoy each" title="Ied drink" /></a>		            
         		</div>
                  
         		<!--thumbnails-->
@@ -163,13 +164,39 @@
 	<div id="subscribe">
     <br/>
 		<p><img src="Images/icons/newsletter.png" width="459" height="67" alt="newsletter"></p>
-		 <form>		   
-           <input type="text" class="text" value='Please enter your email here' onFocus="this.value = '';" onBlur="if (this.value == ''){this.value ='Please enter your email here';}">
+		 <form name="validation" onSubmit="return checkbae()">
+           <input type="text" class="text" name="emailcheck" value='Please enter your email here' onFocus="this.value = '';" onBlur="if (this.value == ''){this.value ='Please enter your email here';}">
 		   <input type="submit" value="Subscribe">
 		</form>		
 	</div>
+
+<script language="JavaScript1.2">
+//Advanced Email Check credit-
+//By JavaScript Kit (http://www.javascriptkit.com)
+	var testresults
+	function checkemail(){
+		var str=document.validation.emailcheck.value
+		var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+		if (filter.test(str)){
+			alert("Thank you for subscribing to our newsletter!")
+			testresults=true			
+		}else{
+			alert("Please input a valid email address!")
+			testresults=false
+		}
+		return (testresults)
+		}
+</script>
+
+<script>
+	function checkbae(){
+		if (document.layers||document.getElementById||document.all)
+			return checkemail()
+		else
+		return true
+		}
+</script>                   
 	<!--//subscribe-->           
-      
     
     <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
@@ -247,7 +274,7 @@
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave your comment here. Thank you very much.</textarea>
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	
