@@ -3,36 +3,10 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Check Out</title>
+<title>Feedback</title>
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
-<script src="jquery/jquery-1.11.3.min.js"></script>
-<script src="jquery/wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
-<script type="text/javascript">
-  simpleCart({
-	
-    // checkout
-    checkout: { 
-        type: "PayPal" , 
-        email: "diazepamcafe@gmail.com" 
-    },
-    // set the currency, see the currency 
-    currency: "SGD",
-	
-	// array representing the format and columns of the cart,
-    cartColumns: [
-        { attr: "name", label: "Name"},
-		{ attr: "flavour", label: "Flavour"},
-        { view: "currency", attr: "price", label: "Price"},
-        { attr: "quantity", label: "Qty"},
-        { view: "currency", attr: "total", label: "SubTotal" },
-    ],
-	
-    // display the chart as table
-    cartStyle: "table", 
-  });
-</script>
 <!-- InstanceEndEditable -->
 
 <link href="Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for Template & index.html-->
@@ -49,14 +23,14 @@
  	<!-- header -->
 	<div id="header">		
     	<div id="logo">
-        	<a href="#"><img src="Images/icons/logo.png" alt="logo"></a>            
+        	<a href="index.html"><img src="Images/icons/logo.png" alt="logo"></a>            
         </div>
                 
         <div id="social_icons">
         	<ul>
-            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Templates/Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="Templates/Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><img src="Templates/Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -79,10 +53,10 @@
         </li>
         <li><a href="Templates/services.html">Services</a></li>
         <li><a href="Templates/upcoming-events.html" class="scroll">Events</a></li>
-        <li><a href="#faq" class="scroll">FAQ</a></li>
-        <li><a href="#contact" class="scroll">Contact</a></li>
-        <li><a href="#signup" class="scroll">Membership</a></li>
-        <li><a href="#order" class="scroll">Shopping Cart</a></li>
+        <li><a href="Templates/faq.html">FAQ/Feedback</a></li>
+        <li><a href="Templates/contact.html">Contact</a></li>
+        <li><a href="Templates/member.html">Membership</a></li>        
+        <li style="float:right;"><a href="Templates/shopping-cart.html">Shopping Cart</a></li>        
       </ul>
     </div>
     <!--//nav_bar-->
@@ -91,55 +65,81 @@
     <!--//maincontent-->    
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-   <div>
-    <h2 class="page_headingh2">Check Out</h2>
-    <p><form action="" method="post" name="orderForm" id="orderForm">
+    <div>
+    <h2 class="page_headingh2">Feedback Form</h2>
+    <h3>We would like to hear your thoughts, concern, or problem with anything so that we can improve!</h3>
+    <p><form action="" method="post" name="feedbackForm" id="feedbackForm">
         <p>
-        <label for="title" class="orderForm_label">Title:</label>
-		<select name="title" width="60" style="width: 60px">
-    	<option>Mrs </option>
-    	<option selected>Mr</option>
-    	<option>Ms</option>
-		</select></p>
-            
+        <label for="name" class="feedbackForm_label">Name: </label>&nbsp;
+            <input type="text" name="Name" id="Name" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your name here."/></p>
         <p>
-            <label for="first" class="orderForm_label">First Name: </label>&nbsp;
-            <input type="text" name="firstName" id="firstName" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your first name here."/></p>
-       
+          <label for="email" class="feedbackForm_label">Email: </label>&nbsp;
+            <input type="email" name="email" id="email" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your email here."/></p>
+        <p style="text-align:center">Please Rate Us!</p>
         <p>
-        
-          <label for="family" class="orderForm_label">Family Name: </label>&nbsp;
-            <input type="text" name="familyName" id="familyName" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your family name here."/></p>
+        <label class="feedbackForm_label">Product: </label></p>
         <p>
-        <label for="address" class="orderForm_label">Address:</label>&nbsp;
-        <textarea name="address" cols="40" rows="3" required id="address"></textarea>
-        &nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your street name. Don't forget to give as much details as possible (e.g. block and flat number)"/></p>
+        <table width="400">
+          <tr>
+            <td><label>
+              <input type="radio" name="Product" value="Poor" id="Product_0">
+              Poor</label></td>
+            <td><label>
+              <input type="radio" name="Product" value="Bad" id="Product_1">
+              Bad</label></td>
+            <td><label>
+              <input type="radio" name="Product" value="Normal" id="Product_2">
+              Normal</label></td>
+
+            <td><label>
+              <input type="radio" name="Product" value="Good" id="Product_3">
+              Good</label></td>
+
+            <td><label>
+              <input type="radio" name="Product" value="Best" id="Product_4">
+              Best</label></td>
+          </tr>
+        </table>
+        </p>
         <p>
-        <label for="code" class="orderForm_label">Zip code:</label>
-<input type="text" name="code" id="code" size="40" style="width: 86px" /required> &nbsp; <i>Singapore</i></p>
+        <label class="feedbackForm_label">Customer Services: </label></p>
         <p>
-        <label for="phone" class="orderForm_label">Phone:</label>&nbsp;
-      <input type="text" name="phone" id="phone" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="In case your delivery will be late e will call you"/></p>
-      	<p>
-        <label for="payment" class="orderForm_label">Payment via:</label> &nbsp;
-        <img src="Images/icons/rsz_paypal.jpg" alt="PayPal"></p>
+        <table width="400">
+          <tr>
+            <td><label>
+              <input type="radio" name="Product" value="Poor" id="Product_0">
+              Poor</label></td>
+            <td><label>
+              <input type="radio" name="Product" value="Bad" id="Product_1">
+              Bad</label></td>
+            <td><label>
+              <input type="radio" name="Product" value="Normal" id="Product_2">
+              Normal</label></td>
+
+            <td><label>
+              <input type="radio" name="Product" value="Good" id="Product_3">
+              Good</label></td>
+
+            <td><label>
+              <input type="radio" name="Product" value="Best" id="Product_4">
+              Best</label></td>
+          </tr>
+        </table>
+        </p>
+
         <p>
-       <label for="product" class="orderForm_label">Shopping Cart:</label> &nbsp;
-       <img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow"></p>
-       <div class="simpleCart_items"></div>
+        <label for="feedback" class="feedbackForm_label">How can we improve this cafe? </label>
+        <textarea name="feedback" cols="40" rows="3" id="feedback"></textarea></p>
         <br>
-        
-        <br/>
-       <div id="submission">
+        <div id="submission">
             
-            <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
+         <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
             or
-            <input name="Button" type="button" value="Submit" onclick="return checkForm()" class="simpleCart_checkout">
+          <input name="Submit" type="submit" value="Submit">
         
         </div>
         </form>   
     </div>
-        <script src="scripts.js"></script>
     
   <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
@@ -147,7 +147,7 @@
  
     <!--sidebar right for search box-->
     <aside>
-		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     		<input name="q" type="hidden" />
             <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
 	    	<p><input id="submit_search" type="submit" value="Search"></p>
@@ -166,8 +166,7 @@
 			curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 		}
 	</script>
-   
-    
+       
     <!-- web browsers that are not supporting the this new HTML5 attribute, make fallback: http://red-team-design.com/how-to-create-a-cool-and-usable-css3-search-box/-->
     <script>
     	$(document).ready(function() {           
@@ -204,7 +203,8 @@
    		<h3 id="label_support">Online support</h3>
         <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
         <!--Chat button will appear here-->
-		<div id="MyLiveChatContainer"></div>
+		<a name="livechat" id="livechat"></a>
+        <div id="MyLiveChatContainer"></div>
 	</aside>
 	<!--//sidebar right for online support-->
     
@@ -232,37 +232,36 @@
             <div class="footer_grid">
                 <h4>Company</h4>
                 <ul class="ul_footer">
-                    <li><a href="Templates/about-us.html">About us</a></li>
-                    <li><a href="#">Work Here</a></li>                
-                    <li><a href="Templates/upcoming-events.html">Upcomming Events</a></li>
-                    <li><a href="#">Outlets</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="faq.html#work_here">Work Here</a></li>                
+                    <li><a href="upcoming-events.html">Upcomming Events</a></li>
+                    <li><a href="contact.html#outlets">Outlets</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Products/Services</h4>
                 <ul class="ul_footer">
-                    <li><a href="Templates/products.html">Products</a></li>
-                    <li><a href="Templates/services.html">Services</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Warranty</a></li>
+                    <li><a href="list_products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer_grid">
                 <h4>Order/Return</h4>
                 <ul class="ul_footer">                
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Digital Gift Card</a></li>
+                    <li><a href="terms_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="terms_conditions.html#order_shipping">Order and Shipping Policy</a></li>                    
+                    <li><a href="terms_conditions.html#delivery_policy">Delivery Policy</a></li>
+                    <li><a href="terms_conditions.html#return_refund">Return Policy</a></li>
                 </ul>
             </div>        
             <div class="footer_grid">
                 <h4>Connect with Us</h4>
                 <ul class="ul_footer">
-		           	<li><a href="Templates/contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
-                	<li><a href="#"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
-                	<li><a href="#"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
-                	<li><a href="#"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+		           	<li><a target="_self" href="contact.html"><img src="Templates/Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a target="_blank" href="https://www.facebook.com/"><img src="Templates/Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a target="_blank" href="https://www.instagram.com/"><img src="Templates/Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a target="_blank" href="https://twitter.com/"><img src="Templates/Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
             	</ul>
         	</div>       
             <div class="clearfix"></div>
@@ -272,9 +271,12 @@
     
     <!--//footer_bottom-->
 	<div id="footer_bottom">
-    	<div>© 2015 Diazepam. All rights reserved.</div>
-        <div><span>+65-44446677</span><span>Diazepam@gmail.com</span><span>200 Diazepam Crescent,#01-175, Singapore 100000</span>
-		</div>
+    	<p>
+        	<span>© 2015 Diazepam. All rights reserved.</span>
+        	<span><a target="_blank" href="http://www.skype.com/en/"><img src="Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+        	<span><a target="_blank" href="https://www.gmail.com"><img src="Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
+       		<span><a target="_self" href="contact.html"> <img src="Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
+		</p>
 	</div>
     <!--//footer_bottom -->
   
@@ -289,7 +291,7 @@
 	</script>
       <!--//script for BackToTop-->
       
-      <!--script for chatbox-->      
+      <!--script for chatbox-->
     	<!--Add the following script at the bottom of the web page (before </body></html>)-->
         <!--A chat session happens on the same webpage instead of a separate browser window. The Embedded Chat Window floats on the page, never getting blocked by popup blockers. It scrolls up and down the page with the page-->        
         	<script type="text/javascript" async defer data-cfasync="false" src=  "https://mylivechat.com/chatinline.aspx?hccid=38471262"></script>
