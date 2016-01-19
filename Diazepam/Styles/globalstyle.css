@@ -1459,6 +1459,36 @@ form#checkout{
 	text-align: left;
 }
 
+/*===================== Feedback form ==================================*/
+#feedbackForm {
+    border-radius: 20px;
+	border-color: #92F3AF;
+	border-style: dashed;
+	border-width: thick;
+    width: 850px;
+}
+#feedbackForm input, #feedbackForm textarea, #feedbackForm fieldset, #feedbackForm radio {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.feedbackForm_label {
+    float: left;
+    clear: both;
+    width: 300px;
+    text-align:right;
+}
+#feedbackForm fieldset input, #feedbackForm fieldset label, #submission input, #feedbackFrom fieldset radio{
+    float:none;
+    width:auto;
+}
+
+#submission{
+	text-align: center;
+	clear: both;
+	margin: auto;
+}
+
 /*======================membership form=========================*/
 #formMemebership form{
 	background-color:#c2f2d0;
