@@ -4,16 +4,15 @@
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Membership - Diazepam</title>
-<meta name="Membership" content="Sign up for our membership! We have a special reward program for our loyal customers including a birthday present! Don't miss it and join us for FREE!...">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
-<script src="SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
-<link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
 
 <link href="Styles/globalstyle.css" rel="stylesheet" type="text/css"><!--css for Template & index.html-->
@@ -22,6 +21,7 @@
 <link href="Styles/productstyle.css" rel="stylesheet" type="text/css"> <!--css for All Products, Product Categories, Each Product-->
 <script src="Styles/forBanner/js-image-slider.js"></script><!--js for banner slider @Homepage-->
 <script src="Styles/forProducts/js-image-slider-products.js"></script><!--js for product slider @Homepage-->
+
 </head>
 
 <body>
@@ -34,9 +34,9 @@
                 
         <div id="social_icons">
         	<ul>
-            	<li><a target="_blank" href="https://www.facebook.com/Diazepam-Cafe-875510655879581/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/diazepamcafe/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a target="_blank" href="https://twitter.com/DiazapemCafe"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -53,10 +53,12 @@
           	<a href="prodcat_classic.html">Classic Ice Cream</a> 
             <a href="prodcat_creation.html">Ice Cream Creations</a> 
             <a href="prodcat_drink.html">Iced Drinks</a> 
-            <a href="product-list.html">All Products</a> </div>
+            <a href="list_categories.html">All Categories</a>
+            <a href="list_products.html">All Products</a>
+          </div>            
         </li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="upcoming-events.html">Events</a></li>
+        <li><a href="upcoming-events.html" class="scroll">Events</a></li>
         <li class="dropdown"><a href="#" class="dropbtn">FAQ/Feedback</a>
         	<div class="dropdown-content">
             	<a href="faq.html">FAQ</a>
@@ -64,8 +66,8 @@
             </div>
         </li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="active"><a href="member.html">Membership</a></li>
-        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li class="active"><a href="member.html">Membership</a></li>        
+        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>        
       </ul>
     </div>
     <!--//nav_bar-->
@@ -74,9 +76,9 @@
     <!--//maincontent-->    
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
-    	<h2 class="page_headingh2">Sign up for our membership!</h2>
+    <h2 class="page_headingh2">Sign up for our membership!</h2>
      	<p>We have a <span class="italic_bold_green">special reward program for our loyal customers</span> including a birthday present!</p>
-     	<p><span class="italic_bold_green">Don't miss it and join us</span> for <span class="discount">FREE!</span> Fill out the form below, then we'll send you an email for confirmation.Please check out the email to complete the Sign-up process.</p>
+     	<p><span class="italic_bold_green">Don't miss it and join us</span> for <span class="discount">FREE!</span>. Fill out the form below, then we'll send you an email for confirmation.Please check out the email to complete the Sign-up process.</p>
 		<p class="italic_bold_green">Please complete all the fields marked with *</p>
 		
         <h3 class="page_headingh3">Sign up Membership!</h3>
@@ -88,28 +90,31 @@
               <td><label for="userid">User ID*:</label></td>
               <td><span id="sprytextfield1">
               <input name="userid" type="text" id="userid" size="50" maxlength="50">
-              <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldMinCharsMsg">Minimum number of characters not met.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></td>
+              <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldMinCharsMsg">Minimum number of characters not met.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></span></td>
             </tr>
             <tr>
               <td><span id="sprypassword1">
                 <label for="password">Password*:</label>
-              <span class="passwordRequiredMsg">A value is required.</span></span></td>
-              <td><span id="sprypassword2">
+              </td>
+              <td><span id="sprypassword2"><span id="sprypassword1">
               <input name="password" type="password" id="password" size="50" maxlength="50">
-              <span class="passwordRequiredMsg">A value is required.</span><span class="passwordMinCharsMsg">Minimum number of characters not met.</span><span class="passwordMaxCharsMsg">Exceeded maximum number of characters.</span></span></td>
+              <span class="passwordRequiredMsg">A value is required.</span><span class="passwordInvalidStrengthMsg">The password doesn't meet the specified strength.</span></span></td>
             </tr>
             <tr>
               <td width="27%"><label for="title">Title*:</label></td>
-              <td width="73%"><select name="title" id="title">
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Ms">Ms</option>
-                <option value="Miss">Miss</option>
-              </select></td>
+              <td width="73%"><span id="spryselect1">
+                <select name="title" id="title">
+                  <option>Please choose one</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Miss">Miss</option>
+                </select>
+              <span class="selectRequiredMsg">Please select an item.</span></span></td>
             </tr>
             <tr>
               <td><label for="fname">First Name*:</label></td>
-              <td><span id="sprytextfield2">
+              <td><span id="sprytextfield2"><span id="sprytextfield2">
               <input name="fname" type="text" id="fname" size="50" maxlength="50">
               <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldMinCharsMsg">Minimum number of characters not met.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></td>
             </tr>
@@ -119,7 +124,7 @@
             </tr>
             <tr>
               <td><label for="lname">Last Name*:</label></td>
-              <td><span id="sprytextfield3">
+              <td><span id="sprytextfield3"><span id="sprytextfield3">
               <input name="lname" type="text" id="lname" size="50" maxlength="50">
               <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldMinCharsMsg">Minimum number of characters not met.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></td>
             </tr>
@@ -130,24 +135,28 @@
             <tr>
               <td><label></label>
               <label for="country">Country*:</label></td>
-              <td><select name="country" id="country">
-                <option>Please select a country</option>
-                <option value="Singapore">Singapore</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Vietnam">Vietnam</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="India">India</option>
-                <option value="Germany">Germany</option>
-                <option value="Brunei">Brunei</option>
-                <option value="Campuchia">Campuchia</option>
-                <option value="Laos">Laos</option>
-                <option value="China">China</option>
-              </select></td>
+              <td><span id="spryselect2">
+                <select name="country" id="country">
+                  <option>Please select a country</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="India">India</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Campuchia">Campuchia</option>
+                  <option value="Laos">Laos</option>
+                  <option value="China">China</option>
+                </select>
+              <span class="selectRequiredMsg">Please select an item.</span></span></td>
             </tr>
             <tr>
               <td><label for="zcode">Zip Code*:</label></td>
-              <td><input name="zcode" type="text" id="zcode" size="50" maxlength="50"></td>
+              <td><span id="sprytextfield4">
+              <input name="zcode" type="text" id="zcode" size="50" maxlength="50">
+              <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
             </tr>
             <tr>
               <td><label for="address">Address:</label></td>
@@ -172,27 +181,34 @@
             <tr>
               <td>&nbsp;</td>
               <td >
-              <input  style="float:left;" type="checkbox" name="news" id="news">
-              <label style="float:left; for="news">I want to receive newsletters from the shop</label>
+              <label style="float:left;" for="news">
+              <input name="news" type="checkbox" id="news"  style="float:left;" checked>I want to receive newsletters from the shop
+              </label>
               <br>              
-              <input style="float:left;" type="checkbox" name="terms" id="terms">
-              <label style="float:left;" for="terms">I understand Terms and Conditions, and aggree with these </label></td>
+              <label style="float:left;" for="terms">
+              <input name="terms" type="checkbox" id="terms" style="float:left;" checked>I understand <a class="anc_link" href="terms_conditions.html">Terms and Conditions,</a> and aggree with these information provided </label></td>
             </tr>
         
-            <tr id="submitclearSignup">            	
-              <td><input type="submit" name="Signup" id="Signup" value="Sign up Form!"></td>
-              <td><input type="reset" name="clear" id="clear" value="Clear up Form!"></td>
+            <tr id="submitclearSignup">
+            	<td>&nbsp;</td>            	
+              	<td>
+              	<input type="submit" name="Signup" id="Signup" value="Sign up Form!">
+              	<input type="reset" name="clear" id="clear" value="Clear up Form!">
+              	</td>
             </tr>
           </table>
         </form>
         </div>
         <p>&nbsp;</p>
+    
     <script type="text/javascript">
-var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1");
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {minChars:1, maxChars:50});
-var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword2", {minChars:6, maxChars:20});
-var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {minChars:1, maxChars:50});
-var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none", {minChars:1, maxChars:50});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {minChars:1, maxChars:50, hint:"Please choose your ID, must be between 1 to 50 characters"});
+var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1", {minNumbers:5, maxNumbers:20});
+var spryselect1 = new Spry.Widget.ValidationSelect("spryselect1", {validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {minChars:1, maxChars:50, hint:"Please enter your first name"});
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none", {minChars:1, maxChars:50, hint:"Please enter your last name"});
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "zip_code", {hint:"Please enter your Zipcode"});
     </script>
     <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
@@ -270,7 +286,7 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave a comment here. Thank you very much!</textarea>
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	
