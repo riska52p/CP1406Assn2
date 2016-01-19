@@ -62,10 +62,15 @@ simpleCart.bind( "afterAdd" , function( item ){
         </li>
         <li><a href="services.html">Services</a></li>
         <li><a href="upcoming-events.html">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">FAQ/Feedback</a>
+        	<div class="dropdown-content">
+            	<a href="faq.html">FAQ</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="member.html">Membership</a></li>
-        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -82,48 +87,54 @@ simpleCart.bind( "afterAdd" , function( item ){
    	 	</p>
         
         <div class="content_3cols">
-			<div id="product1image">
-      			<img src="Images/Products/prodcat2_cookie.png" width="300" height="300" alt="Ice cream cookie">
+			<div class="product1image">
+      			<img src="Images/Products/prodcat2_cookie.png" alt="Ice cream Cookie" title="Ice cream Cookie">
       		</div>
 
 			<div id="product1descPrice">
       			<hr class="hr_line">
-                <h1 class="item_name_h1"> Ice Cream Cookie</h1>
-                <form name="form2" method="post" action="">
-          		<p>Flavours:    
-            		<select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
-              		<option value="Chocolate Chip">Chocolate Chip</option>
-              		<option value="Double Chocolate">Double Chocolate</option>
-              		<option value="Almond">Almond</option>
-              		<option value="Peacan">Peacan</option>
-            		</select>
-          		</p>
-          		<label for="flavours"></label>
-          		<p>Quantity: 
-            	<label for="product1Qty"></label>
-            	<span id="QtyTF">
-            	<label for="product1Qty"></label>
-            	<input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
-          		<span class="textfieldRequiredMsg">A value is required.</span>
-                <span class="textfieldInvalidFormatMsg">Invalid format.</span>
-                <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
-                <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
-                </p>
-                <p>Unit price:</p>
-          		<h2 class="item_price">S$ 2.00 &nbsp;</h2>          
-            	<p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
-        	</form>
-        </div>
+                
+                <div class="simpleCart_shelfItem">
+                  <h1 class="item_name"> Ice Cream Cookie</h1>
+                  <form name="form2" method="post" action="">
+                  <p>Flavours:    
+                      <select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
+                      <option value="Chocolate Chip">Chocolate Chip</option>
+                      <option value="Double Chocolate">Double Chocolate</option>
+                      <option value="Almond">Almond</option>
+                      <option value="Peacan">Peacan</option>
+                      </select>
+                  </p>
+                  <label for="flavours"></label>
+                  <p>Quantity: 
+                  <label for="product1Qty"></label>
+                  <span id="QtyTF">
+                  <label for="product1Qty"></label>
+                  <input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
+                  <span class="textfieldRequiredMsg">A value is required.</span>
+                  <span class="textfieldInvalidFormatMsg">Invalid format.</span>
+                  <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
+                  <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
+                  </p>
+                  <p>Unit price:</p>
+                  <h2 class="item_price">S$ 2.00 &nbsp;</h2>          
+                  <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
+              </form>
+        	  </div>
+         	</div>
       
-    	<div id="product1desc">
-    		<hr>
-    		<h3>Description</h3>
-    		<p>The Ice Cream Cookie is one of our newest creations. </p>
-            <p>Stemming from the latest craze, this creation combines two freshly baked cookies with our ice cream.</p>
-            <p>The cookie remains soft and chewy despite being re-frozen, and the ice cream retains its form and does not melt.</p>
-    		<p>Choose the flavour of the cookie, and indulge with our soft-serve vanilla ice cream filling that goes well with every flavour.</p>
-   		</div>
-   </div>
+    		<div id="product1desc">
+              <hr>
+              <h3>Description</h3>
+              <p>The Ice Cream Cookie is one of our newest creations, the real deal. </p>
+              <p>Stemming from the latest craze, this creation combines two freshly baked cookies with our ice cream.</p>
+              <p>we combine our artisanal ice cream with freshly baked cookies into a sandwich that will delight you, your guests and customers.</p>
+              <p>All our cookies and ice creams are made in-house from scratch using carefully curated ingredients. The ice cream sandwiches are pre-assembled and individually packed for easy consumption at home, events, or as a takeaway option or dine-in for businesses.
+</p>
+              <p>The cookie remains soft and chewy despite being re-frozen, and the ice cream retains its form and does not melt.</p>
+              <p>Choose the flavour of the cookie, and indulge with our soft-serve vanilla ice cream filling that goes well with every flavour.</p>   
+   			</div>
+   	</div>
           <script type="text/javascript">
 var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {minValue:0, maxChars:3});
     </script>
@@ -204,7 +215,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave your comment here. Thank you very much.</textarea>
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	

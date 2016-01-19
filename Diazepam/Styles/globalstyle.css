@@ -161,6 +161,11 @@ a:hover, a:active{
 	text-shadow:none;	
 }
 
+.active_faq_feedback{
+	background-color:orange;
+	text-shadow:none;	
+}
+
 /*CSS for dopdown Products*/
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -1230,73 +1235,97 @@ li.loc{
 #shoppingcart_body{
 	height:800px;
 }
-
 .simpleCart_items{
 	float:left;
 	clear:left;
 	width:100%;
-	margin:30px;
-	color:#6b3e26;
+	padding:5% 0%;
+	margin:0 auto;
+	color:#6b3e26; /*#6b3e26*/
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 
 .simpleCart_items table{
-	border:thick solid #6b3e26;
-	padding:5px;
-	width:90%;
+	width:95%;
+	padding:1%;
+	margin:0;	
+}
+
+.simpleCart_items table th,.simpleCart_items table td{
+	padding-left:0.5%;
+	padding-bottom:1.5%;
+	padding-top:1.5%;
+}
+
+.simpleCart_items table tr:nth-child(odd){
+	background-color:#FFF;
+}
+
+.simpleCart_items table tr:nth-child(even){
+	background-color:#c2f2d0;
 }
 
 .simpleCart_items table th{
-	background-color:#c2f2d0;
-	padding:5px;
-	border-bottom:#6b3e26 medium solid;
+	background-color:#6b3e26;
+	color:#fdf5c9;
+	text-align:left;
+	padding-left:1%;
 }
 
-.simpleCart_items table td{
-	padding:5px;
-}
 
 .simpleCart_items a{
 	text-decoration:none;
-	color:#F07818;
+	color:#F00;
+	font-size:1.1em;
+	font-weight:700;
 }
 
 #shoppingcart_total{
 	float:left;
 	clear:left;
 	text-align:left;
-	font-size:1.2em;
+	font-size:1.5em;	
+	color:#6b3e26;
+	margin-top:0px;
 	margin-left:10px;
-/*	color:#FFB062;*/
-color:black;
-	margin-top:15px;
+	font-weight:800;
 }
 
 .simpleCart_total{
 	float: left;
+	margin-top:0px;
 	margin-left: 10px;
 	text-align: left;
-	font-size: 1.3em;
-	font-weight: normal;
-	/*color: #fdf5c9;*/
+	font-size: 1.7em;
+	font-weight: normal;	
 	color:blue;
 	font-family: "Dimbo Regular";
 	letter-spacing: 0.2em;
-	margin-top:15px;
+	font-weight:700;
+
 }
 
 .shoppingcart_button{
 	float:right;
 	clear:right;
-	margin-top:10px;
-	margin-right:20px;
+	margin-top:0px;
+	margin-right:50px;
 	text-align:center;
-	font-size:1.1em;
+	font-size:1.5em;
 	font-weight:bold;
-	background-color:#fdf5c9;
-	/*color:#F07818;*/
-	color:black;
-	padding:5px;
-	border:medium solid #FFB062;
+	background-color:#6b3e26;
+	color:#fdf5c9;
+	padding:10px;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;	
 }
 
 .shoppingcart_button a{
@@ -1304,8 +1333,10 @@ color:black;
 	text-decoration:none;
 }
 
-.shoppingcart_button a:hover{
+.shoppingcart_button:hover{
 	color:#6b3e26;
+	background-color:#fdf5c9;
+	
 }
 
 #shoppingCart{
@@ -1317,6 +1348,7 @@ margin-left:30px;
 	background-color:#F6C;
 	border:1px solid black;
 }
+
 
 /*===================== Services page==================================*/
 #site_service{
@@ -1340,57 +1372,171 @@ a.services:hover{
 
 
 /*===================== Order form ==================================*/
-#orderForm {
-    border-radius: 20px;
-	border-color: #92F3AF;
-	border-style: dashed;
-	border-width: thick;
-    width: 850px;
+form#checkout{
+	margin:0 auto;
+	padding-left:1%;
+	width:100%;
 }
-#orderForm input, #orderForm select, #orderForm textarea, #orderForm fieldset {
+.clearfix{
+	overflow:auto;
+}
+
+.customer_info{
+	margin-bottom:5%;
+	
+}
+
+#checkout input, #checkout select, #checkout textarea, #checkout fieldset {
     float: left;
-    margin-left: 10px;
-    width: 300px;
-    margin-bottom: 10px;
+    margin-left:10px;    
+    margin-bottom:10px;
 }
-.orderForm_label {
+#checkout img, #checkout i{
+	float:left;
+	margin-left:1.5%;
+}
+
+#checkout label {
     float: left;
     clear:both;
-    width: 300px;
+    width:15%;
     text-align:right;
 }
-#orderForm fieldset input, #orderForm fieldset label, #submission input {
+#checkout fieldset input, #checkout fieldset label, #submission input {
     float:none;
     width:auto;
 }
 
 
-/*===================== Feedback form ==================================*/
-#feedbackForm {
-    border-radius: 20px;
-	border-color: #92F3AF;
-	border-style: dashed;
-	border-width: thick;
-    width: 850px;
+#submission input[type="button"] {
+    outline: none;
+    border: 1px solid #c2f2d0;/*#F07818*/
+    width: 15%;
+    padding: 0.5em;
+    font-size: 1em;
+    background: none;
+    color: #fdf5c9;
+    background-color:#6b3e26;/*#F07818*/
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+
 }
-#feedbackForm input, #feedbackForm textarea, #feedbackForm fieldset, #feedbackForm radio {
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-.feedbackForm_label {
-    float: left;
-    clear: both;
-    width: 300px;
-    text-align:right;
-}
-#feedbackForm fieldset input, #feedbackForm fieldset label, #submission input, #feedbackFrom fieldset radio{
-    float:none;
-    width:auto;
+#submission input[type="button"]:hover {
+    background-color: #fdf5c9;
+    color: #6b3e26;/*#F07818*/
 }
 
-#submission{
-	text-align: center;
-	clear: both;
-	margin: auto;
+#submission input[type="reset"] {
+    outline: none;
+    border: 1px solid #c2f2d0;
+    width: 15%;
+    padding: 0.5em;
+    font-size: 1em;
+    background: none;
+    color:#FFF;
+    background-color:green;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+
 }
+#submission input[type="reset"]:hover {
+    background-color:white;
+    color: green;/*#F07818*/
+}
+#container #maincontent table {
+	text-align: left;
+}
+
+/*======================membership form=========================*/
+#formMemebership form{
+	background-color:#c2f2d0;
+	border:1px solid orange;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#6b3e26;
+}
+#formMemebership form label{
+	float:right;
+	margin-right:2%;
+}
+
+#
+
+/*
+#submitclearSignup input[type="submit"] {
+    outline: none;
+    border: 1px solid #c2f2d0;/*#F07818
+    width: 15%;
+    padding: 0.5em;
+    font-size: 1em;
+    background: none;
+    color: #fdf5c9;
+    background-color:#6b3e26;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+}
+#submitclearSignup input[type="submit"]:hover {
+    background-color: #fdf5c9;
+    color: #6b3e26;
+}
+
+#submitclearSignup input[type="reset"] {
+    outline: none;
+    border: 1px solid #c2f2d0;
+    width: 15%;
+    padding: 0.5em;
+    font-size: 1em;
+    background: none;
+    color:#FFF;
+    background-color:green;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+}
+#submitclearSignup input[type="reset"]:hover {
+    background-color:white;
+    color: green;
+}
+*/
+
+/*
+#formMemebership table tr:nth-child(odd){
+	background-color:#FFF;
+}
+
+#formMemebership table tr:nth-child(even){
+	background-color:#c2f2d0;
+}
+
+*/

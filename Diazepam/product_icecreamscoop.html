@@ -62,10 +62,15 @@ simpleCart.bind( "afterAdd" , function( item ){
         </li>
         <li><a href="services.html">Services</a></li>
         <li><a href="upcoming-events.html">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">FAQ/Feedback</a>
+        	<div class="dropdown-content">
+            	<a href="faq.html">FAQ</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="member.html">Membership</a></li>
-        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -82,51 +87,58 @@ simpleCart.bind( "afterAdd" , function( item ){
         </p>
         
         <div class="content_3cols">
-           	<div id="product1image">
-      			<img src="Images/Products/prodcat1_Ice CreamScoop.jpg" width="300" height="300" alt="Ice cream scoop">
+           	<div class="product1image">
+      			<img src="Images/Products/prodcat1_Ice CreamScoop.jpg" alt="Ice cream scoop" title="Ice cream scoop">
         	</div>
       		<div id="product1descPrice">        
         		<hr class="hr_line">
-                <h1 class="item_name_h1">Ice Cream Scoop</h1>        	
-        		<form name="form2" method="post" action="">
-          		<p>Flavours:    
-            	<select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
-              		<option value="Vanilla">Vanilla</option>
-              		<option value="Chocolate">Chocolate</option>
-              		<option value="Mango">Mango</option>
-              		<option value="Coconut">Coconut</option>
-              		<option value="Mixed Berry">Mixed Berry</option>
-              		<option value="Nata de Coco">Nata de Coco</option>
-	    	        <option value="Dark Chocolate">Dark Chocolate</option>
-    	    	    <option value="Pistachio">Pistachio</option>
-              		<option value="Cotton Candy">Cotton Candy</option>
-            	</select>
-          		</p>
-          		<label for="flavours"></label>
-          		<p>Quantity: 
-            	<label for="product1Qty"></label>
-	            <span id="QtyTF">
-    	        <label for="product1Qty"></label>
-        	    <input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
-          		<span class="textfieldRequiredMsg">A value is required.</span>
-                <span class="textfieldInvalidFormatMsg">Invalid format.</span>
-                <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
-                <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
-                </p>
-                <p>Unit Price:</p>
-          		<h2 class="item_price">S$ 3.90 &nbsp;</h2>          
-            	<p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
-       	  	</form>
-      	</div>
+                <div class="simpleCart_shelfItem">
+                    <h1 class="item_name">Ice Cream Scoop</h1>        	
+                    <form name="form2" method="post" action="">
+                    <p>Flavours:    
+                    <select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Mango">Mango</option>
+                        <option value="Coconut">Coconut</option>
+                        <option value="Mixed Berry">Mixed Berry</option>
+                        <option value="Nata de Coco">Nata de Coco</option>
+                        <option value="Dark Chocolate">Dark Chocolate</option>
+                        <option value="Pistachio">Pistachio</option>
+                        <option value="Cotton Candy">Cotton Candy</option>
+                    </select>
+                    </p>
+                    <label for="flavours"></label>
+                    <p>Quantity: 
+                    <label for="product1Qty"></label>
+                    <span id="QtyTF">
+                    <label for="product1Qty"></label>
+                    <input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
+                    <span class="textfieldRequiredMsg">A value is required.</span>
+                    <span class="textfieldInvalidFormatMsg">Invalid format.</span>
+                    <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
+                    <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
+                    </p>
+                    <p>Unit Price:</p>
+                    <h2 class="item_price">S$ 3.90 &nbsp;</h2>          
+                    <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
+                </form>
+                </div>
+      		</div>
        
-    	<div id="product1desc">
-    		<hr>
-    		<h3>Description</h3>
-    		<p>Try our wide variety of ice cream flavours today. Each scoop promises a rich creamy goodness, with new flavours every month.</p>
-    		<p>Our specialized craft of creating premium ice creams use our own recipes and unique production process.</p>
-            <p>The magic of making good ice cream is nothing more than quality ingredients, lots of hard work and a deep appreciation for craftsmanship and perfection.</p>
+            <div id="product1desc">
+                <hr>
+                <h3>Description</h3>
+                <p>Try our wide variety of ice cream flavours today which are made with low fat milk, yet bursting in flavor with every spoonful. Each scoop promises a rich creamy goodness, with new flavours every month.</p>
+                <p>Our specialized craft of creating premium ice creams use our own recipes and unique production process.</p>
+                <p>We make our ice cream in-store daily, creating flavours from local ingredients, luscious seasonal fresh fruits, aromatic vanilla beans, fragrant honey, specialty blend coffee and sweet liqueur. With such quality ingredients, there’s no room for artificial flavouring and colouring!
+</p>
+                <p>The magic of making good ice cream is nothing more than quality ingredients, lots of hard work and a deep appreciation for craftsmanship and perfection.</p>
+                <p>Savour your ice cream atop a homemade brownie or a freshly baked waffle. Concoct your own thick milkshake, or quench your thirst with our fizzy soda floats.</p>
+                <p>Need a caffeine fix? Have an Italian affogato or swirl a scoop into a chilled mocha.</p>
+				<p>Do call ahead to be sure your favourites are available, as we rotate our flavours weekly. But if there’s a flavour you’re really craving for, place an online order and we’ll churn up a batch, especially for you!</p>
+            </div>
     	</div>
-    </div>
     <script type="text/javascript">
 var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {minValue:0, maxChars:3});
     </script>
@@ -207,7 +219,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave your comment here. Thank you very much.</textarea>
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	

@@ -62,10 +62,15 @@ simpleCart.bind( "afterAdd" , function( item ){
         </li>
         <li><a href="services.html">Services</a></li>
         <li><a href="upcoming-events.html">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">FAQ/Feedback</a>
+        	<div class="dropdown-content">
+            	<a href="faq.html">FAQ</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="member.html">Membership</a></li>
-        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li style="float:right;"><a href="shopping-cart.html">Shopping Cart</a></li>
       </ul>
     </div>
     <!--//nav_bar-->
@@ -82,37 +87,40 @@ simpleCart.bind( "afterAdd" , function( item ){
     </p>
     
     <div class="content_3cols">
-    	<div id="product1image">
-      		<img src="Images/Products/prodcat2_cake.png" width="300" height="300" alt="Ice cream cake">
+    	<div class="product1image">
+      		<img src="Images/Products/prodcat2_cake.png" alt="Ice cream Cake" title="Ice cream cake">
       	</div>	
       
       	<div id="product1descPrice">
       	   	<hr class="hr_line">
-            <h1 class="item_name_h1">Rainbow Ice Cream Cake</h1>        	
+            <div class="simpleCart_shelfItem">
+            	<h1 class="item_name">Rainbow Ice Cream Cake</h1>  	
         
-	        <form name="form2" method="post" action="">
-    	    	<p>Flavours:    
-            	<select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
-              	<option value="Vanilla">Vanilla</option>
-              	<option value="Chocolate">Chocolate</option>
-            	</select>
-          		</p>
-          		<label for="flavours"></label>
-          		<p>Quantity: 
-            		<label for="product1Qty"></label>
-            		<span id="QtyTF">
-            		<label for="product1Qty"></label>
-            		<input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
-          			<span class="textfieldRequiredMsg">A value is required.</span>
-                    <span class="textfieldInvalidFormatMsg">Invalid format.</span>
-                    <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
-                    <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
-                </p>
-            <p>Unit price:</p>    
-          	<h2 class="item_price">S$ 23.50 &nbsp;</h2>          
-            <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
-        	</form>
-        </div>  
+	   		    <form name="form2" method="post" action="">
+                  <p>Flavours:    
+                  <select name="falvoursList" size="1" id="product1flavoursList" class="item_flavour">
+                  <option value="Vanilla">Vanilla</option>
+                  <option value="Chocolate">Chocolate</option>
+                  </select>
+                  </p>
+                  <label for="flavours"></label>
+                  <p>Quantity: 
+                      <label for="product1Qty"></label>
+                      <span id="QtyTF">
+                      <label for="product1Qty"></label>
+                      <input type="text" name="product1Qty" id="product1Qty" value="1" class="item_Quantity"></span>
+                      <span class="textfieldRequiredMsg">A value is required.</span>
+                      <span class="textfieldInvalidFormatMsg">Invalid format.</span>
+                      <span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span>
+                      <span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span>
+                  </p>
+              <p>Unit price:</p>    
+              <h2 class="item_price">S$ 23.50 &nbsp;</h2>          
+              <p><input type="button" name="ProductAddtoCart" id="product1AddtoCart" value="Add to Cart" a class="item_add" href="javascript:;"></p>
+              </form>
+        	</div>
+        </div>
+          
         <div id="product1desc">
           <hr>
           <h3>Description</h3>
@@ -210,7 +218,7 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("QtyTF", "integer", {mi
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave your comment here. Thank you very much.</textarea>
+                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	
