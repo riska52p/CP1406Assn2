@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Membership - Diazepam</title>
+<meta name="Membership" content="Sign up for our membership! We have a special reward program for our loyal customers including a birthday present! Don't miss it and join us for FREE!...">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="head" -->
@@ -19,7 +22,6 @@
 <link href="Styles/productstyle.css" rel="stylesheet" type="text/css"> <!--css for All Products, Product Categories, Each Product-->
 <script src="Styles/forBanner/js-image-slider.js"></script><!--js for banner slider @Homepage-->
 <script src="Styles/forProducts/js-image-slider-products.js"></script><!--js for product slider @Homepage-->
-
 </head>
 
 <body>
@@ -32,9 +34,9 @@
                 
         <div id="social_icons">
         	<ul>
-            	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
-                <li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
+            	<li><a target="_blank" href="https://www.facebook.com/Diazepam-Cafe-875510655879581/"><img src="Images/icons/facebook.png" alt="facebook icon"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/diazepamcafe/"><img src="Images/icons/instagram.png" alt="instagram icon"></a></li>
+                <li><a target="_blank" href="https://twitter.com/DiazapemCafe"><img src="Images/icons/twitter.png" alt="twitter icon"></a></li>                
            </ul>
         </div>
         <div class="clearfix"></div>
@@ -74,7 +76,7 @@
     <!-- InstanceBeginEditable name="maincontent" -->
     	<h2 class="page_headingh2">Sign up for our membership!</h2>
      	<p>We have a <span class="italic_bold_green">special reward program for our loyal customers</span> including a birthday present!</p>
-     	<p><span class="italic_bold_green">Don't miss it and join us</span> for <span class="discount">FREE!</span>. Fill out the form below, then we'll send you an email for confirmation.Please check out the email to complete the Sign-up process.</p>
+     	<p><span class="italic_bold_green">Don't miss it and join us</span> for <span class="discount">FREE!</span> Fill out the form below, then we'll send you an email for confirmation.Please check out the email to complete the Sign-up process.</p>
 		<p class="italic_bold_green">Please complete all the fields marked with *</p>
 		
         <h3 class="page_headingh3">Sign up Membership!</h3>
@@ -192,8 +194,168 @@ var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword2", {minChar
 var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {minChars:1, maxChars:50});
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none", {minChars:1, maxChars:50});
     </script>
-    <!-- InstanceEndEditable --></div>
-</div>
+    <!-- InstanceEndEditable -->      
+    </div>   <!--//maincontent-->
+
+ 
+    <!--sidebar right for search box-->
+    <aside>
+		<form id="searchbox"  action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+    		<input name="q" type="hidden" />
+            <p><input id="search"  name="qfront" type="text" placeholder="Type here"></p>           
+	    	<p><input id="submit_search" type="submit" value="Search"></p>
+		</form>
+    </aside>
+    
+    <script type="text/javascript">
+		// Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+		// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+		// This notice must stay intact for use
+
+		//Enter domain of site to search.
+		var domainroot="www.diazepam.com"
+
+		function Gsitesearch(curobj){
+			curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+		}
+	</script>
+       
+    <!-- web browsers that are not supporting the this new HTML5 attribute, make fallback: http://red-team-design.com/how-to-create-a-cool-and-usable-css3-search-box/-->
+    <script>
+    	$(document).ready(function() {           
+    if (!Modernizr.input.placeholder)
+    {       
+        var placeholderText = $('#search').attr('placeholder');
+        
+        $('#search').attr('value',placeholderText);
+        $('#search').addClass('placeholder');
+        
+        $('#search').focus(function() {             
+            if( ($('#search').val() == placeholderText) )
+            {
+                $('#search').attr('value','');
+                $('#search').removeClass('placeholder');
+            }
+        });
+        
+        $('#search').blur(function() {              
+            if ( ($('#search').val() == placeholderText) || (($('#search').val() == '')) )                      
+            {   
+                $('#search').addClass('placeholder');                     
+                $('#search').attr('value',placeholderText);
+            }
+        });
+    }                
+});
+    </script>  
+    <!--//sidebar right for search box-->
+        
+        
+    <!--sidebar right for online support-->         
+    <aside id="sidebar_right_top">
+   		<h3 id="label_support">Online support</h3>
+        <p><img class="img_phone" src="Images/icons/phone.png" alt="make a call to:"><a class="number" href="http://www.skype.com/en/">+65-<span>44446677</span></a></p>
+        <!--Chat button will appear here-->
+		<a name="livechat" id="livechat"></a>
+        <div id="MyLiveChatContainer"></div>
+	</aside>
+	<!--//sidebar right for online support-->
+    
+    <!--sidebar right for comments-->         
+       <aside id="sidebar_right_bottom">
+   		<h3 id="label_reviews">Reviews &amp; Comments</h3>
+     <p class="review_detail">This ice cream shop actually uses real pistachios! I genuinely love the ice cream here as it takes me back to the old days, where icecream still tastes like heaven.</p>
+          <p class="review_detail"> The cafe is cozy and the staff are especially friendly. Highly recommended :)</p>
+        <p class="review_detail"> I brought my son here last tuesday and we were welcomed with smiles and good ice cream.</p>
+		<div id="leave_comments">
+        <h5>Leave a comment</h5>   		
+	        <form name="form1" method="get" action="">
+                <textarea name="comments" id="comments">Please leave a comment here. Thank you very much!</textarea>
+          		<input type="submit" name="submit" id="submit_comments" value="Submit">
+            	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
+       	  </form>        	
+     </div>
+	</aside>    <!--//sidebar right for comments-->  
+    
+
+   <!-- footer_top -->    
+  	<div class="clearfix"></div>
+    <div id="footer_top">			
+        <div id="content_footer_top">
+            <div class="footer_grid">
+                <h4>Company</h4>
+                <ul class="ul_footer">
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="faq.html#work_here">Work Here</a></li>                
+                    <li><a href="upcoming-events.html">Upcomming Events</a></li>
+                    <li><a href="contact.html#outlets">Outlets</a></li>
+                </ul>
+            </div>
+            <div class="footer_grid">
+                <h4>Products/Services</h4>
+                <ul class="ul_footer">
+                    <li><a href="list_products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer_grid">
+                <h4>Order/Return</h4>
+                <ul class="ul_footer">                
+                    <li><a href="terms_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="terms_conditions.html#order_shipping">Order and Shipping Policy</a></li>                    
+                    <li><a href="terms_conditions.html#delivery_policy">Delivery Policy</a></li>
+                    <li><a href="terms_conditions.html#return_refund">Return Policy</a></li>
+                </ul>
+            </div>        
+            <div class="footer_grid">
+                <h4>Connect with Us</h4>
+                <ul class="ul_footer">
+		           	<li><a target="_self" href="contact.html"><img src="Images/icons/googlemap.png" title="map icon">At Shop</a></li>  	
+                	<li><a target="_blank" href="https://www.facebook.com/"><img src="Images/icons/facebook.png" title="facebook icon">On Facebook</a></li>                
+                	<li><a target="_blank" href="https://www.instagram.com/"><img src="Images/icons/instagram.png" alt="instagram icon">On Instagram</a></li>
+                	<li><a target="_blank" href="https://twitter.com/"><img src="Images/icons/twitter.png" alt="twitter icon">On Twitter</a></li>                
+            	</ul>
+        	</div>       
+            <div class="clearfix"></div>
+      </div>
+    </div>
+	<!--//footer_top-->
+    
+    <!--//footer_bottom-->
+	<div id="footer_bottom">
+    	<p>
+        	<span>© 2015 Diazepam. All rights reserved.</span>
+        	<span><a target="_blank" href="http://www.skype.com/en/"><img src="Images/icons/phone.png" alt="phone icon">+65-44446677</a></span>
+        	<span><a target="_blank" href="https://www.gmail.com"><img src="Images/icons/mail.png" alt="email icon">Diazepam@gmail.com</a></span>
+       		<span><a target="_self" href="contact.html"> <img src="Images/icons/loc.png" alt="location icon">200 Diazepam Crescent,#01-175, Singapore 100000</a></span>
+		</p>
+	</div>
+    <!--//footer_bottom -->
+  
+  </div> <!--end div "container"-->	        
+  
+  
+  <!--script for BackToTop-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script> <!--Script copyright of http://arrow.scrolltotop.com/arrow79.js-->
+		var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="Images/icons/arrow79_backToTop.png" width="45" height="45" alt="backToTopArrow">',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+	</script>
+      <!--//script for BackToTop-->
+      
+      <!--script for chatbox-->
+    	<!--Add the following script at the bottom of the web page (before </body></html>)-->
+        <!--A chat session happens on the same webpage instead of a separate browser window. The Embedded Chat Window floats on the page, never getting blocked by popup blockers. It scrolls up and down the page with the page-->        
+        	<script type="text/javascript" async defer data-cfasync="false" src=  "https://mylivechat.com/chatinline.aspx?hccid=38471262"></script>
+
+		<!--A graphic button with online or offline images. It allows you to monitor website visitors-->
+			<script type="text/javascript" async defer data-cfasync="false" src=	"https://mylivechat.com/chatbutton.aspx?hccid=38471262"></script>
+
+		<!--Chat Widget appears as an Image Chat button and it floats in a specified position. A Chat Widget will re-position itself when visitors scroll up and down your web page-->
+			<script type="text/javascript" async defer data-cfasync="false" src="https://mylivechat.com/chatwidget.aspx?hccid=38471262"></script>
+
+	<!--//script for chatbox-->
+
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
