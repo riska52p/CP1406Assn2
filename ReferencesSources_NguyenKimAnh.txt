@@ -22,3 +22,6 @@ https://www.iconfinder.com/
 7. Images of ice-cream on products:
 https://www.google.com.sg
 
+===== Additional by Riska =====
+8. Shopping Cart
+http://simplecartjs.org/
