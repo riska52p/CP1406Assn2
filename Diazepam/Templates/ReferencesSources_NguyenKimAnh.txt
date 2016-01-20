@@ -1,0 +1,24 @@
+List of all references used by Nguyen Kim Anh on Project Diazepam
+
+1. Check email valid in subscribe Newsletters on index.html
+By JavaScript Kit (http://www.javascriptkit.com)
+
+
+2.Searchbox functionality on Template master.dwt
+Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+		
+3. Script for BackToTop for Template master.dwt
+Script copyright of http://arrow.scrolltotop.com/arrow79.js
+
+4. Script for chatbox on index.html
+https://mylivechat.com/chatinline.aspx?hccid=38471262
+
+5. Javascript and CSS for banner photoslideshow, product slideshow on index.html
+http://www.menucool.com
+
+6. Icons:
+https://www.iconfinder.com/
+
+7. Images of ice-cream on products:
+https://www.google.com.sg
+
