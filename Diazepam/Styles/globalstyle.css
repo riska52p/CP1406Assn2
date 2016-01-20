@@ -1402,36 +1402,42 @@ form#checkout{
 /*======================//membership form=========================*/
 
 
-/*===================== Feedback form ==================================*/
-#feedbackForm {
-    border-radius: 20px;
-	border-color: #92F3AF;
-	border-style: dashed;
-	border-width: thick;
-    width: 850px;
-	
+/*============================================== FeedBack Form =================================================*/
+.feedbackForm_label{
+	margin:0px;
+	text-align: right;
+	vertical-align: text-top;
+	float:left;
+	clear: left;
+	width:185px;
 }
 
-#feedbackForm input, #feedbackForm textarea, #feedbackForm fieldset, #feedbackForm radio {
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
+#submission input[type="submit"] {
+    outline: none;
+    border: 1px solid #c2f2d0;/*#F07818*/
+    width: 15%;
+    padding: 0.5em;
+    font-size: 1em;
+    background: none;
+    color: #fdf5c9;
+    background-color:#6b3e26;/*#F07818*/
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	border-radius:5px;
+	-noz-border-radius:5px;
+	-webkit-border-radius:5px;
+
 }
-.feedbackForm_label {
-    float: left;
-    clear: both;
-    width: 300px;
-    text-align:right;
-}
-#feedbackForm fieldset input, #feedbackForm fieldset label, #submission input, #feedbackFrom fieldset radio{
-    float:none;
-    width:auto;
+#submission input[type="submit"]:hover {
+    background-color: #fdf5c9;
+    color: #6b3e26;/*#F07818*/
 }
 
 #submission{
-	text-align: center;
-	clear: both;
-	margin: auto;
+	text-align:center;
 }
 
 /*===================== //Feedback form ==================================*/

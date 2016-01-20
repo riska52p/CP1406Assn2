@@ -96,39 +96,44 @@
     <!-- InstanceBeginEditable name="maincontent" -->
    <div>
     <h2 class="page_headingh2">Check Out</h2>
-    <p><form action="" method="post" name="orderForm" id="orderForm">
+    <p><form action="" method="post" name="orderForm" id="checkoutForm">
         <p>
-        <label for="title" class="orderForm_label">Title:</label>
-		<select name="title" width="60" style="width: 60px">
+        <label for="title" class="checkoutForm_label">Title:</label>&nbsp;
+		<select name="title" width="60" style="width: 60px" class="checkoutForm_input">
     	<option>Mrs </option>
     	<option selected>Mr</option>
     	<option>Ms</option>
-		</select></p>
+		</select> &nbsp; <span id="errorTitle"></span></p>
             
         <p>
-            <label for="first" class="orderForm_label">First Name: </label>&nbsp;
-            <input type="text" name="firstName" id="firstName" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your first name here."/></p>
-       
-        <p>
+            <label for="first" class="checkoutForm_label">First Name: <span class="requiredField">*</span></label>
+            &nbsp;
+            <input type="text" name="firstName" id="firstName" size="40"/ required class="checkoutForm_input">
+          &nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your first name here."/> &nbsp; <span id="errorFname"></span></p>
         
-          <label for="family" class="orderForm_label">Family Name: </label>&nbsp;
-            <input type="text" name="familyName" id="familyName" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your family name here."/></p>
+<p>
+        
+          <label for="family" class="checkoutForm_label">Family Name: </label>&nbsp;
+            <input type="text" name="familyName" id="familyName" size="40" class="checkoutForm_input"/>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your family name here."/>&nbsp; <span id="errorLname"></span></p>
         <p>
-        <label for="address" class="orderForm_label">Address:</label>&nbsp;
-        <textarea name="address" cols="40" rows="3" required id="address"></textarea>
-        &nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your street name. Don't forget to give as much details as possible (e.g. block and flat number)"/></p>
+        <label for="address" class="checkoutForm_label">Address: <span class="requiredField">*</span></label>
+        &nbsp;
+        <textarea name="address" cols="40" rows="3" required id="address" class="checkoutForm_input"></textarea>
+        &nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your street name. Don't forget to give as much details as possible (e.g. block and flat number)"/>&nbsp;<span id="errorAddress"></span></p>
         <p>
-        <label for="code" class="orderForm_label">Zip code:</label>
-<input type="text" name="code" id="code" size="40" style="width: 86px" /required> &nbsp; <i>Singapore</i></p>
+        <label for="code" class="checkoutForm_label">Zip code: <span class="requiredField">*</span></label>
+        &nbsp;
+<input type="text" name="code" id="code" size="40" style="width: 86px" /required class="checkoutForm_input"> &nbsp; <i>Singapore</i>&nbsp;<span id="errorCode"></span></p>
         <p>
-        <label for="phone" class="orderForm_label">Phone:</label>&nbsp;
-      <input type="text" name="phone" id="phone" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="In case your delivery will be late e will call you"/></p>
+        <label for="phone" class="checkoutForm_label">Phone: <span class="requiredField">*</span></label>
+        &nbsp;
+        <input type="text" name="phone" id="phone" size="40" /required class="checkoutForm_input">&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="In case your delivery will be late e will call you"/>&nbsp;<span id="errorPhone"></span></p>
       	<p>
-        <label for="payment" class="orderForm_label">Payment via:</label> &nbsp;
-        <img src="Images/icons/rsz_paypal.jpg" alt="PayPal"></p>
+        <label for="payment" class="checkoutForm_label">Payment via:</label> &nbsp;
+        <img src="Images/icons/rsz_paypal.jpg" alt="PayPal" class="checkoutForm_input"></p>
         <p>
-       <label for="product" class="orderForm_label">Shopping Cart:</label> &nbsp;
-       <img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow"></p>
+       <label for="product" class="checkoutForm_label">Shopping Cart:</label> &nbsp;
+       <img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow" class="checkoutForm_input"></p>
        <div class="simpleCart_items"></div>
         <br>
         
@@ -137,7 +142,7 @@
             
             <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
             or
-            <input name="Button" type="button" value="Submit" onclick="return checkForm()" class="simpleCart_checkout">
+            <input name="Button" type="button" value="Submit" onClick="return submitOrder()"/>
         
         </div>
         </form>   

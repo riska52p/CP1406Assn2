@@ -74,81 +74,88 @@
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
     <div>
-    <h2 class="page_headingh2">Feedback Form</h2>
-    <h3 class="italic_bold_green">We would like to hear your thoughts, concern, or problem with anything so that we can improve!</h3>
-    <br>
-    <p><form action="" method="post" name="feedbackForm" id="feedbackForm">
+      <h2 class="page_headingh2">Feedback Form</h2>
+      <h3 class="italic_bold_green">We would like to hear your thoughts, concern, or problem with anything so that we can improve!</h3>
+      <br>
+      <p><form action="" method="post" name="feedbackForm" id="feedbackForm">
         <p>
-        <label for="name" class="feedbackForm_label">Name: </label>&nbsp;
-            <input type="text" name="Name" id="Name" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your name here."/></p>
+          <label for="name" class="feedbackForm_label">Name: <span class="requiredField">*</span></label>
+          &nbsp;
+          <input type="text" name="Name" id="Name" size="40"/ required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your name here."/></p>
         <p>
-          <label for="email" class="feedbackForm_label">Email: </label>&nbsp;
-            <input type="email" name="email" id="email" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your email here."/></p>
-        <p style="text-align:center">Please Rate Us!</p>
+          <label for="email" class="feedbackForm_label">Email: <span class="requiredField">*</span></label>
+          &nbsp;
+          <input type="email" name="email" id="email" size="40" /required>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please fill in your email here."/></p>
+          <fieldset>
+        <h4>Please Rate Us!</h4>
         <p>
-        <label class="feedbackForm_label">Product: </label></p>
+        <label class="feedbackForm_label">Product: <span class="requiredField">*</span></label>
+        </p>
         <p>
         <table width="400">
           <tr>
             <td><label>
-              <input type="radio" name="Product" value="Poor" id="Product_0">
+                <input type="radio" name="Product" value="Poor" id="Product_0" required>
               Poor</label></td>
             <td><label>
-              <input type="radio" name="Product" value="Bad" id="Product_1">
+                <input type="radio" name="Product" value="Bad" id="Product_1">
               Bad</label></td>
             <td><label>
-              <input type="radio" name="Product" value="Normal" id="Product_2">
+                <input type="radio" name="Product" value="Normal" id="Product_2">
               Normal</label></td>
-
+              
             <td><label>
-              <input type="radio" name="Product" value="Good" id="Product_3">
+                <input type="radio" name="Product" value="Good" id="Product_3">
               Good</label></td>
-
+              
             <td><label>
-              <input type="radio" name="Product" value="Best" id="Product_4">
+                <input type="radio" name="Product" value="Best" id="Product_4">
               Best</label></td>
           </tr>
         </table>
         </p>
         <p>
-        <label class="feedbackForm_label">Customer Services: </label></p>
+        <label class="feedbackForm_label">Customer Services: <span class="requiredField">*</span></label>
+        </p>
         <p>
         <table width="400">
           <tr>
             <td><label>
-              <input type="radio" name="Product" value="Poor" id="Product_0">
+                <input type="radio" name="CS" value="Poor" id="CS_0" required>
               Poor</label></td>
             <td><label>
-              <input type="radio" name="Product" value="Bad" id="Product_1">
+                <input type="radio" name="CS" value="Bad" id="CS_1">
               Bad</label></td>
             <td><label>
-              <input type="radio" name="Product" value="Normal" id="Product_2">
+                <input type="radio" name="CS" value="Normal" id="CS_2">
               Normal</label></td>
-
+              
             <td><label>
-              <input type="radio" name="Product" value="Good" id="Product_3">
+                <input type="radio" name="CS" value="Good" id="CS_3">
               Good</label></td>
-
+              
             <td><label>
-              <input type="radio" name="Product" value="Best" id="Product_4">
+                <input type="radio" name="CS" value="Best" id="CS_4">
               Best</label></td>
           </tr>
         </table>
         </p>
-
+  <br>
         <p>
-        <label for="feedback" class="feedbackForm_label">How can we improve this cafe? </label>
-        <textarea name="feedback" cols="40" rows="3" id="feedback"></textarea></p>
+          <label for="feedback" class="feedbackForm_label">How can we improve this cafe? </label>&nbsp;
+        <textarea name="feedback" cols="40" rows="5" id="feedback"></textarea>&nbsp;<img src="../Diazepam/Images/icons/rsz_11box.png" title="Please write your suggestion to improve Diazepam Cafe services and product"/></p>
+        </fieldset>
         <br>
         <div id="submission">
-            
-         <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
-            or
-          <input name="Submit" type="submit" value="Submit">
-        
+          
+          <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
+          or
+          <input name="Submit" type="submit" value="Submit" onClick="return submitFeedback()">
+          
         </div>
         </form>   
     </div>
+    <script src="scripts.js"></script>
     
   <!-- InstanceEndEditable -->      
     </div>   <!--//maincontent-->
