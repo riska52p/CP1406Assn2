@@ -1239,41 +1239,31 @@ a.services:hover{
 }
 
 
-/*===================== Order form ==================================*/
-form#checkout{
-	margin:0 auto;
-	padding-left:1%;
-	width:100%;
-}
-.clearfix{
-	overflow:auto;
-}
-
-.customer_info{
-	margin-bottom:5%;	
-}
-
-#checkout input, #checkout select, #checkout textarea, #checkout fieldset {
-    float: left;
-    margin-left:10px;    
-    margin-bottom:10px;
-}
-#checkout img, #checkout i{
+/*===================== Check Out form ==================================*/
+.checkoutForm_label{
+	margin:0px;
+	padding-left:20px;
+	text-align: left;
+	vertical-align: text-top;
 	float:left;
-	margin-left:1.5%;
+	clear: left;
+	width:140px;
 }
 
-#checkout label {
-    float: left;
-    clear:both;
-    width:15%;
-    text-align:right;
-}
-#checkout fieldset input, #checkout fieldset label, #submission input {
-    float:none;
-    width:auto;
+
+.checkoutForm_input{
+	vertical-align:text-top;
+	margin:0px;
 }
 
+#errorTitle, #errorFname, #errorLname, #errorAddress, #errorCode, #errorPhone, #errorTerms, #errorEmail, #errorUserId, #errorPassword{
+	font-size:0.8em;
+	color:red;
+}
+
+.requiredField {
+	color: #F00;
+}
 
 #submission input[type="button"] {
     outline: none;
@@ -1326,11 +1316,22 @@ form#checkout{
 	text-align: left;
 }
 
-/*===================== //Order form ==================================*/
+/*===================== //Check Out form ==================================*/
 
 
 
 /*======================membership form=========================*/
+.memberForm_label{
+	margin:0px;
+	padding-left:20px;
+	text-align: left;
+	vertical-align: text-top;
+	float:left;
+	clear: left;
+	width:150px;
+}
+
+
 #formMemebership form{
 	background-color:#c2f2d0;
 	border:1px solid orange;
@@ -1349,7 +1350,7 @@ form#checkout{
 	margin-right:2%;
 }
 
-#submitclearSignup input[type="submit"] {
+#submitclearSignup input[type="button"] {
     margin: 0 2%;
 	outline: none;
     border: 1px solid #c2f2d0;
@@ -1369,7 +1370,7 @@ form#checkout{
 	-webkit-border-radius:5px;
 
 }
-#submitclearSignup input[type="submit"]:hover {
+#submitclearSignup input[type="button"]:hover {
     background-color: #fdf5c9;
     color: #6b3e26;
 }
