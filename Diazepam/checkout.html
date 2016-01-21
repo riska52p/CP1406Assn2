@@ -100,7 +100,14 @@
     <div id="maincontent">
     <!-- InstanceBeginEditable name="maincontent" -->
    <div>
-    <h2 class="page_headingh2">Check Out</h2>
+    <p>
+        <span class="headprod_level2"><a href="list_products.html">1. Select products</a></span>
+        <span class="arrow">&gt;</span>
+        <span class="headprod_level2"><a href="shopping-cart.html">2. Shopping Cart</a></span>
+        <span class="arrow">&gt;</span>
+        <span class="headprod_level2 selected">3. Check-out</span>
+    </p>
+        
     <p><form action="" method="post" name="orderForm" id="checkoutForm">
         <p>
         <label for="title" class="checkoutForm_label">Title:</label>&nbsp;
@@ -138,7 +145,8 @@
         <img src="Images/icons/rsz_paypal.jpg" alt="PayPal" class="checkoutForm_input"></p>
         <p>
        <label for="product" class="checkoutForm_label">Shopping Cart:</label> &nbsp;
-       <img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow" class="checkoutForm_input"></p>
+       <a href="#detail_shoppingcart"><img src="Images/icons/bottom-arrow-icon.png" width="25" height="25" alt="bottom arrow" title="Please check carefully your shopping cart details before proceeding to next step" class="checkoutForm_input"></a></p>
+       <a id="detail_shoppingcart" name="detail_shoppingcart"></a>
        <div class="simpleCart_items"></div>
         <br>
         
@@ -230,7 +238,7 @@
 		<div id="leave_comments">
         <h5>Leave a comment</h5>   		
 	        <form name="form1" method="get" action="">
-                <textarea name="comments" id="comments">Please leave your words here. Thanks a lot.</textarea>
+                <textarea name="comments" id="comments">Thanks a lot.</textarea>
           		<input type="submit" name="submit" id="submit_comments" value="Submit">
             	<input type="reset" name="reset" id="reset_comments" value="Clear">          		
        	  </form>        	
