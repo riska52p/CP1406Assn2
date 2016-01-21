@@ -1024,6 +1024,23 @@ h3.page_headingh3{
 	font-size:large;
 }
 
+a.uev:link, a.uev:visited, a.uev:active,
+a.uev_link:link, a.uev_link:visited, a.uev_link:active{
+	font-weight:bold;
+	color:blue;	
+	text-decoration:none;
+}
+
+a.uev:hover, a.uev_link:hover{
+	color:orange;
+}
+p.frame{
+	padding-top: 20px;
+}
+
+p.fashion{
+	line-height: 1.5em;
+	}
 /*=====================//Upcomming events==================================*/
 
 
