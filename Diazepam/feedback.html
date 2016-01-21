@@ -77,7 +77,7 @@
       <h2 class="page_headingh2">Feedback Form</h2>
       <h3 class="italic_bold_green">We would like to hear your thoughts, concern, or problem with anything so that we can improve!</h3>
       <br>
-      <p><form action="" method="post" name="feedbackForm" id="feedbackForm">
+      <p><form action="" method="post" name="feedbackForm" id="feedbackForm" onSubmit="return submitFeedback()">
         <p>
           <label for="name" class="feedbackForm_label">Name: <span class="requiredField">*</span></label>
           &nbsp;
@@ -150,7 +150,7 @@
           
           <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
           or
-          <input name="Submit" type="submit" value="Submit" onClick="return submitFeedback()">
+          <input name="Submit" type="submit" value="Submit">
           
         </div>
         </form>   
