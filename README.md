@@ -1,7 +1,7 @@
 # CP1406 - Assignment 2 - Project Plan
-Group 4 Assignment 2
-Name: Tuyet My Ho, Ong Pei Jia Charmaine, Riska Wilian Triany Putri, Kim Anh Nguyen
-The second website that I made in 2015
+- Group 4 Assignment 2
+- Name: Tuyet My Ho, Ong Pei Jia Charmaine, Riska Wilian Triany Putri, Kim Anh Nguyen
+- The second website that I made in 2015
 
 ## Diazepam Ice cream Café
 ### Mission
